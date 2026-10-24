@@ -650,7 +650,7 @@ def body_home() -> str:
         categories.setdefault(res["category"], []).append(res)
     stats = f"""<dl class="meta-grid">
   <div><dt>Resources</dt><dd>{len(RESOURCES)} reviewed at pinned commits</dd></div>
-  <div><dt>Recorded files</dt><dd>{fmt_int(total_files)} paths across the fourteen upstream trees</dd></div>
+  <div><dt>Recorded files</dt><dd>{fmt_int(total_files)} files across the fourteen upstream trees</dd></div>
   <div><dt>Task routes</dt><dd>{len(TASKS)} jobs with a lead resource and steps</dd></div>
   <div><dt>Version</dt><dd>{esc(VERSION)}, released {esc(RELEASED)}</dd></div>
 </dl>"""
@@ -662,7 +662,7 @@ def body_home() -> str:
   </div>
   <div class="panel">
     <h3>Start from a job</h3>
-    <p class="muted">Twelve routes: new site, app screen, audit, copy edit, feature plan, code review, research, extraction, browser task, artefact inspection, icons.</p>
+    <p class="muted">Twelve routes, from a new marketing site and an application screen through audits, copy edits, feature plans and artefact inspection.</p>
     <p><a href="{esc(rel_link(PAGES['home'], '/tasks/'))}">Open the task routes</a></p>
   </div>
   <div class="panel">
@@ -717,7 +717,7 @@ def body_home() -> str:
 </div>
 <h2>Where the numbers come from</h2>
 <p>Commit, entry path, file count and licence for every resource were checked against the upstream repository at build time, not copied from earlier notes. The <a href="{esc(rel_link(PAGES['home'], '/docs/provenance/'))}">provenance page</a> lists the checks and the gaps, including the five REA submodules whose contents were never downloaded.</p>
-<p class="small muted">{fmt_int(total_paths)} recorded paths in total. A path in those trees means the file exists at that commit. It does not mean the file was read.</p>
+<p class="small muted">{fmt_int(total_paths)} recorded paths in total, five of them submodule references. A path in those trees means the file exists at that commit. It does not mean the file was read.</p>
 """
 
 
