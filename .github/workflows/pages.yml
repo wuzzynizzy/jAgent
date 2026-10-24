@@ -1,8 +1,9 @@
-name: Build and publish
+name: Build and check
 
 on:
   push:
-    branches: [main]
+    branches: [main, "arena/**"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -28,16 +29,28 @@ jobs:
         run: python3 build/build.py
       - name: Validate links, data, privacy and checksums
         run: python3 build/check.py
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-  deploy:
+      - name: Report output size
+        run: du -sh public && find public -type f | wc -l
+
+  # Publishing is a deliberate action. It only runs when triggered by hand from the
+  # Actions tab, after Pages has been enabled in the repository settings.
+  publish:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r build/requirements.txt
+      - run: python3 build/build.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
       - id: deployment
         uses: actions/deploy-pages@v4
