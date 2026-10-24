@@ -19,11 +19,12 @@ Limits at the time of writing: 20,000 files per deployment and 25 MiB per asset 
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` builds the site and publishes `public/` on every push to `main`, and can be run manually from the Actions tab.
+`.github/workflows/pages.yml` builds and checks the site on every push and pull request. It does not publish on its own. `public/` is only uploaded when you run the workflow by hand.
 
 1. In the repository settings, open Pages and set the source to GitHub Actions.
-2. Push to `main`. The workflow installs Python, builds, runs the checks, uploads `public/` as the Pages artifact and deploys it.
-3. The site appears at `https://wuzzynizzy.github.io/jAgent/`.
+2. Open the Actions tab, choose Build and check, then Run workflow on `main`.
+3. The build runs, the checks run, `public/` is uploaded as the Pages artifact and deployed.
+4. The site appears at `https://wuzzynizzy.github.io/jAgent/`.
 
 If the checks fail, the deployment stops. That is deliberate: a broken link or a privacy hit should block publication rather than ship.
 
