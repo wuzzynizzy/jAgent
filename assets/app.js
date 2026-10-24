@@ -21,6 +21,84 @@
     return node;
   }
 
+
+  /* Collapsed navigation below 1024px. */
+
+  (function () {
+    var toggle = document.querySelector("[data-nav-toggle]");
+    var nav = document.getElementById("site-nav");
+    if (!toggle || !nav) return;
+    var label = toggle.querySelector("span");
+
+    function wide() {
+      return window.matchMedia("(min-width: 1025px)").matches;
+    }
+
+    function setOpen(open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      nav.dataset.open = open ? "true" : "false";
+      if (label) label.textContent = open ? "Hide navigation" : "Browse the library";
+    }
+
+    setOpen(wide());
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+    var media = window.matchMedia("(min-width: 1025px)");
+    if (media.addEventListener) {
+      media.addEventListener("change", function () { setOpen(wide()); });
+    }
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !wide() && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+  })();
+
+  /* Theme: system by default, explicit choice stored in localStorage. */
+
+  (function () {
+    var root = document.documentElement;
+    var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-theme-set]"));
+    if (!buttons.length) return;
+    var media = window.matchMedia("(prefers-color-scheme: light)");
+    var stored = null;
+    try { stored = localStorage.getItem("jagent-theme"); } catch (error) { stored = null; }
+    var current = stored === "light" || stored === "dark" ? stored : "system";
+
+    function resolved(mode) {
+      if (mode !== "system") return mode;
+      return media.matches ? "light" : "dark";
+    }
+
+    function paint(mode) {
+      current = mode;
+      root.dataset.theme = mode;
+      var effective = resolved(mode);
+      buttons.forEach(function (button) {
+        button.setAttribute("aria-pressed", button.dataset.themeSet === mode ? "true" : "false");
+      });
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", effective === "light" ? "#f6f7f4" : "#1c1d1c");
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        paint(button.dataset.themeSet);
+        try {
+          if (button.dataset.themeSet === "system") localStorage.removeItem("jagent-theme");
+          else localStorage.setItem("jagent-theme", button.dataset.themeSet);
+        } catch (error) { /* storage can be blocked; the choice still applies to this page */ }
+      });
+    });
+
+    if (media.addEventListener) {
+      media.addEventListener("change", function () { if (current === "system") paint("system"); });
+    }
+    paint(current);
+  })();
+
   /* Copy buttons on code blocks */
 
   document.querySelectorAll(".prose pre").forEach(function (pre) {

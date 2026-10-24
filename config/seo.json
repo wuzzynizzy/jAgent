@@ -1,0 +1,31 @@
+{
+ "siteName": "jAgent",
+ "locale": "en",
+ "titleTemplate": "{title} · jAgent",
+ "homeTitle": "jAgent: fourteen agent skills, reviewed at pinned commits",
+ "defaultDescription": "A reviewed library of fourteen agent skills, workflows and interface resources, with recorded source trees, typed relationships and retrieval-ready files for agents.",
+ "defaultImage": "/assets/og/default.png",
+ "twitterCard": "summary_large_image",
+ "twitterSite": null,
+ "author": {"name": "Nizzy", "url": "https://github.com/wuzzynizzy"},
+ "publisher": {"name": "jAgent", "logo": "/assets/brand/icon-512.png"},
+ "searchPath": "/search/?q={query}",
+ "keywords": ["agent skills", "AI coding agents", "skill library", "LLM tooling",
+              "design system", "prompt library", "retrieval", "context management"],
+ "resourceKeywords": {
+  "taste-skill": ["art direction", "design review", "browser inspection"],
+  "hallmark": ["design gates", "visual audit", "theme system"],
+  "ui-ux-pro-max-skill": ["ux guidance", "design tokens", "accessibility"],
+  "lucide": ["svg icons", "icon library"],
+  "morphicons": ["icon animation", "reduced motion"],
+  "kumo": ["react components", "cloudflare kumo", "design tokens"],
+  "humanizer": ["copy editing", "prose style"],
+  "slopmonster": ["copy checker", "editing workflow"],
+  "ponytail": ["code review", "minimal change"],
+  "spec-kit": ["specification", "planning", "acceptance criteria"],
+  "last30days-skill": ["recent research", "source coverage"],
+  "scrapling": ["web scraping", "structured extraction"],
+  "browser-use": ["browser automation", "agent actions"],
+  "rea": ["reverse engineering", "binary analysis", "artefact inspection"]
+ }
+}

@@ -19,10 +19,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 RELEASES = ROOT / "releases"
-SITE = json.loads((ROOT / "build/content/site.json").read_text())
+SITE = json.loads((ROOT / "config/site.json").read_text())
 VERSION = SITE["version"]
 
-SOURCE_INCLUDE = ["build", "README.md", "DEPLOY.md", "LICENSE", "CONTENT-LICENSE.md",
+SOURCE_INCLUDE = ["build", "config", "references", "sources", "assets", "tools", "SKILL.md",
+                  "AGENTS.md", "README.md", "DEPLOY.md", "LICENSE", "CONTENT-LICENSE.md",
                   ".gitignore", ".github"]
 SOURCE_EXCLUDE_DIRS = {"__pycache__", "node_modules", ".venv", ".git", "releases", "kit",
                        "google_drive", ".arena"}

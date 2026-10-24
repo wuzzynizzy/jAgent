@@ -27,17 +27,22 @@ from mistune.renderers.html import HTMLRenderer
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
-CONTENT = ROOT / "content"
-INPUTS = ROOT / "inputs"
-ASSETS = ROOT / "assets"
+CONFIG = REPO / "config"
+REFS = REPO / "references"
+SOURCES_DIR = REPO / "sources"
+ASSETS = REPO / "assets"
 PUBLIC = REPO / "public"
 
-SITE = json.loads((CONTENT / "site.json").read_text())
-RESOURCES = json.loads((CONTENT / "resources.json").read_text())
-SOURCES = {s["id"]: s for s in json.loads((INPUTS / "sources.json").read_text())}
-DOCS = json.loads((CONTENT / "docs.json").read_text())
-TASKS = json.loads((CONTENT / "tasks.json").read_text())
-GRAPH_SPEC = json.loads((CONTENT / "graph.json").read_text())
+SITE = json.loads((CONFIG / "site.json").read_text())
+SEO = json.loads((CONFIG / "seo.json").read_text())
+NAV = json.loads((CONFIG / "nav.json").read_text())
+THEME = json.loads((CONFIG / "theme.json").read_text())
+ICONS = json.loads((ASSETS / "icons.json").read_text())
+RESOURCES = json.loads((CONFIG / "resources.json").read_text())
+SOURCES = {s["id"]: s for s in json.loads((SOURCES_DIR / "registry.json").read_text())}
+DOCS = json.loads((CONFIG / "docs.json").read_text())
+TASKS = json.loads((CONFIG / "tasks.json").read_text())
+GRAPH_SPEC = json.loads((CONFIG / "graph.json").read_text())
 
 VERSION = SITE["version"]
 RELEASED = SITE["released"]
@@ -132,6 +137,11 @@ register("data", url="/data/", out="data/index.html", kind="page", nav="data",
          title=f"Data files \u00b7 {SITE['name']}",
          description="Machine-readable catalog, graph, chunk index, recorded source trees and release manifest.",
          trail=[("Library", "/"), ("Data files", None)])
+
+register("skill", url="/skill/", out="skill/index.html", kind="skill", nav="skill",
+         title=f"SKILL.md \u00b7 {SITE['name']}",
+         description="The skill entry: when to use this library, how to route a task, and which reference to open.",
+         trail=[("Library", "/"), ("Skill entry", None)])
 
 register("docs", url="/docs/", out="docs/index.html", kind="page", nav="docs",
          title=f"Guides \u00b7 {SITE['name']}",
@@ -258,54 +268,53 @@ def rewrite_md_links(text: str, page: dict) -> str:
 
 # ---------------------------------------------------------------- components
 
-def icon(name: str, size: int = 16) -> str:
-    paths = {
-        "arrow-right": '<path d="M5 12h14M13 6l6 6-6 6"/>',
-        "external": '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
-        "search": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/>',
-        "copy": '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/>',
-        "check": '<path d="M4 12.5l5 5L20 6.5"/>',
-        "file": '<path d="M13 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"/><path d="M13 3v5h5"/>',
-        "chevron-left": '<path d="M15 6l-6 6 6 6"/>',
-        "chevron-right": '<path d="M9 6l6 6-6 6"/>',
-    }
-    return (f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" '
+def icon(name: str, size: int = 16, extra_class: str = "") -> str:
+    """Inline a Lucide path set. Paths are ISC licensed, see assets/ICONS-LICENSE.txt."""
+    body = ICONS.get(name)
+    if body is None:
+        raise KeyError(f"unknown icon {name}")
+    klass = f' class="{extra_class}"' if extra_class else ""
+    return (f'<svg{klass} width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" '
             f'stroke="currentColor" stroke-width="1.75" stroke-linecap="round" '
-            f'stroke-linejoin="round" aria-hidden="true">{paths[name]}</svg>')
+            f'stroke-linejoin="round" aria-hidden="true">{body}</svg>')
 
 
-NAV_PRIMARY = [
-    ("home", "Library", "/"),
-    ("resources", f"Resources ({len(RESOURCES)})", "/resources/"),
-    ("tasks", f"Task routes ({len(TASKS)})", "/tasks/"),
-    ("graph", "Knowledge graph", "/graph/"),
-    ("search", "Search", "/search/"),
-    ("data", "Data files", "/data/"),
-]
+def theme_switch(page: dict) -> str:
+    buttons = []
+    icons = {"system": "monitor", "light": "sun", "dark": "moon"}
+    labels = {"system": "Auto", "light": "Light", "dark": "Dark"}
+    for mode in THEME["modes"]:
+        buttons.append(
+            f'<button type="button" class="theme-btn" data-theme-set="{esc(mode)}" '
+            f'aria-pressed="{"true" if mode == THEME["default"] else "false"}" '
+            f'title="{esc(labels[mode])} theme">{icon(icons[mode], 15)}'
+            f'<span>{esc(labels[mode])}</span></button>')
+    return ('<div class="theme-switch" role="group" aria-label="Colour theme">'
+            + "".join(buttons) + "</div>")
 
 
 def sidebar(page: dict) -> str:
     primary = []
-    for nav_id, label, url in NAV_PRIMARY:
-        current = ' aria-current="page"' if page["nav"] == nav_id else ""
-        primary.append(f'<li><a class="nav-link" href="{esc(rel_link(page, url))}"{current}>'
-                       f'<span>{esc(label)}</span></a></li>')
-    docs = []
+    for item in NAV["primary"]:
+        current = ' aria-current="page"' if page["nav"] == item["id"] else ""
+        label = item["label"]
+        count = ""
+        if item.get("count"):
+            number = len(RESOURCES) if item["id"] == "resources" else len(TASKS)
+            count = f'<span class="count">{number}</span>'
+        primary.append(f'<li><a class="nav-link" href="{esc(rel_link(page, item["url"]))}"{current}>'
+                       f'<span>{esc(label)}</span>{count}</a></li>')
+    guides = []
     for doc in DOCS:
         dest = PAGES[doc["id"]]
         current = ' aria-current="page"' if page["id"] == doc["id"] else ""
-        docs.append(f'<li><a class="nav-link small" href="{esc(rel_link(page, dest["url"]))}"{current}>'
-                    f'<span>{esc(doc["title"])}</span></a></li>')
-    docs_hub_current = ' aria-current="page"' if page["id"] == "docs" else ""
-    agent_files = [
-        ("llms.txt", "/llms.txt", "agent bootstrap"),
-        ("manifest.json", "/data/manifest.json", f"version {VERSION}"),
-        ("checksums", "/checksums.sha256", "verify a copy"),
-    ]
+        guides.append(f'<li><a class="nav-link small" href="{esc(rel_link(page, dest["url"]))}"{current}>'
+                      f'<span>{esc(doc["title"])}</span></a></li>')
+    guides_hub = ' aria-current="page"' if page["id"] == "docs" else ""
     agent_links = "".join(
-        f'<li><a class="nav-link small" href="{esc(rel_link(page, url))}"><span>{esc(label)}</span>'
-        f'<span class="count">{esc(note)}</span></a></li>'
-        for label, url, note in agent_files)
+        f'<li><a class="nav-link small" href="{esc(rel_link(page, url))}"><span>{esc(item["label"])}</span>'
+        f'<span class="count">{esc(item["note"])}</span></a></li>'
+        for item in NAV["agentFiles"] for url in [item["url"]])
     return f"""
 <aside class="sidebar">
   <a class="brand" href="{esc(rel_link(page, '/'))}">
@@ -313,22 +322,28 @@ def sidebar(page: dict) -> str:
     <span class="brand-version">v{VERSION}</span>
   </a>
   <p class="brand-line">{esc(SITE['tagline'])}</p>
+  <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+    {icon('menu', 16)}<span>Browse the library</span>
+  </button>
+  <div class="site-nav" id="site-nav" data-open="true">
   <nav aria-label="Library">
     <div class="nav-group">
       <ul class="nav-list">{''.join(primary)}</ul>
     </div>
     <div class="nav-group">
-      <p class="nav-label">Guides</p>
+      <p class="nav-label">{esc(NAV['guidesLabel'])}</p>
       <ul class="nav-list">
-        <li><a class="nav-link small" href="{esc(rel_link(page, '/docs/'))}"{docs_hub_current}><span>All guides</span></a></li>
-        {''.join(docs)}
+        <li><a class="nav-link small" href="{esc(rel_link(page, NAV['guidesIndex']['url']))}"{guides_hub}><span>{esc(NAV['guidesIndex']['label'])}</span></a></li>
+        {''.join(guides)}
       </ul>
     </div>
     <div class="nav-group">
-      <p class="nav-label">Agent files</p>
+      <p class="nav-label">{esc(NAV['agentsLabel'])}</p>
       <ul class="nav-list">{agent_links}</ul>
     </div>
   </nav>
+  </div>
+  {theme_switch(page)}
   <div class="sidebar-foot">
     <p>Reviewed {esc(SITE['reviewed_on'])}. Every resource links to the commit it describes.</p>
     <p><a href="{esc(REPO_URL)}" rel="noopener">Source repository</a></p>
@@ -349,26 +364,203 @@ def breadcrumbs(page: dict) -> str:
     return f'<div class="crumbs">{joined}</div>'
 
 
+def page_image(page: dict) -> str:
+    """Absolute URL of the social card for a page."""
+    if page["kind"] == "resource":
+        name = f"/assets/og/resource-{page['id']}.png"
+    elif page["kind"] == "doc":
+        name = f"/assets/og/doc-{page['id']}.png"
+    elif page["id"] in {"home", "resources", "tasks", "graph", "search", "data", "docs", "skill"}:
+        name = f"/assets/og/{page['id']}.png"
+    else:
+        name = SEO["defaultImage"]
+    if not (PUBLIC / name.lstrip("/")).exists() and not (ASSETS / name.split("/assets/")[-1]).exists():
+        return BASE.rstrip("/") + SEO["defaultImage"]
+    return BASE.rstrip("/") + name
+
+
+def breadcrumb_jsonld(page: dict) -> dict | None:
+    trail = [("Home", "/")] + [(label, url) for label, url in page["trail"]]
+    if len(trail) < 2:
+        return None
+    items = []
+    for position, (label, url) in enumerate(trail, start=1):
+        item = {"@type": "ListItem", "position": position, "name": label}
+        if url:
+            item["item"] = BASE.rstrip("/") + url
+        items.append(item)
+    return {"@type": "BreadcrumbList", "itemListElement": items}
+
+
+def jsonld(page: dict) -> str:
+    graph: list[dict] = []
+    canonical = BASE + page["url"].lstrip("/")
+    site_ref = {"@type": "WebSite", "name": SITE["name"], "url": BASE.rstrip("/")}
+    publisher = {"@type": "Organization", "name": SEO["publisher"]["name"],
+                 "url": BASE.rstrip("/"),
+                 "logo": {"@type": "ImageObject",
+                          "url": BASE.rstrip("/") + SEO["publisher"]["logo"],
+                          "width": 512, "height": 512}}
+    author = {"@type": "Person", "name": SEO["author"]["name"], "url": SEO["author"]["url"]}
+
+    if page["id"] == "home":
+        graph.append({
+            "@type": "WebSite", "name": SITE["name"], "alternateName": "jAgent library",
+            "url": BASE.rstrip("/"), "description": SEO["defaultDescription"],
+            "inLanguage": SEO["locale"], "version": VERSION,
+            "publisher": publisher,
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {"@type": "EntryPoint",
+                           "urlTemplate": BASE + "search/?q={query}"},
+                "query-input": "required name=query"},
+        })
+        graph.append({
+            "@type": "CollectionPage", "name": "Resource index",
+            "url": BASE + "resources/", "isPartOf": site_ref,
+            "mainEntity": {"@type": "ItemList", "numberOfItems": len(RESOURCES),
+                           "itemListElement": [
+                               {"@type": "ListItem", "position": i, "name": res["name"],
+                                "url": BASE + f"resources/{res['id']}/"}
+                               for i, res in enumerate(RESOURCES, start=1)]},
+        })
+    elif page["kind"] == "resource":
+        res = RESOURCE_BY_ID[page["id"]]
+        source = SOURCES[res["id"]]
+        graph.append({
+            "@type": "TechArticle",
+            "headline": f"{res['name']}: what it does, how to run it, where it stops",
+            "name": res["name"], "description": res["summary"], "url": canonical,
+            "inLanguage": SEO["locale"], "datePublished": RELEASED, "dateModified": RELEASED,
+            "author": author, "publisher": publisher, "isPartOf": site_ref,
+            "articleSection": res["category"],
+            "keywords": ", ".join([res["name"], res["category"]] + SEO["resourceKeywords"].get(res["id"], [])),
+            "license": source["license_file"],
+            "about": {
+                "@type": "SoftwareSourceCode", "name": res["name"],
+                "codeRepository": source["repo"], "version": source["commit"],
+                "license": source["license_file"], "programmingLanguage": res.get("runtime", ""),
+            },
+        })
+    elif page["kind"] == "doc":
+        doc = next(d for d in DOCS if d["id"] == page["id"])
+        graph.append({
+            "@type": "TechArticle", "headline": doc["title"], "description": doc["summary"],
+            "url": canonical, "inLanguage": SEO["locale"],
+            "datePublished": RELEASED, "dateModified": RELEASED,
+            "author": author, "publisher": publisher, "isPartOf": site_ref,
+            "articleSection": "Guides",
+        })
+    elif page["id"] == "skill":
+        graph.append({
+            "@type": "TechArticle", "headline": "jAgent skill entry",
+            "description": "The SKILL.md entry for the jAgent library: routes, rules and references.",
+            "url": canonical, "inLanguage": SEO["locale"],
+            "datePublished": RELEASED, "dateModified": RELEASED,
+            "author": author, "publisher": publisher, "isPartOf": site_ref,
+        })
+    elif page["id"] in {"resources", "tasks", "docs", "data", "graph", "search"}:
+        entries = []
+        if page["id"] == "resources":
+            entries = [(r["name"], f"/resources/{r['id']}/") for r in RESOURCES]
+        elif page["id"] == "tasks":
+            entries = [(t["title"], f"/tasks/#{t['id']}") for t in TASKS]
+        elif page["id"] == "docs":
+            entries = [(d["title"], f"/docs/{d['id']}/") for d in DOCS]
+        node = {"@type": "CollectionPage", "name": page["title"], "url": canonical,
+                "description": page["description"], "inLanguage": SEO["locale"],
+                "isPartOf": site_ref, "publisher": publisher}
+        if entries:
+            node["mainEntity"] = {
+                "@type": "ItemList", "numberOfItems": len(entries),
+                "itemListElement": [{"@type": "ListItem", "position": i, "name": name,
+                                     "url": BASE.rstrip("/") + url}
+                                    for i, (name, url) in enumerate(entries, start=1)]}
+        graph.append(node)
+
+    crumbs = breadcrumb_jsonld(page)
+    if crumbs:
+        graph.append(crumbs)
+    payload = {"@context": "https://schema.org", "@graph": graph}
+    return ('<script type="application/ld+json">'
+            + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+            + "</script>")
+
+
+def head_meta(page: dict) -> str:
+    canonical = BASE + page["url"].lstrip("/")
+    image = page_image(page)
+    is_article = page["kind"] in {"resource", "doc"} or page["id"] == "skill"
+    tags = ["jAgent", "agent skills"] + SEO["keywords"][:4]
+    if page["kind"] == "resource":
+        res = RESOURCE_BY_ID[page["id"]]
+        tags = [res["name"], res["category"]] + SEO["resourceKeywords"].get(res["id"], [])
+    meta = [
+        f'<meta name="description" content="{esc(page["description"])}">',
+        f'<link rel="canonical" href="{esc(canonical)}">',
+        f'<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">',
+        f'<meta name="author" content="{esc(SEO["author"]["name"])}">',
+        f'<meta name="keywords" content="{esc(", ".join(tags))}">',
+        f'<meta name="theme-color" content="{esc(THEME["palettes"]["dark"]["themeColor"])}">',
+        f'<meta property="og:site_name" content="{esc(SEO["siteName"])}">',
+        f'<meta property="og:locale" content="{esc(SEO["locale"])}">',
+        f'<meta property="og:type" content="{"article" if is_article else "website"}">',
+        f'<meta property="og:title" content="{esc(page["title"])}">',
+        f'<meta property="og:description" content="{esc(page["description"])}">',
+        f'<meta property="og:url" content="{esc(canonical)}">',
+        f'<meta property="og:image" content="{esc(image)}">',
+        f'<meta property="og:image:type" content="image/png">',
+        f'<meta property="og:image:width" content="1200">',
+        f'<meta property="og:image:height" content="630">',
+        f'<meta property="og:image:alt" content="{esc(page["title"])}">',
+        f'<meta name="twitter:card" content="{esc(SEO["twitterCard"])}">',
+        f'<meta name="twitter:title" content="{esc(page["title"])}">',
+        f'<meta name="twitter:description" content="{esc(page["description"])}">',
+        f'<meta name="twitter:image" content="{esc(image)}">',
+        f'<meta name="twitter:image:alt" content="{esc(page["title"])}">',
+    ]
+    if SEO.get("twitterSite"):
+        meta.append(f'<meta name="twitter:site" content="{esc(SEO["twitterSite"])}">')
+    if is_article:
+        meta += [
+            f'<meta property="article:published_time" content="{esc(RELEASED)}T00:00:00Z">',
+            f'<meta property="article:modified_time" content="{esc(RELEASED)}T00:00:00Z">',
+            f'<meta property="article:author" content="{esc(SEO["author"]["url"])}">',
+        ]
+        if page["kind"] == "resource":
+            meta.append(f'<meta property="article:section" content="{esc(RESOURCE_BY_ID[page["id"]]["category"])}">')
+    if page["id"] == "404":
+        meta[2] = '<meta name="robots" content="noindex,follow">'
+    return "\n".join(meta)
+
+
 def shell(page: dict, body: str, *, wide: bool = False) -> str:
     canonical = BASE + page["url"].lstrip("/")
     md_link = esc(rel_link(page, page["md_url"]))
+    icon_base = esc(rel_link(page, "/assets/brand/"))
+    preload_theme = (
+        '<script>try{var t=localStorage.getItem("jagent-theme");'
+        'document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:"system"}'
+        'catch(e){document.documentElement.dataset.theme="system"}</script>')
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{esc(SEO['locale'])}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{preload_theme}
 <title>{esc(page['title'])}</title>
-<meta name="description" content="{esc(page['description'])}">
-<link rel="canonical" href="{esc(canonical)}">
-<meta name="theme-color" content="#1c1d1c">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{esc(page['title'])}">
-<meta property="og:description" content="{esc(page['description'])}">
-<meta property="og:url" content="{esc(canonical)}">
+{head_meta(page)}
+<link rel="icon" href="{icon_base}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{icon_base}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{icon_base}favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="{icon_base}apple-touch-icon.png">
+<link rel="manifest" href="{icon_base}site.webmanifest">
+<link rel="stylesheet" href="{esc(rel_link(page, '/assets/theme.css'))}">
 <link rel="stylesheet" href="{esc(rel_link(page, '/assets/site.css'))}">
 <link rel="preload" href="{esc(rel_link(page, '/assets/fonts/google-sans-latin.woff2'))}" as="font" type="font/woff2" crossorigin>
 <link rel="alternate" type="text/markdown" href="{md_link}">
 <script src="{esc(rel_link(page, '/assets/app.js'))}" defer></script>
+{jsonld(page)}
 </head>
 <body data-root="{esc(rel_link(page, '/'))}">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -383,6 +575,7 @@ def shell(page: dict, body: str, *, wide: bool = False) -> str:
 <footer class="footer">
   <span>{esc(SITE['name'])} v{VERSION}, released {esc(RELEASED)}. Guides CC BY 4.0, code MIT.</span>
   <span class="footer-links">
+    <a href="{esc(rel_link(page, '/skill/'))}">Skill</a>
     <a href="{esc(rel_link(page, '/docs/about/'))}">About</a>
     <a href="{esc(rel_link(page, '/data/manifest.json'))}">Manifest</a>
     <a href="{esc(rel_link(page, '/checksums.sha256'))}">Checksums</a>
@@ -693,10 +886,16 @@ def body_home() -> str:
 <p class="lede">Design, writing, engineering, research and inspection. Each resource was read at a pinned commit, written up with its limits, and recorded with the files that exist upstream.</p>
 <div class="actions">
   <a class="btn" href="{esc(rel_link(PAGES['home'], '/resources/'))}">Browse the resources {icon('arrow-right')}</a>
+  <a class="btn secondary" href="{esc(rel_link(PAGES['home'], '/skill/'))}">Use it as a skill</a>
   <a class="btn secondary" href="{esc(rel_link(PAGES['home'], '/tasks/'))}">Start from a task</a>
   <a class="btn secondary" href="{esc(rel_link(PAGES['home'], '/search/'))}">Search the library</a>
 </div>
 {stats}
+<div class="panel">
+  <h2 style="margin-top:0">Install it as a skill</h2>
+  <pre><code>{esc(SITE['skill']['install'])}</pre></code>
+  <p class="small muted" style="margin-bottom:0">Or read <a href="{esc(rel_link(PAGES['home'], '/skill/'))}">SKILL.md</a> and take the route for your job. Nothing here needs a server or a key.</p>
+</div>
 <h2>Three ways in</h2>
 {steps}
 <h2>All resources</h2>
@@ -743,7 +942,7 @@ def body_resource(res: dict) -> str:
     page = PAGES[res["id"]]
     source = SOURCES[res["id"]]
     tree = TREES[res["id"]]
-    md = (CONTENT / "resources" / f"{res['id']}.md").read_text()
+    md = (REFS / "resources" / f"{res['id']}.md").read_text()
     prose = render_markdown(md, page)
     requires = "".join(f"<li>{esc(item)}</li>" for item in res["requires"])
     not_for = "".join(f"<li>{esc(item)}</li>" for item in res["not_for"])
@@ -859,7 +1058,7 @@ def render_relations(page: dict, node_id: str) -> str:
 
 def body_doc(doc: dict) -> str:
     page = PAGES[doc["id"]]
-    md = (CONTENT / "docs" / f"{doc['id']}.md").read_text()
+    md = (REFS / f"{doc['id']}.md").read_text()
     prose = render_markdown(md, page)
     order = [d["id"] for d in DOCS]
     index = order.index(doc["id"])
@@ -1017,7 +1216,7 @@ def body_data() -> str:
         ("/data/search-index.json", "Passages, titles and URLs used by the search page."),
         ("/data/chunks/manifest.json", "Chunk files, counts, bytes and SHA-256."),
         ("/data/chunks/all.jsonl", "Every chunk on one line each, for batch loading."),
-        ("/data/versions/1.0.0.json", "Per-file hashes and counts for this release."),
+        (f"/data/versions/{VERSION}.json", "Per-file hashes and counts for this release."),
         ("/data/sources.json", "The verified upstream registry the build reads."),
         ("/checksums.sha256", "SHA-256 for every deployed file."),
         ("/sitemap.xml", "Every page URL at the canonical origin."),
@@ -1062,6 +1261,59 @@ curl -s {esc(BASE)}data/chunks/all.jsonl | head -n 5</code></pre>
 """
 
 
+def tasks_reference() -> str:
+    lines = ["# Task routes", "",
+             "Twelve jobs, each with a lead reference and a short sequence. Generated from config/tasks.json.", ""]
+    for task in TASKS:
+        lead = RESOURCE_BY_ID[task["lead"]]
+        lines += [f"## {task['title']}", "", task["question"], "",
+                  f"Lead: `references/resources/{lead['id']}.md` ({lead['name']})"]
+        if task["supporting"]:
+            supporting = []
+            for item in task["supporting"]:
+                if item in RESOURCE_BY_ID:
+                    supporting.append(f"`resources/{item}.md`")
+                else:
+                    supporting.append(f"`{item}.md`")
+            lines.append("Supporting: " + ", ".join(supporting))
+        lines += ["", "Steps:", ""]
+        lines += [f"{i}. {step}" for i, step in enumerate(task["steps"], start=1)]
+        lines += ["", f"Skip: {task['skip']}", "", f"Result: {task['output']}", ""]
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def body_skill(skill_md: str) -> str:
+    page = PAGES["skill"]
+    if skill_md.startswith("---"):
+        _, front, body = skill_md.split("---", 2)
+    else:
+        front, body = "", skill_md
+    meta_rows = []
+    for line in front.strip().splitlines():
+        if ":" not in line or line.startswith(" "):
+            continue
+        key, value = line.split(":", 1)
+        meta_rows.append(f"<div><dt>{esc(key.strip())}</dt><dd>{esc(value.strip())}</dd></div>")
+    prose = render_markdown(re.sub(r"^# .*\n", "", body.strip()), page)
+    install = SITE["skill"]["install"]
+    return f"""
+<h1>jAgent skill</h1>
+<p class="lede">One skill that routes a task to the right reference, so an agent loads two or three files instead of twenty. The full entry is below; the same text is served as plain Markdown for tooling.</p>
+<div class="actions">
+  <a class="btn" href="{esc(rel_link(page, '/skill.md'))}">Open SKILL.md {icon('external-link', 16)}</a>
+  <a class="btn secondary" href="{esc(rel_link(page, '/resources/'))}">Resource index</a>
+  <a class="btn secondary" href="{esc(rel_link(page, '/docs/context-protocol/'))}">Context protocol</a>
+</div>
+<div class="panel">
+  <h2 style="margin-top:0">Install into a skill host</h2>
+  <pre><code>{esc(install)}</code></pre>
+  <p class="small muted">Without a skill host, read SKILL.md directly, then the reference it points at. Nothing here needs a service.</p>
+</div>
+<dl class="meta-grid">{''.join(meta_rows)}</dl>
+<div class="prose">{prose}</div>
+"""
+
+
 def body_404() -> str:
     page = PAGES["home"]
     return f"""
@@ -1087,6 +1339,8 @@ def llms_txt() -> str:
         "",
         "## Start here",
         "",
+        f"- [SKILL.md]({BASE}skill.md): the skill entry. Routes a task to one reference and states the rules.",
+        f"- Install into a skill host: `{SITE['skill']['install']}`",
         f"- [Context protocol]({BASE}docs/context-protocol/): loading order, budgets, citation and eviction rules.",
         f"- [Manifest]({BASE}data/manifest.json): version, counts, entry points, retrieval status.",
         f"- [Catalog]({BASE}data/catalog.json): all fourteen resources as data.",
@@ -1182,6 +1436,46 @@ python3 build/check.py
 
 # ---------------------------------------------------------------- build steps
 
+def theme_css() -> str:
+    def kebab(name: str) -> str:
+        return re.sub(r"([A-Z])", lambda m: "-" + m.group(1).lower(), name)
+
+    def block(palette: dict) -> str:
+        return "\n".join(f"  --{kebab(key)}: {value};" for key, value in palette.items()
+                          if key not in {"scheme", "themeColor"})
+
+    dark, light = THEME["palettes"]["dark"], THEME["palettes"]["light"]
+    return f"""/* Generated from config/theme.json. Do not edit. */
+:root,
+:root[data-theme="dark"] {{
+  color-scheme: {dark['scheme']};
+{block(dark)}
+}}
+:root[data-theme="light"] {{
+  color-scheme: {light['scheme']};
+{block(light)}
+}}
+@media (prefers-color-scheme: light) {{
+  :root[data-theme="system"] {{
+    color-scheme: {light['scheme']};
+{block(light)}
+  }}
+}}
+"""
+
+
+def check_brand() -> None:
+    required = ["favicon.svg", "favicon-32.png", "favicon-48.png", "apple-touch-icon.png",
+                "icon-192.png", "icon-512.png", "site.webmanifest", "logo.svg"]
+    missing = [name for name in required if not (ASSETS / "brand" / name).exists()]
+    if missing:
+        raise SystemExit("brand assets missing: " + ", ".join(missing)
+                         + "\nRun: node tools/make_brand.mjs")
+    og_missing = [p.name for p in (ASSETS / "og").glob("*.png")]
+    if not og_missing:
+        raise SystemExit("no social cards found in assets/og; run node tools/make_brand.mjs")
+
+
 def write(path: str, text: str) -> None:
     target = PUBLIC / path
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -1196,10 +1490,12 @@ def build() -> None:
 
     TREES = {}
     for res in RESOURCES:
-        TREES[res["id"]] = json.loads((INPUTS / "trees" / f"{res['id']}.json").read_text())
+        TREES[res["id"]] = json.loads((SOURCES_DIR / "trees" / f"{res['id']}.json").read_text())
 
     GRAPH = build_graph()
     GRAPH_NODE_BY_ID = {node["id"]: node for node in GRAPH["nodes"]}
+
+    (REFS / "tasks.md").write_text(tasks_reference())
 
     CHUNKS = []
     CHUNKS_BY_ID = {}
@@ -1209,13 +1505,13 @@ def build() -> None:
     # Chunks first: docs and pages may link to them.
     for res in RESOURCES:
         page = PAGES[res["id"]]
-        md = (CONTENT / "resources" / f"{res['id']}.md").read_text()
+        md = (REFS / "resources" / f"{res['id']}.md").read_text()
         before = len(CHUNKS)
         add_chunks(page, md, prefix=f"resource/{res['id']}", page_title=res["name"])
         CHUNK_COUNTS[res["id"]] = len(CHUNKS) - before
     for doc in DOCS:
         page = PAGES[doc["id"]]
-        md = (CONTENT / "docs" / f"{doc['id']}.md").read_text()
+        md = (REFS / f"{doc['id']}.md").read_text()
         before = len(CHUNKS)
         add_chunks(page, md, prefix=f"doc/{doc['id']}", page_title=doc["title"])
         CHUNK_COUNTS[doc["id"]] = len(CHUNKS) - before
@@ -1254,6 +1550,9 @@ def build() -> None:
     for doc in DOCS:
         write(f"docs/{doc['id']}/index.html", shell(PAGES[doc["id"]], body_doc(doc)))
     write("404.html", shell(PAGES["home"], body_404()))
+    skill_md = (REPO / "SKILL.md").read_text()
+    write("skill.md", skill_md)
+    write("skill/index.html", shell(PAGES["skill"], body_skill(skill_md)))
     write("llms.txt", llms_txt())
     write("AGENTS.md", agents_md())
 
@@ -1261,16 +1560,18 @@ def build() -> None:
     for page_id, page in PAGES.items():
         if page["kind"] == "resource":
             res = RESOURCE_BY_ID[page_id]
-            md = f"# {res['name']}\n\n{res['summary']}\n\n" + (CONTENT / "resources" / f"{page_id}.md").read_text()
+            md = f"# {res['name']}\n\n{res['summary']}\n\n" + (REFS / "resources" / f"{page_id}.md").read_text()
         elif page["kind"] == "doc":
             doc_entry = next(d for d in DOCS if d["id"] == page_id)
-            md = f"# {doc_entry['title']}\n\n{doc_entry['summary']}\n\n" + (CONTENT / "docs" / f"{page_id}.md").read_text()
+            md = f"# {doc_entry['title']}\n\n{doc_entry['summary']}\n\n" + (REFS / f"{page_id}.md").read_text()
         elif page_id == "home":
             md = (f"# {SITE['name']}\n\n{SITE['description']}\n\n"
                   "See the HTML page for the filterable index, or read the catalog at data/catalog.json.\n\n"
                   + "\n".join(f"- [{r['name']}](page:{r['id']}): {r['summary']}" for r in RESOURCES)
                   + "\n\n## Task routes\n\n"
                   + "\n".join(f"- [{t['title']}](page:tasks#{t['id']}): {t['question']}" for t in TASKS) + "\n")
+        elif page_id == "skill":
+            md = (REPO / "SKILL.md").read_text()
         elif page_id == "resources":
             md = "# Resources\n\n" + "\n".join(f"- [{r['name']}](page:{r['id']}): {r['summary']}" for r in RESOURCES) + "\n"
         elif page_id == "docs":
@@ -1297,7 +1598,9 @@ def build() -> None:
         write(page["md_url"].lstrip("/"), rewrite_md_links(md, page))
 
     # Assets
+    check_brand()
     shutil.copytree(ASSETS, PUBLIC / "assets")
+    (PUBLIC / "assets" / "theme.css").write_text(theme_css())
     (PUBLIC / "assets" / "fonts" / "OFL.txt").write_bytes((ASSETS / "fonts" / "OFL.txt").read_bytes())
 
     # Data files
@@ -1417,10 +1720,28 @@ def build() -> None:
     write("data/manifest.json", json.dumps(manifest, indent=1) + "\n")
 
     # Sitemap and robots
-    urls = "".join(f"  <url><loc>{esc(BASE + p['url'].lstrip('/'))}</loc></url>\n" for p in PAGES.values())
+    urls = "".join(
+        f"  <url><loc>{esc(BASE + page['url'].lstrip('/'))}</loc>"
+        f"<lastmod>{esc(RELEASED)}</lastmod>"
+        f"<changefreq>{'weekly' if page['kind'] in {'resource', 'doc'} else 'monthly'}</changefreq>"
+        f"<priority>{'1.0' if page['id'] == 'home' else '0.8' if page['kind'] == 'resource' else '0.7'}</priority>"
+        f"</url>\n" for page in PAGES.values())
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n")
-    write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
+    write("robots.txt", (
+        "# jAgent library. Content is public; agent files are open.\n"
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: GPTBot\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: ClaudeBot\n"
+        "Allow: /\n"
+        "\n"
+        "User-agent: Google-Extended\n"
+        "Allow: /\n"
+        f"\nSitemap: {BASE}sitemap.xml\n"))
 
     # Per-file hashes, then checksums.txt
     files = sorted(p for p in PUBLIC.rglob("*") if p.is_file() and p.name != "checksums.sha256")
