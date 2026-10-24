@@ -1,0 +1,6 @@
+Google Sans, official static/variable release supplied by Google as a licensed asset.
+File used: GoogleSans[GRAD,opsz,wght].ttf
+Subset: Latin plus punctuation, arrows and check mark, wght 300-700 kept as a variable axis.
+Licence: SIL Open Font License 1.1, see OFL.txt. Reserved Font Name restrictions apply to modified versions.
+The subset is a modified copy, therefore it is shipped under the same OFL terms and is not 
+presented as the original font file.

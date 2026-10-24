@@ -1,0 +1,55 @@
+{
+ "node_types": {
+  "resource": "A reviewed upstream skill, tool or library.",
+  "doc": "A guide published by this library that states rules or explains a process.",
+  "task": "A routing entry describing a job and the resource that leads it."
+ },
+ "edge_types": {
+  "governs": "The document sets rules that override the resource's own visual or structural defaults.",
+  "requires": "The source resource needs the target resource to work as described.",
+  "pairs-with": "The two resources are used together and do not conflict.",
+  "alternative-to": "Pick one for a given job. Using both produces competing instructions.",
+  "conflicts-with": "The defaults contradict and one side has to be adapted before use.",
+  "routes-to": "The task route's lead resource.",
+  "references": "One document points to another for a specific part of its process."
+ },
+ "edges": [
+  {"from": "doc/design-contract", "to": "resource/taste-skill", "type": "governs", "note": "Direction and house style still have to respect the type, palette and decoration bans."},
+  {"from": "doc/design-contract", "to": "resource/hallmark", "type": "governs", "note": "Themes are materials, not exemptions from the palette and ban list."},
+  {"from": "doc/design-contract", "to": "resource/ui-ux-pro-max-skill", "type": "governs", "note": "Catalogued font and colour suggestions do not override an established brand."},
+  {"from": "doc/design-contract", "to": "resource/lucide", "type": "governs", "note": "Icons stay functional and share one size and stroke weight."},
+  {"from": "doc/design-contract", "to": "resource/morphicons", "type": "governs", "note": "Motion must respect reduced-motion and never loop."},
+  {"from": "doc/design-contract", "to": "resource/kumo", "type": "governs", "note": "Left borders, before-elements and uppercase tracked labels are replaced."},
+
+  {"from": "resource/morphicons", "to": "resource/lucide", "type": "requires", "note": "The package morphs icon data, and the documented pairing is Lucide."},
+  {"from": "resource/kumo", "to": "resource/lucide", "type": "conflicts-with", "note": "Kumo ships Phosphor internally. Keep one icon family per app; Lucide is a scoped exception."},
+
+  {"from": "resource/taste-skill", "to": "resource/hallmark", "type": "alternative-to", "note": "Both are visual leads with different rulebooks. Choose one per project."},
+  {"from": "resource/browser-use", "to": "resource/scrapling", "type": "alternative-to", "note": "Direct fetch for extraction you can script; an agent loop for judgement across steps."},
+
+  {"from": "resource/taste-skill", "to": "resource/ui-ux-pro-max-skill", "type": "pairs-with", "note": "Direction first, then targeted guidance for the specific screen."},
+  {"from": "resource/ui-ux-pro-max-skill", "to": "resource/kumo", "type": "pairs-with", "note": "Guidance for the problem, Kumo for the React controls."},
+  {"from": "resource/ui-ux-pro-max-skill", "to": "resource/lucide", "type": "pairs-with", "note": "Functional icons that match the chosen system."},
+  {"from": "resource/humanizer", "to": "resource/slopmonster", "type": "pairs-with", "note": "Contextual edit first, pattern check after."},
+  {"from": "resource/ponytail", "to": "resource/spec-kit", "type": "pairs-with", "note": "Specification for scope, Ponytail for the size of the change."},
+  {"from": "resource/last30days-skill", "to": "resource/scrapling", "type": "pairs-with", "note": "Engine for the recent window, structured extraction for the pages it finds."},
+  {"from": "resource/browser-use", "to": "resource/scrapling", "type": "pairs-with", "note": "Agent for the flow, extractor for the data it leaves behind."},
+
+  {"from": "doc/context-protocol", "to": "doc/retrieval-and-rag", "type": "references", "note": "The protocol states what retrieval exists and what is absent."},
+  {"from": "doc/about", "to": "doc/provenance", "type": "references", "note": "Claims about scope are backed by the provenance record."},
+  {"from": "doc/provenance", "to": "doc/recovery", "type": "references", "note": "Recorded trees and hashes are explained in full in the recovery guide."},
+
+  {"from": "task/new-site", "to": "resource/taste-skill", "type": "routes-to"},
+  {"from": "task/app-screen", "to": "resource/ui-ux-pro-max-skill", "type": "routes-to"},
+  {"from": "task/existing-ui-fix", "to": "resource/ui-ux-pro-max-skill", "type": "routes-to"},
+  {"from": "task/design-audit", "to": "resource/hallmark", "type": "routes-to"},
+  {"from": "task/copy-edit", "to": "resource/humanizer", "type": "routes-to"},
+  {"from": "task/feature-plan", "to": "resource/spec-kit", "type": "routes-to"},
+  {"from": "task/code-review", "to": "resource/ponytail", "type": "routes-to"},
+  {"from": "task/recent-research", "to": "resource/last30days-skill", "type": "routes-to"},
+  {"from": "task/structured-extraction", "to": "resource/scrapling", "type": "routes-to"},
+  {"from": "task/browser-task", "to": "resource/browser-use", "type": "routes-to"},
+  {"from": "task/artifact-inspection", "to": "resource/rea", "type": "routes-to"},
+  {"from": "task/icon-system", "to": "resource/lucide", "type": "routes-to"}
+ ]
+}

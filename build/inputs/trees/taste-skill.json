@@ -1,0 +1,358 @@
+{
+ "resource": "taste-skill",
+ "source": "https://github.com/leonxlnx/taste-skill",
+ "commit": "6010f91a9935f1c167dfc500fb1a475681892e6b",
+ "format": "recorded tracked paths at the pinned commit",
+ "path_count": 69,
+ "file_count": 69,
+ "submodule_count": 0,
+ "tracked_bytes": 3083290,
+ "note": "Paths come from the repository tree at the pinned commit. Directories and .git are not listed. A listed path means it exists upstream, not that its contents were read.",
+ "entries": [
+  {
+   "path": ".agents/plugins/marketplace.json",
+   "bytes": 410,
+   "sha256": "b9325fd668c8c27de5b82cd415287219804243615be6af9f6af2f347298d5290"
+  },
+  {
+   "path": ".claude-plugin/marketplace.json",
+   "bytes": 945,
+   "sha256": "4977afcf2ffd5604d8954fde26a18756884b981a48554e2d98bafba81952b740"
+  },
+  {
+   "path": ".codex-plugin/plugin.json",
+   "bytes": 1218,
+   "sha256": "3c71f5cbf7186a9266e6ff745c57f7d0882bd96afde659f3a08415058844c7f0"
+  },
+  {
+   "path": ".gitattributes",
+   "bytes": 17,
+   "sha256": "1d5d71dcc6ccd28ab46a335349ecc74742ca4b81f4fcad212f8d134f70f1f13e"
+  },
+  {
+   "path": ".github/FUNDING.yml",
+   "bytes": 17,
+   "sha256": "38f3a3fac585c3c35d6ed2297baba8d2d22ea974fa9799f842771c2f7c42d916"
+  },
+  {
+   "path": ".github/workflows/check-skills.yml",
+   "bytes": 720,
+   "sha256": "7fba3e2a508a1ceddd1b835701b028961a4c3321ab6d64738ec44d159de42962"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 48,
+   "sha256": "017e423c61b2a8991ae6db3c6d25463efbc5497765ac0c9083b9d0e517b7fa44"
+  },
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 25926,
+   "sha256": "cf02bfb321471648a05272684a95e9163d8bd893c7c1445c4e190967d87dcd51"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1065,
+   "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+  },
+  {
+   "path": "README.md",
+   "bytes": 15088,
+   "sha256": "a3e3735d1bd37553801bc09918804f93b8f0a98448f3cb58001332832bb89357"
+  },
+  {
+   "path": "assets/readme-tastecode-dark.webp",
+   "bytes": 48042,
+   "sha256": "f0193a5405c4060a1b4901b4891ffe007ec5a4311392c5755a440c07555695f5"
+  },
+  {
+   "path": "assets/readme-tastecode.webp",
+   "bytes": 29104,
+   "sha256": "242e045fb27f05c63bb836334452bdba34c20dab57c11e881a6693b4649029b5"
+  },
+  {
+   "path": "assets/sponsors/imgly-logo.svg",
+   "bytes": 1174,
+   "sha256": "2dd10ba9f8005d6b52149db678d611678609e653d0870b42cdb083fe9506e85f"
+  },
+  {
+   "path": "assets/sponsors/interfaces-dev-icon.webp",
+   "bytes": 1924,
+   "sha256": "bc6607b4721cd0b3f9a8314a6b5c8e36ee3bb53b988fbc55cb0d856e893a2873"
+  },
+  {
+   "path": "assets/sponsors/kimi-icon.png",
+   "bytes": 11486,
+   "sha256": "dbd00e2ad61ea8832ef0b024662a4a8a5d1b66f0599d5d42e1c9688b9d4cfdf6"
+  },
+  {
+   "path": "assets/sponsors/reactbits-icon-dark.svg",
+   "bytes": 3939,
+   "sha256": "e78e92b5289d049945dd6c3c7403d6d6799d78c7c4e503a4ace5ac0927df4840"
+  },
+  {
+   "path": "assets/sponsors/reactbits-icon-light.svg",
+   "bytes": 3937,
+   "sha256": "fbb62de0895647def6c562ec3bf2819de0d4bb091ce3114dfd72b17288af4020"
+  },
+  {
+   "path": "assets/sponsors/sentdm.png",
+   "bytes": 4382,
+   "sha256": "e22c024eba502cf83b1d86018d310d23430b8173093dda9f9686190df1db0b48"
+  },
+  {
+   "path": "assets/sponsors/sidrune-ai.png",
+   "bytes": 21326,
+   "sha256": "566009ccc7995311710eb0da3c0c57ed77706cbc54f501492ba82ebccbe6d0d3"
+  },
+  {
+   "path": "assets/sponsors/vercel-logo.svg",
+   "bytes": 242,
+   "sha256": "e1346e2d4f4d2e81f01939f5e333720c527185471dcdae90304f476766c1633f"
+  },
+  {
+   "path": "assets/taste-skill-wordmark-dark.png",
+   "bytes": 61650,
+   "sha256": "bb75e333ee6ebc418f80d5bff8bc093ae5589830623e9aeffe76909aed107b7d"
+  },
+  {
+   "path": "assets/taste-skill-wordmark.png",
+   "bytes": 51509,
+   "sha256": "c3a3e8f94a2a751b90510b30e8f635590764225a4584ad5c1494523b5ec9a408"
+  },
+  {
+   "path": "assets/vercel-oss-program-badge.svg",
+   "bytes": 13296,
+   "sha256": "edd338b3735bc2668b84d11d6f98b2704c45fae93fa5918d5cfbdcd6b43cf041"
+  },
+  {
+   "path": "examples/v2/CREDITS.md",
+   "bytes": 10491,
+   "sha256": "5e865281e168253eb49ce77ee2028c797a5c5c9eb2db54213ec9d1dae35de18e"
+  },
+  {
+   "path": "examples/v2/coffee-questions.webp",
+   "bytes": 26692,
+   "sha256": "9bdbbf34a628babd282f7a551ab6950ddbe9f39276bd6339d482c2c032b5c718"
+  },
+  {
+   "path": "examples/v2/coffee-roast.webp",
+   "bytes": 113142,
+   "sha256": "58c09f2a49e70aba014064d51a8964d8ee8bc816f060df84cb647fe453a8f523"
+  },
+  {
+   "path": "examples/v2/coffee-storefront.webp",
+   "bytes": 29172,
+   "sha256": "56cce0f3f4afdff3b8d977479fb892278caca5dee7599fd78252e56f7d98f0ff"
+  },
+  {
+   "path": "examples/v2/night-dates.webp",
+   "bytes": 173606,
+   "sha256": "a312f4f1c8fdee4f242adcf17e9724f6d5533b9cfe4ece5a7d25560002ec9e56"
+  },
+  {
+   "path": "install.sh",
+   "bytes": 4012,
+   "sha256": "710df355887360965f9135e4460d8e37049282b5eedad2ee94075048b9f2560f"
+  },
+  {
+   "path": "skills/taste-skill/README.md",
+   "bytes": 5345,
+   "sha256": "5e33fd716b3e1ffaca9340f645d44c193f9b446107fa67f0cce498d33025672c"
+  },
+  {
+   "path": "skills/taste-skill/SKILL.md",
+   "bytes": 38458,
+   "sha256": "d955dae4ba8ab2d994f4bb06b4bf412a1d9875433a8597939c391f4bae91dd7a"
+  },
+  {
+   "path": "skills/taste-skill/assets/app.css",
+   "bytes": 15918,
+   "sha256": "16518c3a999fb81b2698137f1f743128c189272e8b1d411c4b02598c6755b67f"
+  },
+  {
+   "path": "skills/taste-skill/assets/base.css",
+   "bytes": 6520,
+   "sha256": "aa6ea21613c79e06e06dea3d33200c78590c89b0346bb976ec07947bb45ceafa"
+  },
+  {
+   "path": "skills/taste-skill/assets/base.js",
+   "bytes": 2162,
+   "sha256": "8d50416125596b84c0083d5d5ffba09add57db4b06cbf0eedac2d4999b7653bc"
+  },
+  {
+   "path": "skills/taste-skill/assets/charts.js",
+   "bytes": 58705,
+   "sha256": "89071120bd09eb276d9e568bab433ed035ea8b3a1b72750a1fa204a63e3d4ab4"
+  },
+  {
+   "path": "skills/taste-skill/assets/scenes/stage.css",
+   "bytes": 1141,
+   "sha256": "b5c587dac45ac6fcc34ae7cb4aa2b3e43797b2ef5d71fd32b48483bda3fca3e0"
+  },
+  {
+   "path": "skills/taste-skill/assets/scenes/stage.js",
+   "bytes": 7522,
+   "sha256": "3012ade75e01a9c0c81b5835a60e9ade965ed310cd58d85a7ad10e4ed4a1ad16"
+  },
+  {
+   "path": "skills/taste-skill/evals/evals.json",
+   "bytes": 8198,
+   "sha256": "df0ee2a248cd5445c0e1600eb095dc0d43dd312f5b4bb4316a78471ae0d22a74"
+  },
+  {
+   "path": "skills/taste-skill/library/app.json",
+   "bytes": 74229,
+   "sha256": "3678ccbe1e8d05feff6d4f07fa16a0d610aefeea5e697e842a876713ba763cf5"
+  },
+  {
+   "path": "skills/taste-skill/library/directions.json",
+   "bytes": 61466,
+   "sha256": "d71e3824af33a92d9e1ca543e17f80baa5b7a30c815df5125cfe3300a14892c1"
+  },
+  {
+   "path": "skills/taste-skill/library/heroes.json",
+   "bytes": 108240,
+   "sha256": "98d5e01104412a5fb27936f9c686f3bc0a5f76ce0793186d3de46b982c65b172"
+  },
+  {
+   "path": "skills/taste-skill/library/motions.json",
+   "bytes": 9033,
+   "sha256": "51815dd09a823c829897f99ed9ea7dc5c35bd305ac989b8a0632ea6d42a3f08b"
+  },
+  {
+   "path": "skills/taste-skill/library/palettes.json",
+   "bytes": 34753,
+   "sha256": "a14be9f45baba848c53436f4aa44eb4f1925ad3e232c5d1dcddf4f565661a525"
+  },
+  {
+   "path": "skills/taste-skill/library/photos.json",
+   "bytes": 160632,
+   "sha256": "8fc3b76bca90f44675bd99d99bb4ce95b0756c6c5d4141b7e917d11d90e61520"
+  },
+  {
+   "path": "skills/taste-skill/library/sections.json",
+   "bytes": 276146,
+   "sha256": "7c2c8a470a22501176948661f803434db8c542a511281752c717252de80c1ad8"
+  },
+  {
+   "path": "skills/taste-skill/library/sites.json",
+   "bytes": 869073,
+   "sha256": "a2bc4d0cff8ebff481f0dfd4879c106d5e1e16cb3122f9ab3702184a5e1f3502"
+  },
+  {
+   "path": "skills/taste-skill/library/type.json",
+   "bytes": 82290,
+   "sha256": "01a36c53c4398f48ff945b0f31a256281c1c0c1075729747c11bec70867b6232"
+  },
+  {
+   "path": "skills/taste-skill/references/app-screens.md",
+   "bytes": 85358,
+   "sha256": "55e937ec30de605b53a11310b446f328a3ce7403de24fff008920a00be1a5ed4"
+  },
+  {
+   "path": "skills/taste-skill/references/colour.md",
+   "bytes": 6853,
+   "sha256": "6556bcc7eed48b7bc2d0d281c28bf57c1b75e94d7ca0bde49f5d9df8c6a09351"
+  },
+  {
+   "path": "skills/taste-skill/references/copy.md",
+   "bytes": 9436,
+   "sha256": "676edbe75d5f3cfd8a793010ea9f730525ae074b231a674c2426264d3398262e"
+  },
+  {
+   "path": "skills/taste-skill/references/critique.md",
+   "bytes": 11157,
+   "sha256": "9c2f4392674530b3f02ac529fba53d82ab37b85f401c4c1989fbe98d6217f0b4"
+  },
+  {
+   "path": "skills/taste-skill/references/imagery.md",
+   "bytes": 51025,
+   "sha256": "518def6b2c643b295e13e66b09b66f2e3fc1421d3cf6c7dbb1dc749097ad2ad9"
+  },
+  {
+   "path": "skills/taste-skill/references/layout.md",
+   "bytes": 18315,
+   "sha256": "40080640719b07737afb94a8868afef87767a1ab4892814d9b6882e2d283453b"
+  },
+  {
+   "path": "skills/taste-skill/references/motion.md",
+   "bytes": 55400,
+   "sha256": "79f94d8469898d2bf6186c198ad86ddf691a67c6536eaec36a4ec101285d9a37"
+  },
+  {
+   "path": "skills/taste-skill/references/research.md",
+   "bytes": 24262,
+   "sha256": "83433646a352cae588591e05bc0a75fe1deadff55ede8851bc8dd5dd483adfc5"
+  },
+  {
+   "path": "skills/taste-skill/references/scenes.md",
+   "bytes": 9817,
+   "sha256": "733ac7258a1a28f2f6ae8205bc36ba66c563594ad0a2e2f829c5eaaba3199a61"
+  },
+  {
+   "path": "skills/taste-skill/references/tells.md",
+   "bytes": 7420,
+   "sha256": "8e6de4411c43d3108f832b3f33bb1a2a838148a72b92a176df893b67d99a0da9"
+  },
+  {
+   "path": "skills/taste-skill/references/type.md",
+   "bytes": 8495,
+   "sha256": "6353ff1d0ce2f9913628c88fbcb7dad3cc3877e61196848bce99e33a17d20611"
+  },
+  {
+   "path": "skills/taste-skill/scripts/assets.mjs",
+   "bytes": 64522,
+   "sha256": "b4b4b99b5634735f5a0b4213169cda5240ee6bbed8ed8042ad1bcf2b6607c1fa"
+  },
+  {
+   "path": "skills/taste-skill/scripts/draw.mjs",
+   "bytes": 54140,
+   "sha256": "6c2047d207d2400d3b099956dfe2ac306203b614246e66bc8760212a7f797dbf"
+  },
+  {
+   "path": "skills/taste-skill/scripts/inspect.mjs",
+   "bytes": 27839,
+   "sha256": "9482c546288d4d5c738a915905959e99394551ec27bc202ed443af12a02bd1f7"
+  },
+  {
+   "path": "skills/taste-skill/scripts/lib/app-draw.mjs",
+   "bytes": 14715,
+   "sha256": "aa0802d341d19b53ec14ec21746e428be49a8ec3ed7b30253194105fc18a8df6"
+  },
+  {
+   "path": "skills/taste-skill/scripts/lib/cdp.mjs",
+   "bytes": 11920,
+   "sha256": "320fb75c6454a97b88458e5c33559a1188042aa0041bd5eff53455900236c88a"
+  },
+  {
+   "path": "skills/taste-skill/scripts/lib/probe.mjs",
+   "bytes": 81280,
+   "sha256": "c14fd0bed7727855a1f3fcf5ade945fba97f314562fd7430354168b2da25433b"
+  },
+  {
+   "path": "skills/taste-skill/scripts/lib/rules.mjs",
+   "bytes": 37284,
+   "sha256": "5de058543b3bd6f3dd2f85ff1c1e5e1f91918ba9f4454e7ee0b8934c607982f9"
+  },
+  {
+   "path": "skills/taste-skill/scripts/lint.mjs",
+   "bytes": 11747,
+   "sha256": "05f2fae2f56fc051b539cdbacb43a6f78fbbfb9644bb74aa11be472ff12dcaf5"
+  },
+  {
+   "path": "skills/taste-skill/scripts/scenes.mjs",
+   "bytes": 8980,
+   "sha256": "234ec582e2b841457c33033feeeba8535f9ac285495a74d08dc533a1566c90d5"
+  },
+  {
+   "path": "tests/frontmatter.mjs",
+   "bytes": 4069,
+   "sha256": "571147eaace6706a4c44435c6da3dd76a0038a8128f55a0f92b7dcea46d9be3f"
+  },
+  {
+   "path": "tests/profile-cleanup.mjs",
+   "bytes": 4845,
+   "sha256": "acc20467c734c7c6df43d942968b864c651339120688bc5b5687384a43068630"
+  }
+ ]
+}

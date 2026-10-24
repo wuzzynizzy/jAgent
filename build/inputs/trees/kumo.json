@@ -1,0 +1,3085 @@
+{
+ "resource": "kumo",
+ "source": "https://github.com/cloudflare/kumo",
+ "commit": "947065ad39694fdc688b1128cc9c360f566a4f73",
+ "format": "recorded tracked paths at the pinned commit",
+ "path_count": 768,
+ "file_count": 768,
+ "submodule_count": 0,
+ "tracked_bytes": 6079090,
+ "note": "Paths come from the repository tree at the pinned commit. Directories and .git are not listed. A listed path means it exists upstream, not that its contents were read. Per-file sha256 was not recorded for this capture; sizes come from the captured archive.",
+ "entries": [
+  {
+   "path": ".agents/skills/index-knowledge/SKILL.md",
+   "bytes": 10607
+  },
+  {
+   "path": ".changeset/README.md",
+   "bytes": 1719
+  },
+  {
+   "path": ".changeset/config.json",
+   "bytes": 271
+  },
+  {
+   "path": ".changeset/input-disabled-inactive-text.md",
+   "bytes": 203
+  },
+  {
+   "path": ".changeset/pagination-page-validation.md",
+   "bytes": 380
+  },
+  {
+   "path": ".changeset/tag-input-form-readonly-paste.md",
+   "bytes": 647
+  },
+  {
+   "path": ".changeset/timeseries-large-datasets.md",
+   "bytes": 272
+  },
+  {
+   "path": ".github/actions/install-dependencies/action.yml",
+   "bytes": 1106
+  },
+  {
+   "path": ".github/actions/vite-task-cache/action.yml",
+   "bytes": 780
+  },
+  {
+   "path": ".github/bonk_reviewer.md",
+   "bytes": 4738
+  },
+  {
+   "path": ".github/opencode.json",
+   "bytes": 666
+  },
+  {
+   "path": ".github/pull_request_template.md",
+   "bytes": 828
+  },
+  {
+   "path": ".github/workflows/bonk-pr-review.yml",
+   "bytes": 2819
+  },
+  {
+   "path": ".github/workflows/bonk.yml",
+   "bytes": 3284
+  },
+  {
+   "path": ".github/workflows/docs-pr.yml",
+   "bytes": 949
+  },
+  {
+   "path": ".github/workflows/docs-preview-post-build.yml",
+   "bytes": 6868
+  },
+  {
+   "path": ".github/workflows/package-preview-pr.yml",
+   "bytes": 1015
+  },
+  {
+   "path": ".github/workflows/pullrequest-report.yml",
+   "bytes": 4326
+  },
+  {
+   "path": ".github/workflows/pullrequest.yml",
+   "bytes": 6481
+  },
+  {
+   "path": ".github/workflows/release.yml",
+   "bytes": 1854
+  },
+  {
+   "path": ".github/workflows/semgrep.yml",
+   "bytes": 828
+  },
+  {
+   "path": ".github/workflows/validate-changeset.yml",
+   "bytes": 826
+  },
+  {
+   "path": ".github/workflows/validate-pr-description.yml",
+   "bytes": 2137
+  },
+  {
+   "path": ".github/workflows/visual-regression.yml",
+   "bytes": 2108
+  },
+  {
+   "path": ".github/workflows/warm-task-cache.yml",
+   "bytes": 573
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 1163
+  },
+  {
+   "path": ".node-version",
+   "bytes": 8
+  },
+  {
+   "path": ".nvmrc",
+   "bytes": 7
+  },
+  {
+   "path": ".opencode/agents/bonk.md",
+   "bytes": 13280
+  },
+  {
+   "path": ".opencode/agents/kumo.md",
+   "bytes": 7328
+  },
+  {
+   "path": ".review.json",
+   "bytes": 931
+  },
+  {
+   "path": ".vite-hooks/pre-commit",
+   "bytes": 375
+  },
+  {
+   "path": ".vite-hooks/pre-push",
+   "bytes": 557
+  },
+  {
+   "path": "AGENTS.md",
+   "bytes": 10088
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 13157
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1103
+  },
+  {
+   "path": "README.md",
+   "bytes": 2215
+  },
+  {
+   "path": "ci/AGENTS.md",
+   "bytes": 7144
+  },
+  {
+   "path": "ci/preview/preview.test.ts",
+   "bytes": 1812
+  },
+  {
+   "path": "ci/preview/preview.ts",
+   "bytes": 13286
+  },
+  {
+   "path": "ci/reporters/bundle-size-report.test.ts",
+   "bytes": 2716
+  },
+  {
+   "path": "ci/reporters/bundle-size-report.ts",
+   "bytes": 7239
+  },
+  {
+   "path": "ci/reporters/bundle-size.test.ts",
+   "bytes": 1091
+  },
+  {
+   "path": "ci/reporters/bundle-size.ts",
+   "bytes": 7439
+  },
+  {
+   "path": "ci/reporters/index.ts",
+   "bytes": 921
+  },
+  {
+   "path": "ci/reporters/kumo-docs-preview.ts",
+   "bytes": 785
+  },
+  {
+   "path": "ci/reporters/npm-release.ts",
+   "bytes": 856
+  },
+  {
+   "path": "ci/reporters/types.ts",
+   "bytes": 4177
+  },
+  {
+   "path": "ci/reporters/visual-regression.ts",
+   "bytes": 523
+  },
+  {
+   "path": "ci/scripts/create-release-pr.ts",
+   "bytes": 2733
+  },
+  {
+   "path": "ci/scripts/ensure-changeset-config.ts",
+   "bytes": 686
+  },
+  {
+   "path": "ci/scripts/post-bundle-size-report.ts",
+   "bytes": 1535
+  },
+  {
+   "path": "ci/scripts/post-pr-report.ts",
+   "bytes": 1795
+  },
+  {
+   "path": "ci/scripts/post-visual-contracts-report.ts",
+   "bytes": 2704
+  },
+  {
+   "path": "ci/scripts/validate-kumo-changeset.test.ts",
+   "bytes": 554
+  },
+  {
+   "path": "ci/scripts/validate-kumo-changeset.ts",
+   "bytes": 7781
+  },
+  {
+   "path": "ci/scripts/write-bundle-size-report.ts",
+   "bytes": 1110
+  },
+  {
+   "path": "ci/scripts/write-kumo-docs-report.ts",
+   "bytes": 1020
+  },
+  {
+   "path": "ci/scripts/write-npm-report.ts",
+   "bytes": 973
+  },
+  {
+   "path": "ci/tsconfig.json",
+   "bytes": 319
+  },
+  {
+   "path": "ci/utils/git-operations.test.ts",
+   "bytes": 3858
+  },
+  {
+   "path": "ci/utils/git-operations.ts",
+   "bytes": 7765
+  },
+  {
+   "path": "ci/utils/github-api.test.ts",
+   "bytes": 1630
+  },
+  {
+   "path": "ci/utils/github-api.ts",
+   "bytes": 3546
+  },
+  {
+   "path": "ci/utils/pr-reporter.ts",
+   "bytes": 1686
+  },
+  {
+   "path": "ci/versioning/deploy-kumo-docs-preview.sh",
+   "bytes": 2781
+  },
+  {
+   "path": "ci/versioning/deploy-kumo-docs-staging.sh",
+   "bytes": 703
+  },
+  {
+   "path": "ci/versioning/publish-beta.sh",
+   "bytes": 2105
+  },
+  {
+   "path": "ci/versioning/release-production.sh",
+   "bytes": 3392
+  },
+  {
+   "path": "ci/versioning/version-beta.sh",
+   "bytes": 1455
+  },
+  {
+   "path": "ci/visual-regression/image-comparison.test.ts",
+   "bytes": 6214
+  },
+  {
+   "path": "ci/visual-regression/image-comparison.ts",
+   "bytes": 6537
+  },
+  {
+   "path": "ci/visual-regression/page-config.test.ts",
+   "bytes": 1470
+  },
+  {
+   "path": "ci/visual-regression/page-config.ts",
+   "bytes": 6974
+  },
+  {
+   "path": "ci/visual-regression/pull-request-files.test.ts",
+   "bytes": 725
+  },
+  {
+   "path": "ci/visual-regression/pull-request-files.ts",
+   "bytes": 1857
+  },
+  {
+   "path": "ci/visual-regression/requests.test.ts",
+   "bytes": 1956
+  },
+  {
+   "path": "ci/visual-regression/requests.ts",
+   "bytes": 2179
+  },
+  {
+   "path": "ci/visual-regression/run-visual-regression.ts",
+   "bytes": 19562
+  },
+  {
+   "path": "ci/visual-regression/screenshots/.gitignore",
+   "bytes": 14
+  },
+  {
+   "path": "lint/enforce-variant-standard.js",
+   "bytes": 5664
+  },
+  {
+   "path": "lint/kumo-plugin.js",
+   "bytes": 754
+  },
+  {
+   "path": "lint/lint-astro-colors.js",
+   "bytes": 10693
+  },
+  {
+   "path": "lint/no-cross-package-imports.js",
+   "bytes": 4894
+  },
+  {
+   "path": "lint/no-flow-node-custom-render.js",
+   "bytes": 9884
+  },
+  {
+   "path": "lint/no-primitive-colors.js",
+   "bytes": 12851
+  },
+  {
+   "path": "lint/no-tailwind-dark-variant.js",
+   "bytes": 3887
+  },
+  {
+   "path": "package.json",
+   "bytes": 2431
+  },
+  {
+   "path": "packages/kumo-docs-astro/.gitignore",
+   "bytes": 280
+  },
+  {
+   "path": "packages/kumo-docs-astro/AGENTS.md",
+   "bytes": 5752
+  },
+  {
+   "path": "packages/kumo-docs-astro/CHANGELOG.md",
+   "bytes": 30759
+  },
+  {
+   "path": "packages/kumo-docs-astro/astro.config.mjs",
+   "bytes": 5006
+  },
+  {
+   "path": "packages/kumo-docs-astro/kumo.json",
+   "bytes": 63
+  },
+  {
+   "path": "packages/kumo-docs-astro/package.json",
+   "bytes": 1785
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/_headers",
+   "bytes": 100
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/_redirects",
+   "bytes": 278
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/favicon-white.svg",
+   "bytes": 1420
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/favicon.ico",
+   "bytes": 4286
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/favicon.svg",
+   "bytes": 1420
+  },
+  {
+   "path": "packages/kumo-docs-astro/public/worker.svg",
+   "bytes": 435
+  },
+  {
+   "path": "packages/kumo-docs-astro/scripts/extract-demo-examples.ts",
+   "bytes": 8350
+  },
+  {
+   "path": "packages/kumo-docs-astro/scripts/generate-design-skill.mjs",
+   "bytes": 8551
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/build-info.d.ts",
+   "bytes": 340
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/Header.astro",
+   "bytes": 871
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/KumoMenuIcon.tsx",
+   "bytes": 10175
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/SearchDialog.tsx",
+   "bytes": 20370
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/SidebarNav.tsx",
+   "bytes": 17326
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/ThemeToggle.tsx",
+   "bytes": 3198
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/AGENTS.md",
+   "bytes": 2709
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/AutocompleteDemo.tsx",
+   "bytes": 8286
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/BadgeDemo.tsx",
+   "bytes": 1935
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/BannerDemo.tsx",
+   "bytes": 7991
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/BreadcrumbsDemo.tsx",
+   "bytes": 1696
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ButtonDemo.tsx",
+   "bytes": 4292
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ButtonGroupDemo.tsx",
+   "bytes": 2950
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CLIDemo.tsx",
+   "bytes": 20147
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/BubbleMapDemo.tsx",
+   "bytes": 10610
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/ChartCard.astro",
+   "bytes": 748
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/ChartDemo.tsx",
+   "bytes": 29555
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/ChoroplethMapDemo.tsx",
+   "bytes": 2166
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/ColorDemo.tsx",
+   "bytes": 25118
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/GlobeMapDemo.tsx",
+   "bytes": 2722
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/Chart/SankeyChartDemo.tsx",
+   "bytes": 15508
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CheckboxDemo.tsx",
+   "bytes": 5515
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ClipboardTextDemo.tsx",
+   "bytes": 905
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CloudflareLogoDemo.tsx",
+   "bytes": 5950
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CodeHighlightedDemo.tsx",
+   "bytes": 8630
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CollapsibleDemo.tsx",
+   "bytes": 5868
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ColorsDemo.tsx",
+   "bytes": 11069
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ComboboxDemo.tsx",
+   "bytes": 18768
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/CommandPaletteDemo.tsx",
+   "bytes": 13610
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/DatePickerDemo.tsx",
+   "bytes": 7939
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/DateRangePickerDemo.tsx",
+   "bytes": 11
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/DeleteResourceDemo.tsx",
+   "bytes": 2233
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/DialogDemo.tsx",
+   "bytes": 15731
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/DropdownDemo.tsx",
+   "bytes": 9731
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/EmptyDemo.tsx",
+   "bytes": 2712
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/FigmaPage.tsx",
+   "bytes": 629
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/FlowDemo.tsx",
+   "bytes": 8936
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/GridDemo.tsx",
+   "bytes": 7254
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/HomeGrid.tsx",
+   "bytes": 22778
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/InlineCopyTextDemo.tsx",
+   "bytes": 1349
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/InputAreaDemo.tsx",
+   "bytes": 3010
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/InputDemo.tsx",
+   "bytes": 4448
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/InputGroupDemo.tsx",
+   "bytes": 9715
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/KumoPressDemo.tsx",
+   "bytes": 26086
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LabelDemo.tsx",
+   "bytes": 2209
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LayerCardDemo.tsx",
+   "bytes": 2208
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LayerCardFilterMockupDemo.tsx",
+   "bytes": 3837
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LayerDialogDemo.tsx",
+   "bytes": 18704
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LinkDemo.tsx",
+   "bytes": 2045
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/LoaderDemo.tsx",
+   "bytes": 528
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/MeterDemo.tsx",
+   "bytes": 746
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/PageHeaderDemo.tsx",
+   "bytes": 5378
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/PaginationDemo.tsx",
+   "bytes": 5863
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/PopoverDemo.tsx",
+   "bytes": 12251
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/RadioDemo.tsx",
+   "bytes": 12801
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/RegistryDemo.tsx",
+   "bytes": 8151
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ResourceListDemo.tsx",
+   "bytes": 4249
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SelectDemo.tsx",
+   "bytes": 17974
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SelectStressTestDemo.tsx",
+   "bytes": 15420
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SensitiveInputDemo.tsx",
+   "bytes": 2187
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SidebarDemo.tsx",
+   "bytes": 51853
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SkeletonLineDemo.tsx",
+   "bytes": 1954
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SliderDemo.tsx",
+   "bytes": 1495
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/SwitchDemo.tsx",
+   "bytes": 4223
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TableDemo.tsx",
+   "bytes": 15673
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TableOfContentsDemo.tsx",
+   "bytes": 7435
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TabsDemo.tsx",
+   "bytes": 6060
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TagInputDemo.tsx",
+   "bytes": 2655
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TextDemo.tsx",
+   "bytes": 3578
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ToastDemo.tsx",
+   "bytes": 7472
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/ToolbarDemo.tsx",
+   "bytes": 4728
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/TooltipDemo.tsx",
+   "bytes": 3831
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/demos/data/languages.ts",
+   "bytes": 1095
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/Callout.astro",
+   "bytes": 199
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/ChangelogEntry.tsx",
+   "bytes": 1309
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/ChangelogPagination.tsx",
+   "bytes": 556
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/CodeBlock.astro",
+   "bytes": 1400
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/ComponentExample.astro",
+   "bytes": 2760
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/ComponentPreview.astro",
+   "bytes": 289
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/ComponentSection.astro",
+   "bytes": 108
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/CopyPageButton.tsx",
+   "bytes": 4743
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/Heading.astro",
+   "bytes": 1345
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/KeyboardShortcuts.astro",
+   "bytes": 772
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/PropsTable.astro",
+   "bytes": 3406
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/StickyDocHeader.tsx",
+   "bytes": 5891
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/TableOfContents.tsx",
+   "bytes": 5415
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/icons/BaseUIIcon.astro",
+   "bytes": 527
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/icons/BaseUIIcon.tsx",
+   "bytes": 546
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/icons/ClaudeIcon.tsx",
+   "bytes": 1737
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/mdx/H2.astro",
+   "bytes": 162
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/mdx/H3.astro",
+   "bytes": 162
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/docs/mdx/H4.astro",
+   "bytes": 162
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/kumo/page-header/page-header.tsx",
+   "bytes": 2592
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/kumo/resource-list/resource-list.tsx",
+   "bytes": 1882
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/skill/CollapseSizeExample.tsx",
+   "bytes": 1247
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/skill/DesignTip.tsx",
+   "bytes": 2778
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/skill/DesignTips.tsx",
+   "bytes": 2151
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/components/skill/design-tips.tsx",
+   "bytes": 19122
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/env.d.ts",
+   "bytes": 39
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/kumo-colors.d.ts",
+   "bytes": 653
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/kumo-registry.d.ts",
+   "bytes": 426
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/layouts/BaseLayout.astro",
+   "bytes": 9111
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/layouts/DocLayout.astro",
+   "bytes": 4699
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/layouts/MainLayout.astro",
+   "bytes": 1808
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/layouts/MdxDocLayout.astro",
+   "bytes": 937
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/astro-markdown-pages.test.ts",
+   "bytes": 2563
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/astro-markdown-pages.ts",
+   "bytes": 4910
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/component-registry.ts",
+   "bytes": 3458
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/extract-demo-snippet.ts",
+   "bytes": 6032
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/html-to-markdown.test.ts",
+   "bytes": 2172
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/html-to-markdown.ts",
+   "bytes": 3854
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/remark-heading-components.ts",
+   "bytes": 5029
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/use-is-dark-mode.ts",
+   "bytes": 1156
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/vite-plugin-kumo-colors.ts",
+   "bytes": 5500
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/vite-plugin-kumo-hmr.ts",
+   "bytes": 4669
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/lib/vite-plugin-kumo-registry.ts",
+   "bytes": 2393
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/404.astro",
+   "bytes": 13634
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/accessibility.mdx",
+   "bytes": 3044
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/api/component-registry.ts",
+   "bytes": 303
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/api/version.ts",
+   "bytes": 695
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/blocks/delete-resource.mdx",
+   "bytes": 3435
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/blocks/page-header.mdx",
+   "bytes": 4428
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/blocks/resource-list.mdx",
+   "bytes": 5321
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/changelog/[...page].astro",
+   "bytes": 6511
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/colors.mdx",
+   "bytes": 4142
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/custom.mdx",
+   "bytes": 1099
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/index.mdx",
+   "bytes": 2587
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/maps.astro",
+   "bytes": 7804
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/sankey.astro",
+   "bytes": 7352
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/charts/timeseries.mdx",
+   "bytes": 7088
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/cli.mdx",
+   "bytes": 1040
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/colors.mdx",
+   "bytes": 9503
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components-vs-blocks.mdx",
+   "bytes": 6286
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/autocomplete.mdx",
+   "bytes": 4906
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/badge.mdx",
+   "bytes": 2269
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/banner.mdx",
+   "bytes": 3563
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/breadcrumbs.mdx",
+   "bytes": 2238
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/button-group.mdx",
+   "bytes": 3647
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/button.mdx",
+   "bytes": 5610
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/checkbox.mdx",
+   "bytes": 6338
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/clipboard-text.mdx",
+   "bytes": 2223
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/cloudflare-logo.mdx",
+   "bytes": 7004
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/code-highlighted.mdx",
+   "bytes": 17545
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/collapsible.mdx",
+   "bytes": 5674
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/combobox.mdx",
+   "bytes": 9627
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/command-palette.mdx",
+   "bytes": 7073
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/date-picker.mdx",
+   "bytes": 5905
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/dialog.mdx",
+   "bytes": 8048
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/dropdown.mdx",
+   "bytes": 7814
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/empty.mdx",
+   "bytes": 2586
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/flow.mdx",
+   "bytes": 11983
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/grid.mdx",
+   "bytes": 4279
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/inline-copy-text.mdx",
+   "bytes": 2359
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/input-area.mdx",
+   "bytes": 5307
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/input-group.mdx",
+   "bytes": 8584
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/input.mdx",
+   "bytes": 8753
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/label.mdx",
+   "bytes": 7724
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/layer-card.mdx",
+   "bytes": 3292
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/layer-dialog.mdx",
+   "bytes": 12553
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/link.mdx",
+   "bytes": 11306
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/loader.mdx",
+   "bytes": 1467
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/meter.mdx",
+   "bytes": 2208
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/pagination.mdx",
+   "bytes": 6873
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/popover.mdx",
+   "bytes": 9196
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/radio.mdx",
+   "bytes": 10095
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/select.mdx",
+   "bytes": 10512
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/sensitive-input.mdx",
+   "bytes": 2205
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/sidebar.astro",
+   "bytes": 22041
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/skeleton-line.mdx",
+   "bytes": 4771
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/slider.mdx",
+   "bytes": 3449
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/switch.mdx",
+   "bytes": 4648
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/table-of-contents.mdx",
+   "bytes": 6761
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/table.mdx",
+   "bytes": 7942
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/tabs.mdx",
+   "bytes": 4886
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/tag-input.mdx",
+   "bytes": 3134
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/text.mdx",
+   "bytes": 3846
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/toast.mdx",
+   "bytes": 7902
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/toolbar.mdx",
+   "bytes": 7311
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/components/tooltip.mdx",
+   "bytes": 3120
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/contributing.mdx",
+   "bytes": 5300
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/figma.mdx",
+   "bytes": 8007
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/index.astro",
+   "bytes": 517
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/installation.mdx",
+   "bytes": 8886
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/llms.txt.ts",
+   "bytes": 7074
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/registry.mdx",
+   "bytes": 1396
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/skill.astro",
+   "bytes": 1314
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/streaming.mdx",
+   "bytes": 11323
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/tests/badge.astro",
+   "bytes": 5435
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/tests/flow.astro",
+   "bytes": 6230
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/tests/map.astro",
+   "bytes": 1793
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/tests/select.astro",
+   "bytes": 13693
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/pages/tests/timeseries.astro",
+   "bytes": 2026
+  },
+  {
+   "path": "packages/kumo-docs-astro/src/styles/global.css",
+   "bytes": 9936
+  },
+  {
+   "path": "packages/kumo-docs-astro/tsconfig.json",
+   "bytes": 183
+  },
+  {
+   "path": "packages/kumo-docs-astro/vite.config.ts",
+   "bytes": 890
+  },
+  {
+   "path": "packages/kumo-docs-astro/wrangler.jsonc",
+   "bytes": 583
+  },
+  {
+   "path": "packages/kumo-figma/.gitignore",
+   "bytes": 193
+  },
+  {
+   "path": "packages/kumo-figma/AGENTS.md",
+   "bytes": 6075
+  },
+  {
+   "path": "packages/kumo-figma/CHANGELOG.md",
+   "bytes": 16859
+  },
+  {
+   "path": "packages/kumo-figma/package.json",
+   "bytes": 1332
+  },
+  {
+   "path": "packages/kumo-figma/scripts/.env.example",
+   "bytes": 361
+  },
+  {
+   "path": "packages/kumo-figma/scripts/color-utils.ts",
+   "bytes": 4371
+  },
+  {
+   "path": "packages/kumo-figma/scripts/figma-api.ts",
+   "bytes": 19176
+  },
+  {
+   "path": "packages/kumo-figma/scripts/maybe-sync.ts",
+   "bytes": 1684
+  },
+  {
+   "path": "packages/kumo-figma/scripts/sync-tokens-to-figma.ts",
+   "bytes": 15250
+  },
+  {
+   "path": "packages/kumo-figma/src/build-figma-variables.ts",
+   "bytes": 7369
+  },
+  {
+   "path": "packages/kumo-figma/src/build-loader-data.ts",
+   "bytes": 1373
+  },
+  {
+   "path": "packages/kumo-figma/src/build-phosphor-icons.ts",
+   "bytes": 4393
+  },
+  {
+   "path": "packages/kumo-figma/src/build-theme-data.ts",
+   "bytes": 13707
+  },
+  {
+   "path": "packages/kumo-figma/src/build.sh",
+   "bytes": 1122
+  },
+  {
+   "path": "packages/kumo-figma/src/code.ts",
+   "bytes": 16694
+  },
+  {
+   "path": "packages/kumo-figma/src/figma-types.d.ts",
+   "bytes": 6688
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/AGENTS.md",
+   "bytes": 7141
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/__snapshots__/command-palette.test.ts.snap",
+   "bytes": 7228
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/_test-utils.ts",
+   "bytes": 8705
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/badge.test.ts",
+   "bytes": 8543
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/badge.ts",
+   "bytes": 11779
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/banner.test.ts",
+   "bytes": 7934
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/banner.ts",
+   "bytes": 12235
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/breadcrumbs.test.ts",
+   "bytes": 8298
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/breadcrumbs.ts",
+   "bytes": 14126
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/button.test.ts",
+   "bytes": 15249
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/button.ts",
+   "bytes": 29692
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/checkbox.test.ts",
+   "bytes": 14058
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/checkbox.ts",
+   "bytes": 18162
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/clipboard-text.test.ts",
+   "bytes": 12025
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/clipboard-text.ts",
+   "bytes": 14956
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/code-block.test.ts",
+   "bytes": 9515
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/code-block.ts",
+   "bytes": 10249
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/code.test.ts",
+   "bytes": 14386
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/code.ts",
+   "bytes": 10809
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/collapsible.test.ts",
+   "bytes": 11719
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/collapsible.ts",
+   "bytes": 18978
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/combobox.test.ts",
+   "bytes": 10269
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/combobox.ts",
+   "bytes": 25915
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/command-palette.test.ts",
+   "bytes": 17622
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/command-palette.ts",
+   "bytes": 27160
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/date-range-picker.test.ts",
+   "bytes": 12712
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/date-range-picker.ts",
+   "bytes": 31823
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/dialog.test.ts",
+   "bytes": 14226
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/dialog.ts",
+   "bytes": 18047
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/drift-detection.test.ts",
+   "bytes": 63586
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/dropdown.test.ts",
+   "bytes": 9644
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/dropdown.ts",
+   "bytes": 28430
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/empty.test.ts",
+   "bytes": 3644
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/empty.ts",
+   "bytes": 13763
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/icon-utils.ts",
+   "bytes": 9455
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/input-area.test.ts",
+   "bytes": 10854
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/input-area.ts",
+   "bytes": 22529
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/input.test.ts",
+   "bytes": 12279
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/input.ts",
+   "bytes": 20976
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/label.test.ts",
+   "bytes": 6861
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/label.ts",
+   "bytes": 11478
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/layer-card.test.ts",
+   "bytes": 9990
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/layer-card.ts",
+   "bytes": 18410
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/link-button.test.ts",
+   "bytes": 13888
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/link-button.ts",
+   "bytes": 14556
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/link.ts",
+   "bytes": 11686
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/loader.test.ts",
+   "bytes": 7003
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/loader.ts",
+   "bytes": 11251
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/menubar.test.ts",
+   "bytes": 8514
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/menubar.ts",
+   "bytes": 15233
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/meter.test.ts",
+   "bytes": 10570
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/meter.ts",
+   "bytes": 14553
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/pagination.test.ts",
+   "bytes": 14047
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/pagination.ts",
+   "bytes": 17595
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/radio.ts",
+   "bytes": 23456
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/refresh-button.test.ts",
+   "bytes": 11735
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/refresh-button.ts",
+   "bytes": 9103
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/select.test.ts",
+   "bytes": 16520
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/select.ts",
+   "bytes": 23249
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/sensitive-input.test.ts",
+   "bytes": 8264
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/sensitive-input.ts",
+   "bytes": 20361
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/shared.ts",
+   "bytes": 46562
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/surface.test.ts",
+   "bytes": 7404
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/surface.ts",
+   "bytes": 9092
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/switch.test.ts",
+   "bytes": 12378
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/switch.ts",
+   "bytes": 29613
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/table.test.ts",
+   "bytes": 10828
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/table.ts",
+   "bytes": 21281
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/tabs.test.ts",
+   "bytes": 13663
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/tabs.ts",
+   "bytes": 16009
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/text.test.ts",
+   "bytes": 12275
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/text.ts",
+   "bytes": 20313
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/toast.test.ts",
+   "bytes": 18297
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/toast.ts",
+   "bytes": 14357
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/tooltip.test.ts",
+   "bytes": 9076
+  },
+  {
+   "path": "packages/kumo-figma/src/generators/tooltip.ts",
+   "bytes": 15768
+  },
+  {
+   "path": "packages/kumo-figma/src/logger.ts",
+   "bytes": 4178
+  },
+  {
+   "path": "packages/kumo-figma/src/manifest.json",
+   "bytes": 265
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/component-registry.ts",
+   "bytes": 3373
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/loader-parser.ts",
+   "bytes": 6959
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/opacity-extractor.ts",
+   "bytes": 5056
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/tailwind-theme-parser.ts",
+   "bytes": 10398
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/tailwind-to-figma.test.ts",
+   "bytes": 29591
+  },
+  {
+   "path": "packages/kumo-figma/src/parsers/tailwind-to-figma.ts",
+   "bytes": 15184
+  },
+  {
+   "path": "packages/kumo-figma/src/ui.html",
+   "bytes": 4958
+  },
+  {
+   "path": "packages/kumo-figma/tsconfig.json",
+   "bytes": 461
+  },
+  {
+   "path": "packages/kumo-figma/vite.config.ts",
+   "bytes": 618
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/.dev.vars.example",
+   "bytes": 328
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/AGENTS.md",
+   "bytes": 3496
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/package.json",
+   "bytes": 643
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/src/index.ts",
+   "bytes": 22767
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/tsconfig.json",
+   "bytes": 282
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/worker-configuration.d.ts",
+   "bytes": 396739
+  },
+  {
+   "path": "packages/kumo-screenshot-worker/wrangler.jsonc",
+   "bytes": 652
+  },
+  {
+   "path": "packages/kumo/.gitkeep",
+   "bytes": 0
+  },
+  {
+   "path": "packages/kumo/.npmignore",
+   "bytes": 464
+  },
+  {
+   "path": "packages/kumo/AGENTS.md",
+   "bytes": 8938
+  },
+  {
+   "path": "packages/kumo/CHANGELOG.md",
+   "bytes": 133129
+  },
+  {
+   "path": "packages/kumo/README.md",
+   "bytes": 13993
+  },
+  {
+   "path": "packages/kumo/ai/USAGE.md",
+   "bytes": 15411
+  },
+  {
+   "path": "packages/kumo/bin/kumo.js",
+   "bytes": 1082
+  },
+  {
+   "path": "packages/kumo/lint/enforce-variant-standard.js",
+   "bytes": 6012
+  },
+  {
+   "path": "packages/kumo/lint/enforce-variant-standard.test.ts",
+   "bytes": 12294
+  },
+  {
+   "path": "packages/kumo/lint/kumo-plugin.js",
+   "bytes": 870
+  },
+  {
+   "path": "packages/kumo/lint/no-cross-package-imports.js",
+   "bytes": 4894
+  },
+  {
+   "path": "packages/kumo/lint/no-deprecated-props.js",
+   "bytes": 3055
+  },
+  {
+   "path": "packages/kumo/lint/no-flow-node-custom-render.js",
+   "bytes": 9884
+  },
+  {
+   "path": "packages/kumo/lint/no-primitive-colors.js",
+   "bytes": 12823
+  },
+  {
+   "path": "packages/kumo/lint/no-tailwind-dark-variant.js",
+   "bytes": 3887
+  },
+  {
+   "path": "packages/kumo/package.json",
+   "bytes": 17769
+  },
+  {
+   "path": "packages/kumo/plop-templates/component.test.tsx.hbs",
+   "bytes": 617
+  },
+  {
+   "path": "packages/kumo/plop-templates/component.tsx.hbs",
+   "bytes": 774
+  },
+  {
+   "path": "packages/kumo/plop-templates/index.ts.hbs",
+   "bytes": 91
+  },
+  {
+   "path": "packages/kumo/plopfile.js",
+   "bytes": 4877
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/cache.ts",
+   "bytes": 3202
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/discovery.ts",
+   "bytes": 17624
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/example-cleanup.ts",
+   "bytes": 5168
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/index.test.ts",
+   "bytes": 31084
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/index.ts",
+   "bytes": 34425
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/markdown-generator.ts",
+   "bytes": 7753
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/metadata.ts",
+   "bytes": 28032
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/props-filter.ts",
+   "bytes": 8105
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/schema-generator.ts",
+   "bytes": 11767
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/sub-components.ts",
+   "bytes": 13514
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/types.ts",
+   "bytes": 4837
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/utils.ts",
+   "bytes": 8787
+  },
+  {
+   "path": "packages/kumo/scripts/component-registry/variant-parser.ts",
+   "bytes": 9017
+  },
+  {
+   "path": "packages/kumo/scripts/css-build.ts",
+   "bytes": 3524
+  },
+  {
+   "path": "packages/kumo/scripts/generate-globe-land-mask.mjs",
+   "bytes": 2671
+  },
+  {
+   "path": "packages/kumo/scripts/generate-primitives.ts",
+   "bytes": 5766
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/config.ts",
+   "bytes": 16516
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/generate-css.test.ts",
+   "bytes": 1298
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/generate-css.ts",
+   "bytes": 9493
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/index.ts",
+   "bytes": 4190
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/migrate.ts",
+   "bytes": 14965
+  },
+  {
+   "path": "packages/kumo/scripts/theme-generator/types.ts",
+   "bytes": 2646
+  },
+  {
+   "path": "packages/kumo/src/blocks/delete-resource/delete-resource.test.tsx",
+   "bytes": 567
+  },
+  {
+   "path": "packages/kumo/src/blocks/delete-resource/delete-resource.tsx",
+   "bytes": 6817
+  },
+  {
+   "path": "packages/kumo/src/blocks/delete-resource/index.ts",
+   "bytes": 228
+  },
+  {
+   "path": "packages/kumo/src/blocks/page-header/index.ts",
+   "bytes": 225
+  },
+  {
+   "path": "packages/kumo/src/blocks/page-header/page-header.tsx",
+   "bytes": 2532
+  },
+  {
+   "path": "packages/kumo/src/blocks/resource-list/index.ts",
+   "bytes": 80
+  },
+  {
+   "path": "packages/kumo/src/blocks/resource-list/resource-list.test.tsx",
+   "bytes": 748
+  },
+  {
+   "path": "packages/kumo/src/blocks/resource-list/resource-list.tsx",
+   "bytes": 1880
+  },
+  {
+   "path": "packages/kumo/src/catalog/catalog.test.ts",
+   "bytes": 9573
+  },
+  {
+   "path": "packages/kumo/src/catalog/catalog.ts",
+   "bytes": 8002
+  },
+  {
+   "path": "packages/kumo/src/catalog/data.ts",
+   "bytes": 3494
+  },
+  {
+   "path": "packages/kumo/src/catalog/index.ts",
+   "bytes": 1695
+  },
+  {
+   "path": "packages/kumo/src/catalog/types.ts",
+   "bytes": 7622
+  },
+  {
+   "path": "packages/kumo/src/catalog/visibility.ts",
+   "bytes": 4880
+  },
+  {
+   "path": "packages/kumo/src/code/code-highlighted.tsx",
+   "bytes": 7280
+  },
+  {
+   "path": "packages/kumo/src/code/context.ts",
+   "bytes": 635
+  },
+  {
+   "path": "packages/kumo/src/code/index.ts",
+   "bytes": 1142
+  },
+  {
+   "path": "packages/kumo/src/code/provider.test.ts",
+   "bytes": 2409
+  },
+  {
+   "path": "packages/kumo/src/code/provider.test.tsx",
+   "bytes": 16386
+  },
+  {
+   "path": "packages/kumo/src/code/provider.tsx",
+   "bytes": 6227
+  },
+  {
+   "path": "packages/kumo/src/code/server.tsx",
+   "bytes": 7628
+  },
+  {
+   "path": "packages/kumo/src/code/types.ts",
+   "bytes": 4708
+  },
+  {
+   "path": "packages/kumo/src/code/use-shiki-highlighter.test.tsx",
+   "bytes": 7307
+  },
+  {
+   "path": "packages/kumo/src/code/use-shiki-highlighter.ts",
+   "bytes": 2770
+  },
+  {
+   "path": "packages/kumo/src/command-line/build-cli.ts",
+   "bytes": 2297
+  },
+  {
+   "path": "packages/kumo/src/command-line/cli.ts",
+   "bytes": 2789
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/add.test.ts",
+   "bytes": 9524
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/add.ts",
+   "bytes": 7731
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/ai.ts",
+   "bytes": 776
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/blocks.test.ts",
+   "bytes": 6512
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/blocks.ts",
+   "bytes": 2572
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/doc.ts",
+   "bytes": 6893
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/init.test.ts",
+   "bytes": 5490
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/init.ts",
+   "bytes": 2442
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/ls.ts",
+   "bytes": 2249
+  },
+  {
+   "path": "packages/kumo/src/command-line/commands/migrate.ts",
+   "bytes": 4623
+  },
+  {
+   "path": "packages/kumo/src/command-line/utils/config.test.ts",
+   "bytes": 3973
+  },
+  {
+   "path": "packages/kumo/src/command-line/utils/config.ts",
+   "bytes": 2492
+  },
+  {
+   "path": "packages/kumo/src/command-line/utils/transformer.test.ts",
+   "bytes": 6523
+  },
+  {
+   "path": "packages/kumo/src/command-line/utils/transformer.ts",
+   "bytes": 5233
+  },
+  {
+   "path": "packages/kumo/src/components/AGENTS.md",
+   "bytes": 6850
+  },
+  {
+   "path": "packages/kumo/src/components/autocomplete/autocomplete.test.tsx",
+   "bytes": 4159
+  },
+  {
+   "path": "packages/kumo/src/components/autocomplete/autocomplete.tsx",
+   "bytes": 9313
+  },
+  {
+   "path": "packages/kumo/src/components/autocomplete/index.ts",
+   "bytes": 269
+  },
+  {
+   "path": "packages/kumo/src/components/badge/badge.test.tsx",
+   "bytes": 6797
+  },
+  {
+   "path": "packages/kumo/src/components/badge/badge.tsx",
+   "bytes": 8741
+  },
+  {
+   "path": "packages/kumo/src/components/badge/index.ts",
+   "bytes": 76
+  },
+  {
+   "path": "packages/kumo/src/components/banner/banner-action.tsx",
+   "bytes": 5397
+  },
+  {
+   "path": "packages/kumo/src/components/banner/banner.test.tsx",
+   "bytes": 8401
+  },
+  {
+   "path": "packages/kumo/src/components/banner/banner.tsx",
+   "bytes": 11122
+  },
+  {
+   "path": "packages/kumo/src/components/banner/index.ts",
+   "bytes": 50
+  },
+  {
+   "path": "packages/kumo/src/components/breadcrumbs/breadcrumbs.tsx",
+   "bytes": 7133
+  },
+  {
+   "path": "packages/kumo/src/components/breadcrumbs/index.ts",
+   "bytes": 241
+  },
+  {
+   "path": "packages/kumo/src/components/button-group/button-group.test.tsx",
+   "bytes": 3013
+  },
+  {
+   "path": "packages/kumo/src/components/button-group/button-group.tsx",
+   "bytes": 3982
+  },
+  {
+   "path": "packages/kumo/src/components/button-group/index.ts",
+   "bytes": 171
+  },
+  {
+   "path": "packages/kumo/src/components/button/button.test.tsx",
+   "bytes": 13115
+  },
+  {
+   "path": "packages/kumo/src/components/button/button.tsx",
+   "bytes": 17767
+  },
+  {
+   "path": "packages/kumo/src/components/button/index.ts",
+   "bytes": 131
+  },
+  {
+   "path": "packages/kumo/src/components/chart/Color.ts",
+   "bytes": 6324
+  },
+  {
+   "path": "packages/kumo/src/components/chart/EChart.tsx",
+   "bytes": 11869
+  },
+  {
+   "path": "packages/kumo/src/components/chart/GlobeMap.tsx",
+   "bytes": 20406
+  },
+  {
+   "path": "packages/kumo/src/components/chart/Legend.tsx",
+   "bytes": 5922
+  },
+  {
+   "path": "packages/kumo/src/components/chart/Maps.test.tsx",
+   "bytes": 8221
+  },
+  {
+   "path": "packages/kumo/src/components/chart/Maps.tsx",
+   "bytes": 31800
+  },
+  {
+   "path": "packages/kumo/src/components/chart/SankeyChart.test.tsx",
+   "bytes": 23444
+  },
+  {
+   "path": "packages/kumo/src/components/chart/SankeyChart.tsx",
+   "bytes": 13833
+  },
+  {
+   "path": "packages/kumo/src/components/chart/TimeseriesChart.test.tsx",
+   "bytes": 11674
+  },
+  {
+   "path": "packages/kumo/src/components/chart/TimeseriesChart.tsx",
+   "bytes": 36517
+  },
+  {
+   "path": "packages/kumo/src/components/chart/globe-land-mask.ts",
+   "bytes": 11708
+  },
+  {
+   "path": "packages/kumo/src/components/chart/index.ts",
+   "bytes": 856
+  },
+  {
+   "path": "packages/kumo/src/components/chart/timeseries-markers.test.ts",
+   "bytes": 950
+  },
+  {
+   "path": "packages/kumo/src/components/chart/timeseries-markers.ts",
+   "bytes": 3926
+  },
+  {
+   "path": "packages/kumo/src/components/chart/timeseries-thresholds.ts",
+   "bytes": 1624
+  },
+  {
+   "path": "packages/kumo/src/components/chart/timeseries-tooltip.tsx",
+   "bytes": 4568
+  },
+  {
+   "path": "packages/kumo/src/components/chart/tooltip-utils.ts",
+   "bytes": 349
+  },
+  {
+   "path": "packages/kumo/src/components/checkbox/checkbox.test.tsx",
+   "bytes": 3508
+  },
+  {
+   "path": "packages/kumo/src/components/checkbox/checkbox.tsx",
+   "bytes": 22212
+  },
+  {
+   "path": "packages/kumo/src/components/checkbox/index.ts",
+   "bytes": 292
+  },
+  {
+   "path": "packages/kumo/src/components/clipboard-text/clipboard-text.test.tsx",
+   "bytes": 4565
+  },
+  {
+   "path": "packages/kumo/src/components/clipboard-text/clipboard-text.tsx",
+   "bytes": 11502
+  },
+  {
+   "path": "packages/kumo/src/components/clipboard-text/index.ts",
+   "bytes": 50
+  },
+  {
+   "path": "packages/kumo/src/components/cloudflare-logo/cloudflare-logo.tsx",
+   "bytes": 16731
+  },
+  {
+   "path": "packages/kumo/src/components/cloudflare-logo/index.ts",
+   "bytes": 467
+  },
+  {
+   "path": "packages/kumo/src/components/code/code.tsx",
+   "bytes": 6321
+  },
+  {
+   "path": "packages/kumo/src/components/code/index.ts",
+   "bytes": 171
+  },
+  {
+   "path": "packages/kumo/src/components/collapsible/collapsible.tsx",
+   "bytes": 9053
+  },
+  {
+   "path": "packages/kumo/src/components/collapsible/index.ts",
+   "bytes": 240
+  },
+  {
+   "path": "packages/kumo/src/components/combobox/combobox.browser.test.tsx",
+   "bytes": 9687
+  },
+  {
+   "path": "packages/kumo/src/components/combobox/combobox.test.tsx",
+   "bytes": 7189
+  },
+  {
+   "path": "packages/kumo/src/components/combobox/combobox.tsx",
+   "bytes": 19747
+  },
+  {
+   "path": "packages/kumo/src/components/combobox/index.ts",
+   "bytes": 154
+  },
+  {
+   "path": "packages/kumo/src/components/command-palette/command-palette.test.tsx",
+   "bytes": 10257
+  },
+  {
+   "path": "packages/kumo/src/components/command-palette/command-palette.tsx",
+   "bytes": 24540
+  },
+  {
+   "path": "packages/kumo/src/components/command-palette/index.ts",
+   "bytes": 469
+  },
+  {
+   "path": "packages/kumo/src/components/command-palette/types.ts",
+   "bytes": 6531
+  },
+  {
+   "path": "packages/kumo/src/components/date-picker/date-picker.tsx",
+   "bytes": 3749
+  },
+  {
+   "path": "packages/kumo/src/components/date-picker/date-picker.visual.browser.test.tsx",
+   "bytes": 11157
+  },
+  {
+   "path": "packages/kumo/src/components/date-picker/index.ts",
+   "bytes": 230
+  },
+  {
+   "path": "packages/kumo/src/components/date-range-picker/date-range-picker.tsx",
+   "bytes": 22932
+  },
+  {
+   "path": "packages/kumo/src/components/date-range-picker/index.ts",
+   "bytes": 141
+  },
+  {
+   "path": "packages/kumo/src/components/dialog/dialog.test.tsx",
+   "bytes": 490
+  },
+  {
+   "path": "packages/kumo/src/components/dialog/dialog.tsx",
+   "bytes": 12752
+  },
+  {
+   "path": "packages/kumo/src/components/dialog/index.ts",
+   "bytes": 272
+  },
+  {
+   "path": "packages/kumo/src/components/dropdown/dropdown.test.tsx",
+   "bytes": 8004
+  },
+  {
+   "path": "packages/kumo/src/components/dropdown/dropdown.tsx",
+   "bytes": 21622
+  },
+  {
+   "path": "packages/kumo/src/components/dropdown/index.ts",
+   "bytes": 43
+  },
+  {
+   "path": "packages/kumo/src/components/empty/empty.test.tsx",
+   "bytes": 2984
+  },
+  {
+   "path": "packages/kumo/src/components/empty/empty.tsx",
+   "bytes": 4908
+  },
+  {
+   "path": "packages/kumo/src/components/empty/index.ts",
+   "bytes": 179
+  },
+  {
+   "path": "packages/kumo/src/components/field/field.test.tsx",
+   "bytes": 783
+  },
+  {
+   "path": "packages/kumo/src/components/field/field.tsx",
+   "bytes": 5934
+  },
+  {
+   "path": "packages/kumo/src/components/field/index.ts",
+   "bytes": 173
+  },
+  {
+   "path": "packages/kumo/src/components/flow/connectors.tsx",
+   "bytes": 9792
+  },
+  {
+   "path": "packages/kumo/src/components/flow/diagram.tsx",
+   "bytes": 18694
+  },
+  {
+   "path": "packages/kumo/src/components/flow/flow-layout.ts",
+   "bytes": 10776
+  },
+  {
+   "path": "packages/kumo/src/components/flow/flow.browser.test.tsx",
+   "bytes": 24244
+  },
+  {
+   "path": "packages/kumo/src/components/flow/flow.test.tsx",
+   "bytes": 16832
+  },
+  {
+   "path": "packages/kumo/src/components/flow/index.ts",
+   "bytes": 656
+  },
+  {
+   "path": "packages/kumo/src/components/flow/node.tsx",
+   "bytes": 8869
+  },
+  {
+   "path": "packages/kumo/src/components/flow/parallel.tsx",
+   "bytes": 1586
+  },
+  {
+   "path": "packages/kumo/src/components/flow/specs/2026-04-17-flow-layout.md",
+   "bytes": 10824
+  },
+  {
+   "path": "packages/kumo/src/components/flow/use-children.tsx",
+   "bytes": 7412
+  },
+  {
+   "path": "packages/kumo/src/components/grid/grid.tsx",
+   "bytes": 6038
+  },
+  {
+   "path": "packages/kumo/src/components/grid/index.ts",
+   "bytes": 218
+  },
+  {
+   "path": "packages/kumo/src/components/inline-copy-text/index.ts",
+   "bytes": 222
+  },
+  {
+   "path": "packages/kumo/src/components/inline-copy-text/inline-copy-text.test.tsx",
+   "bytes": 5121
+  },
+  {
+   "path": "packages/kumo/src/components/inline-copy-text/inline-copy-text.tsx",
+   "bytes": 7002
+  },
+  {
+   "path": "packages/kumo/src/components/inline-copy-text/inline-copy-text.type-spec.tsx",
+   "bytes": 1673
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/context.ts",
+   "bytes": 8222
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/index.ts",
+   "bytes": 259
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group-addon.tsx",
+   "bytes": 2831
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group-button.tsx",
+   "bytes": 6484
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group-input.tsx",
+   "bytes": 3937
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group-suffix.tsx",
+   "bytes": 1142
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group.test.tsx",
+   "bytes": 50935
+  },
+  {
+   "path": "packages/kumo/src/components/input-group/input-group.tsx",
+   "bytes": 13281
+  },
+  {
+   "path": "packages/kumo/src/components/input/index.ts",
+   "bytes": 1228
+  },
+  {
+   "path": "packages/kumo/src/components/input/input-area.tsx",
+   "bytes": 11058
+  },
+  {
+   "path": "packages/kumo/src/components/input/input.browser.test.tsx",
+   "bytes": 1243
+  },
+  {
+   "path": "packages/kumo/src/components/input/input.test.tsx",
+   "bytes": 13236
+  },
+  {
+   "path": "packages/kumo/src/components/input/input.tsx",
+   "bytes": 8392
+  },
+  {
+   "path": "packages/kumo/src/components/label/index.ts",
+   "bytes": 150
+  },
+  {
+   "path": "packages/kumo/src/components/label/label.test.tsx",
+   "bytes": 2221
+  },
+  {
+   "path": "packages/kumo/src/components/label/label.tsx",
+   "bytes": 4259
+  },
+  {
+   "path": "packages/kumo/src/components/layer-card/index.ts",
+   "bytes": 42
+  },
+  {
+   "path": "packages/kumo/src/components/layer-card/layer-card.test.tsx",
+   "bytes": 1827
+  },
+  {
+   "path": "packages/kumo/src/components/layer-card/layer-card.tsx",
+   "bytes": 4297
+  },
+  {
+   "path": "packages/kumo/src/components/layer-dialog/index.ts",
+   "bytes": 428
+  },
+  {
+   "path": "packages/kumo/src/components/layer-dialog/layer-dialog.test.tsx",
+   "bytes": 28463
+  },
+  {
+   "path": "packages/kumo/src/components/layer-dialog/layer-dialog.tsx",
+   "bytes": 22929
+  },
+  {
+   "path": "packages/kumo/src/components/link/index.ts",
+   "bytes": 24
+  },
+  {
+   "path": "packages/kumo/src/components/link/link.test.tsx",
+   "bytes": 14100
+  },
+  {
+   "path": "packages/kumo/src/components/link/link.tsx",
+   "bytes": 6564
+  },
+  {
+   "path": "packages/kumo/src/components/loader/index.ts",
+   "bytes": 83
+  },
+  {
+   "path": "packages/kumo/src/components/loader/loader.test.tsx",
+   "bytes": 1443
+  },
+  {
+   "path": "packages/kumo/src/components/loader/loader.tsx",
+   "bytes": 3448
+  },
+  {
+   "path": "packages/kumo/src/components/loader/loader.visual.browser.test.tsx",
+   "bytes": 1229
+  },
+  {
+   "path": "packages/kumo/src/components/loader/skeleton-line.tsx",
+   "bytes": 1530
+  },
+  {
+   "path": "packages/kumo/src/components/menubar/index.ts",
+   "bytes": 219
+  },
+  {
+   "path": "packages/kumo/src/components/menubar/menubar.tsx",
+   "bytes": 4390
+  },
+  {
+   "path": "packages/kumo/src/components/menubar/use-menu-navigation.ts",
+   "bytes": 2364
+  },
+  {
+   "path": "packages/kumo/src/components/meter/index.ts",
+   "bytes": 33
+  },
+  {
+   "path": "packages/kumo/src/components/meter/meter.tsx",
+   "bytes": 2939
+  },
+  {
+   "path": "packages/kumo/src/components/pagination/index.ts",
+   "bytes": 43
+  },
+  {
+   "path": "packages/kumo/src/components/pagination/pagination.browser.test.tsx",
+   "bytes": 5045
+  },
+  {
+   "path": "packages/kumo/src/components/pagination/pagination.test.tsx",
+   "bytes": 12298
+  },
+  {
+   "path": "packages/kumo/src/components/pagination/pagination.tsx",
+   "bytes": 19370
+  },
+  {
+   "path": "packages/kumo/src/components/popover/index.ts",
+   "bytes": 419
+  },
+  {
+   "path": "packages/kumo/src/components/popover/popover.tsx",
+   "bytes": 17184
+  },
+  {
+   "path": "packages/kumo/src/components/popover/popover.visual.browser.test.tsx",
+   "bytes": 3743
+  },
+  {
+   "path": "packages/kumo/src/components/radio/index.ts",
+   "bytes": 364
+  },
+  {
+   "path": "packages/kumo/src/components/radio/radio.test.tsx",
+   "bytes": 13517
+  },
+  {
+   "path": "packages/kumo/src/components/radio/radio.tsx",
+   "bytes": 22787
+  },
+  {
+   "path": "packages/kumo/src/components/radio/radio.type-spec.tsx",
+   "bytes": 3515
+  },
+  {
+   "path": "packages/kumo/src/components/select/index.ts",
+   "bytes": 35
+  },
+  {
+   "path": "packages/kumo/src/components/select/select.test.tsx",
+   "bytes": 24709
+  },
+  {
+   "path": "packages/kumo/src/components/select/select.tsx",
+   "bytes": 24174
+  },
+  {
+   "path": "packages/kumo/src/components/select/select.visual.browser.test.tsx",
+   "bytes": 744
+  },
+  {
+   "path": "packages/kumo/src/components/sensitive-input/index.ts",
+   "bytes": 157
+  },
+  {
+   "path": "packages/kumo/src/components/sensitive-input/sensitive-input.test.tsx",
+   "bytes": 1493
+  },
+  {
+   "path": "packages/kumo/src/components/sensitive-input/sensitive-input.tsx",
+   "bytes": 18026
+  },
+  {
+   "path": "packages/kumo/src/components/sidebar/index.ts",
+   "bytes": 1160
+  },
+  {
+   "path": "packages/kumo/src/components/sidebar/sidebar.test.tsx",
+   "bytes": 59055
+  },
+  {
+   "path": "packages/kumo/src/components/sidebar/sidebar.tsx",
+   "bytes": 86012
+  },
+  {
+   "path": "packages/kumo/src/components/slider/index.ts",
+   "bytes": 187
+  },
+  {
+   "path": "packages/kumo/src/components/slider/slider.test.tsx",
+   "bytes": 3256
+  },
+  {
+   "path": "packages/kumo/src/components/slider/slider.tsx",
+   "bytes": 6265
+  },
+  {
+   "path": "packages/kumo/src/components/surface/index.ts",
+   "bytes": 91
+  },
+  {
+   "path": "packages/kumo/src/components/surface/surface.tsx",
+   "bytes": 2528
+  },
+  {
+   "path": "packages/kumo/src/components/switch/index.ts",
+   "bytes": 279
+  },
+  {
+   "path": "packages/kumo/src/components/switch/switch.tsx",
+   "bytes": 17363
+  },
+  {
+   "path": "packages/kumo/src/components/table-of-contents/index.ts",
+   "bytes": 499
+  },
+  {
+   "path": "packages/kumo/src/components/table-of-contents/table-of-contents.test.tsx",
+   "bytes": 7313
+  },
+  {
+   "path": "packages/kumo/src/components/table-of-contents/table-of-contents.tsx",
+   "bytes": 7207
+  },
+  {
+   "path": "packages/kumo/src/components/table-of-contents/use-table-of-contents-active-id.test.tsx",
+   "bytes": 8759
+  },
+  {
+   "path": "packages/kumo/src/components/table-of-contents/use-table-of-contents-active-id.ts",
+   "bytes": 6464
+  },
+  {
+   "path": "packages/kumo/src/components/table/index.ts",
+   "bytes": 142
+  },
+  {
+   "path": "packages/kumo/src/components/table/table.test.tsx",
+   "bytes": 2716
+  },
+  {
+   "path": "packages/kumo/src/components/table/table.tsx",
+   "bytes": 13329
+  },
+  {
+   "path": "packages/kumo/src/components/tabs/index.ts",
+   "bytes": 82
+  },
+  {
+   "path": "packages/kumo/src/components/tabs/tabs.test.tsx",
+   "bytes": 2948
+  },
+  {
+   "path": "packages/kumo/src/components/tabs/tabs.tsx",
+   "bytes": 17474
+  },
+  {
+   "path": "packages/kumo/src/components/tag-input/index.ts",
+   "bytes": 81
+  },
+  {
+   "path": "packages/kumo/src/components/tag-input/tag-input.browser.test.tsx",
+   "bytes": 3821
+  },
+  {
+   "path": "packages/kumo/src/components/tag-input/tag-input.test.tsx",
+   "bytes": 8112
+  },
+  {
+   "path": "packages/kumo/src/components/tag-input/tag-input.tsx",
+   "bytes": 9438
+  },
+  {
+   "path": "packages/kumo/src/components/text/index.ts",
+   "bytes": 31
+  },
+  {
+   "path": "packages/kumo/src/components/text/text.test.tsx",
+   "bytes": 4752
+  },
+  {
+   "path": "packages/kumo/src/components/text/text.tsx",
+   "bytes": 11610
+  },
+  {
+   "path": "packages/kumo/src/components/text/text.type-spec.tsx",
+   "bytes": 4762
+  },
+  {
+   "path": "packages/kumo/src/components/toast/index.ts",
+   "bytes": 243
+  },
+  {
+   "path": "packages/kumo/src/components/toast/toast.test.tsx",
+   "bytes": 3654
+  },
+  {
+   "path": "packages/kumo/src/components/toast/toast.tsx",
+   "bytes": 16040
+  },
+  {
+   "path": "packages/kumo/src/components/toolbar/index.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/components/toolbar/toolbar.browser.test.tsx",
+   "bytes": 7616
+  },
+  {
+   "path": "packages/kumo/src/components/toolbar/toolbar.tsx",
+   "bytes": 8024
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/__screenshots__/tooltip.visual.browser.test.tsx/truncating-text-trigger-chromium-darwin.png",
+   "bytes": 3224
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/__screenshots__/tooltip.visual.browser.test.tsx/truncating-text-trigger-chromium-linux.png",
+   "bytes": 1236
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/index.ts",
+   "bytes": 54
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/tooltip.test.tsx",
+   "bytes": 652
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/tooltip.tsx",
+   "bytes": 9186
+  },
+  {
+   "path": "packages/kumo/src/components/tooltip/tooltip.visual.browser.test.tsx",
+   "bytes": 706
+  },
+  {
+   "path": "packages/kumo/src/index.ts",
+   "bytes": 11242
+  },
+  {
+   "path": "packages/kumo/src/primitives/accordion.ts",
+   "bytes": 264
+  },
+  {
+   "path": "packages/kumo/src/primitives/alert-dialog.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/autocomplete.ts",
+   "bytes": 276
+  },
+  {
+   "path": "packages/kumo/src/primitives/avatar.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/button.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/checkbox-group.ts",
+   "bytes": 283
+  },
+  {
+   "path": "packages/kumo/src/primitives/checkbox.ts",
+   "bytes": 260
+  },
+  {
+   "path": "packages/kumo/src/primitives/collapsible.ts",
+   "bytes": 272
+  },
+  {
+   "path": "packages/kumo/src/primitives/combobox.ts",
+   "bytes": 260
+  },
+  {
+   "path": "packages/kumo/src/primitives/context-menu.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/csp-provider.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/dialog.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/direction-provider.ts",
+   "bytes": 299
+  },
+  {
+   "path": "packages/kumo/src/primitives/drawer.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/field.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/primitives/fieldset.ts",
+   "bytes": 260
+  },
+  {
+   "path": "packages/kumo/src/primitives/form.ts",
+   "bytes": 244
+  },
+  {
+   "path": "packages/kumo/src/primitives/index.ts",
+   "bytes": 2075
+  },
+  {
+   "path": "packages/kumo/src/primitives/input.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/primitives/menu.ts",
+   "bytes": 244
+  },
+  {
+   "path": "packages/kumo/src/primitives/menubar.ts",
+   "bytes": 256
+  },
+  {
+   "path": "packages/kumo/src/primitives/meter.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/primitives/navigation-menu.ts",
+   "bytes": 287
+  },
+  {
+   "path": "packages/kumo/src/primitives/number-field.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/otp-field.ts",
+   "bytes": 350
+  },
+  {
+   "path": "packages/kumo/src/primitives/popover.ts",
+   "bytes": 256
+  },
+  {
+   "path": "packages/kumo/src/primitives/preview-card.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/progress.ts",
+   "bytes": 260
+  },
+  {
+   "path": "packages/kumo/src/primitives/radio-group.ts",
+   "bytes": 271
+  },
+  {
+   "path": "packages/kumo/src/primitives/radio.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/primitives/scroll-area.ts",
+   "bytes": 271
+  },
+  {
+   "path": "packages/kumo/src/primitives/select.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/separator.ts",
+   "bytes": 264
+  },
+  {
+   "path": "packages/kumo/src/primitives/slider.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/switch.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/tabs.ts",
+   "bytes": 244
+  },
+  {
+   "path": "packages/kumo/src/primitives/toast.ts",
+   "bytes": 248
+  },
+  {
+   "path": "packages/kumo/src/primitives/toggle-group.ts",
+   "bytes": 275
+  },
+  {
+   "path": "packages/kumo/src/primitives/toggle.ts",
+   "bytes": 252
+  },
+  {
+   "path": "packages/kumo/src/primitives/toolbar.ts",
+   "bytes": 256
+  },
+  {
+   "path": "packages/kumo/src/primitives/tooltip.ts",
+   "bytes": 256
+  },
+  {
+   "path": "packages/kumo/src/react-compat.test.tsx",
+   "bytes": 1676
+  },
+  {
+   "path": "packages/kumo/src/react-html-attributes.d.ts",
+   "bytes": 113
+  },
+  {
+   "path": "packages/kumo/src/registry/index.ts",
+   "bytes": 340
+  },
+  {
+   "path": "packages/kumo/src/registry/types.ts",
+   "bytes": 5605
+  },
+  {
+   "path": "packages/kumo/src/styles/kumo-binding.css",
+   "bytes": 7010
+  },
+  {
+   "path": "packages/kumo/src/styles/kumo-standalone.css",
+   "bytes": 227
+  },
+  {
+   "path": "packages/kumo/src/styles/kumo.css",
+   "bytes": 16841
+  },
+  {
+   "path": "packages/kumo/src/styles/theme-fedramp.css",
+   "bytes": 806
+  },
+  {
+   "path": "packages/kumo/src/styles/theme-kumo.css",
+   "bytes": 16061
+  },
+  {
+   "path": "packages/kumo/src/utils/cn.test.ts",
+   "bytes": 1142
+  },
+  {
+   "path": "packages/kumo/src/utils/cn.ts",
+   "bytes": 885
+  },
+  {
+   "path": "packages/kumo/src/utils/index.ts",
+   "bytes": 365
+  },
+  {
+   "path": "packages/kumo/src/utils/link-provider.tsx",
+   "bytes": 2810
+  },
+  {
+   "path": "packages/kumo/src/utils/locale-provider.tsx",
+   "bytes": 1839
+  },
+  {
+   "path": "packages/kumo/src/utils/portal-provider.tsx",
+   "bytes": 2334
+  },
+  {
+   "path": "packages/kumo/src/utils/prop-examples.ts",
+   "bytes": 2009
+  },
+  {
+   "path": "packages/kumo/src/utils/resolve-variant.test.ts",
+   "bytes": 1697
+  },
+  {
+   "path": "packages/kumo/src/utils/resolve-variant.ts",
+   "bytes": 1427
+  },
+  {
+   "path": "packages/kumo/src/utils/use-copy-feedback.test.tsx",
+   "bytes": 1061
+  },
+  {
+   "path": "packages/kumo/src/utils/use-copy-feedback.ts",
+   "bytes": 1908
+  },
+  {
+   "path": "packages/kumo/src/utils/variant-safety.test.ts",
+   "bytes": 7795
+  },
+  {
+   "path": "packages/kumo/tailwind.config.js",
+   "bytes": 203
+  },
+  {
+   "path": "packages/kumo/tests/badge-types.test-d.tsx",
+   "bytes": 1009
+  },
+  {
+   "path": "packages/kumo/tests/build/browser-compat.test.ts",
+   "bytes": 4132
+  },
+  {
+   "path": "packages/kumo/tests/imports/deep-imports.test.ts",
+   "bytes": 1866
+  },
+  {
+   "path": "packages/kumo/tests/imports/export-path-validation.test.ts",
+   "bytes": 12061
+  },
+  {
+   "path": "packages/kumo/tests/imports/import-entries.mjs",
+   "bytes": 892
+  },
+  {
+   "path": "packages/kumo/tests/imports/main-entry.test.ts",
+   "bytes": 1351
+  },
+  {
+   "path": "packages/kumo/tests/imports/node-esm-import.test.ts",
+   "bytes": 1072
+  },
+  {
+   "path": "packages/kumo/tests/imports/package-json-validation.test.ts",
+   "bytes": 5643
+  },
+  {
+   "path": "packages/kumo/tests/imports/primitives.test.ts",
+   "bytes": 12505
+  },
+  {
+   "path": "packages/kumo/tests/imports/test-utils.ts",
+   "bytes": 1990
+  },
+  {
+   "path": "packages/kumo/tests/lint/no-cross-package-imports.test.ts",
+   "bytes": 3136
+  },
+  {
+   "path": "packages/kumo/tests/lint/no-flow-node-custom-render.test.ts",
+   "bytes": 9390
+  },
+  {
+   "path": "packages/kumo/tests/select-strict-types.test-d.tsx",
+   "bytes": 4400
+  },
+  {
+   "path": "packages/kumo/tests/setup-browser.css",
+   "bytes": 57
+  },
+  {
+   "path": "packages/kumo/tests/setup.ts",
+   "bytes": 134
+  },
+  {
+   "path": "packages/kumo/tests/stratus-scenario-verify.test-d.tsx",
+   "bytes": 891
+  },
+  {
+   "path": "packages/kumo/tests/stratus-scenario.test-d.tsx",
+   "bytes": 1442
+  },
+  {
+   "path": "packages/kumo/tests/tsconfig.strict.json",
+   "bytes": 310
+  },
+  {
+   "path": "packages/kumo/tsconfig.json",
+   "bytes": 577
+  },
+  {
+   "path": "packages/kumo/vite.config.ts",
+   "bytes": 12983
+  },
+  {
+   "path": "packages/kumo/vitest.browser.config.ts",
+   "bytes": 651
+  },
+  {
+   "path": "packages/kumo/vitest.config.ts",
+   "bytes": 1207
+  },
+  {
+   "path": "packages/kumo/vitest.visual-contracts.config.ts",
+   "bytes": 547
+  },
+  {
+   "path": "packages/kumo/wrangler.jsonc",
+   "bytes": 585
+  },
+  {
+   "path": "pnpm-lock.yaml",
+   "bytes": 428070
+  },
+  {
+   "path": "pnpm-workspace.yaml",
+   "bytes": 1509
+  },
+  {
+   "path": "skills/kumo-design/SKILL.md",
+   "bytes": 6409
+  },
+  {
+   "path": "tools/deployments/validate-pr-description.test.ts",
+   "bytes": 9041
+  },
+  {
+   "path": "tools/deployments/validate-pr-description.ts",
+   "bytes": 3248
+  },
+  {
+   "path": "tsconfig.json",
+   "bytes": 143
+  },
+  {
+   "path": "vite.config.ts",
+   "bytes": 4937
+  }
+ ]
+}

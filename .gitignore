@@ -1,0 +1,12 @@
+# Build output is generated; the release archives hold the copy that ships.
+public/
+releases/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Local working material never belongs in this repository.
+kit/
+google_drive/
+.arena/

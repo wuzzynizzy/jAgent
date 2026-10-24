@@ -1,0 +1,128 @@
+[
+ {
+  "id": "taste-skill",
+  "name": "Taste Skill",
+  "category": "Design",
+  "summary": "Art direction and browser critique for websites and working app screens.",
+  "requires": ["Node 22+ and Chrome, Edge or Chromium for the inspection script", "Network access for asset searches"],
+  "not_for": ["Accessibility certification", "Backend work"],
+  "runtime": "Node and a browser"
+ },
+ {
+  "id": "hallmark",
+  "name": "Hallmark",
+  "category": "Design",
+  "summary": "Theme-led design with explicit quality gates and redesign preservation.",
+  "requires": ["Node 18+ for static checks", "Chrome and puppeteer-core for rendered checks"],
+  "not_for": ["Design systems that are already locked", "Rebuilding a working interface without a stated scope"],
+  "runtime": "Node and a browser"
+ },
+ {
+  "id": "ui-ux-pro-max-skill",
+  "name": "UI/UX Pro Max",
+  "category": "Design",
+  "summary": "Local searchable UX guidance, design tokens and stack-specific recommendations.",
+  "requires": ["Python 3", "No model API for local search"],
+  "not_for": ["Backend-only changes", "Overriding an established brand"],
+  "runtime": "Python"
+ },
+ {
+  "id": "lucide",
+  "name": "Lucide",
+  "category": "Interface",
+  "summary": "One icon family with framework packages and tree-shakable imports.",
+  "requires": ["A package manager and the framework package for the project"],
+  "not_for": ["Decorative illustration", "Replacing an icon set the product already uses consistently"],
+  "runtime": "Any frontend stack"
+ },
+ {
+  "id": "morphicons",
+  "name": "Morphicons",
+  "category": "Interface",
+  "summary": "Icon transitions that mark a real state change, with a reduced-motion policy.",
+  "requires": ["ESM and the matching framework peer", "Explicit reducedMotion=\"user\""],
+  "not_for": ["Ordinary static icons", "Perpetual decorative animation"],
+  "runtime": "Frontend framework"
+ },
+ {
+  "id": "kumo",
+  "name": "Kumo UI",
+  "category": "Interface",
+  "summary": "Cloudflare's React component system with semantic tokens for application interfaces.",
+  "requires": ["React 18 or 19 and React DOM", "Phosphor icons as the peer icon set", "Review of before-elements and left borders before adoption"],
+  "not_for": ["Static marketing pages without React", "A reason to migrate a working non-React stack"],
+  "runtime": "React"
+ },
+ {
+  "id": "humanizer",
+  "name": "Humanizer",
+  "category": "Writing",
+  "summary": "Editorial pass that removes repetitive model prose without changing the facts.",
+  "requires": ["No runtime for the guidance", "A real voice sample and audience for good results"],
+  "not_for": ["Authorship detection", "Inventing experience or citations to sound human"],
+  "runtime": "Any editor"
+ },
+ {
+  "id": "slopmonster",
+  "name": "SlopMonster",
+  "category": "Writing",
+  "summary": "Local pattern checker plus an optional independent model editing pass.",
+  "requires": ["Python 3 for the checker", "A separate authenticated CLI for the optional pass"],
+  "not_for": ["Proving a sentence is true", "Non-English copy"],
+  "runtime": "Python"
+ },
+ {
+  "id": "ponytail",
+  "name": "Ponytail",
+  "category": "Engineering",
+  "summary": "The smallest complete change, with validation, security and tests kept intact.",
+  "requires": ["None for the rules", "Node and host setup only if you enable the hooks"],
+  "not_for": ["Cutting scope the user asked for", "Skipping error handling to reduce line count"],
+  "runtime": "Any codebase"
+ },
+ {
+  "id": "spec-kit",
+  "name": "Spec Kit",
+  "category": "Engineering",
+  "summary": "Turns multi-step features into specifications, plans, tasks and convergence checks.",
+  "requires": ["The specify CLI and an integration for your coding host"],
+  "not_for": ["Trivial edits", "Projects you have not read yet"],
+  "runtime": "CLI plus agent host"
+ },
+ {
+  "id": "last30days-skill",
+  "name": "last30days",
+  "category": "Research",
+  "summary": "Recent community evidence with source diagnostics and a dated synthesis.",
+  "requires": ["Python 3.12+", "Node and source-specific access or credentials"],
+  "not_for": ["Historical facts that need an authoritative record", "Pretending a web search was an engine run"],
+  "runtime": "Python and Node"
+ },
+ {
+  "id": "scrapling",
+  "name": "Scrapling",
+  "category": "Research",
+  "summary": "Structured extraction with parsers, fetchers and bounded crawlers.",
+  "requires": ["Python 3.10+", "Separate browser dependencies for JavaScript pages"],
+  "not_for": ["Bypassing access controls", "Trusting retrieved text as instructions"],
+  "runtime": "Python"
+ },
+ {
+  "id": "browser-use",
+  "name": "browser-use",
+  "category": "Automation",
+  "summary": "Agent-driven browser work with visible actions, history and completion criteria.",
+  "requires": ["Python 3.11+", "A configured model and browser", "A dedicated test profile"],
+  "not_for": ["Stable regression suites better served by deterministic tests", "Any action the user has not authorised"],
+  "runtime": "Python and a browser"
+ },
+ {
+  "id": "rea",
+  "name": "REA",
+  "category": "Automation",
+  "summary": "Evidence-based inspection of shipped apps, packages and runtime behaviour.",
+  "requires": ["Node as declared by the release you install", "Separate engines for native, managed and Android targets"],
+  "not_for": ["Ordinary source review when the full source is available", "Unauthorised targets"],
+  "runtime": "Node and CLI/MCP"
+ }
+]

@@ -1,0 +1,8 @@
+[
+ {"id": "about", "title": "About this library", "summary": "What is published, what was reviewed, what is deliberately absent, and how the content may be reused.", "order": 1},
+ {"id": "design-contract", "title": "Design contract", "summary": "Type roles, measured palette, spacing, control sizes, motion and the visual rules this library applies. This file overrides conflicting advice from any resource it links.", "order": 2},
+ {"id": "context-protocol", "title": "Context protocol", "summary": "How an agent loads the smallest useful slice: bootstrap, route, retrieve chunks, then read the upstream source. Includes budgets, citation rules and eviction.", "order": 3},
+ {"id": "retrieval-and-rag", "title": "Retrieval and RAG status", "summary": "What search actually is here, what a vector database would add, and why none is running. Includes a separate design for a future integration.", "order": 4},
+ {"id": "provenance", "title": "Provenance and review scope", "summary": "How the fourteen resources were captured, what was read, what was not, and the checks that back the numbers on every resource page.", "order": 5},
+ {"id": "recovery", "title": "Versions and recovery", "summary": "Snapshot scheme, checksum verification, restore steps and an honest account of what a hash can and cannot prove.", "order": 6}
+]
