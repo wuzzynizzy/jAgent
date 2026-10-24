@@ -22,6 +22,11 @@ RELEASES = ROOT / "releases"
 SITE = json.loads((ROOT / "config/site.json").read_text())
 VERSION = SITE["version"]
 
+# Fixed timestamp for every archive entry. Git does not record mtimes, so writing
+# the checkout's mtimes into the zip would make the same commit produce different
+# bytes on every machine and break any attempt to verify a downloaded archive.
+FIXED_DATE = (1980, 1, 1, 0, 0, 0)
+
 SOURCE_INCLUDE = ["build", "config", "references", "sources", "assets", "tools", "SKILL.md",
                   "AGENTS.md", "README.md", "DEPLOY.md", "LICENSE", "CONTENT-LICENSE.md",
                   ".gitignore", ".github"]
@@ -29,13 +34,19 @@ SOURCE_EXCLUDE_DIRS = {"__pycache__", "node_modules", ".venv", ".git", "releases
                        "google_drive", ".arena"}
 
 
-def add_tree(zf: zipfile.ZipFile, base: Path) -> int:
+def add_file(zf: zipfile.ZipFile, path: Path, arcname: str) -> None:
+    info = zipfile.ZipInfo(arcname, date_time=FIXED_DATE)
+    info.compress_type = zipfile.ZIP_DEFLATED
+    info.external_attr = 0o644 << 16
+    zf.writestr(info, path.read_bytes())
+
+
+def add_tree(zf: zipfile.ZipFile, base: Path, prefix: str = "") -> int:
     count = 0
     for path in sorted(base.rglob("*")):
         if not path.is_file():
             continue
-        rel = path.relative_to(base).as_posix()
-        zf.write(path, rel)
+        add_file(zf, path, prefix + path.relative_to(base).as_posix())
         count += 1
     return count
 
@@ -73,9 +84,9 @@ def main() -> int:
                         continue
                     if any(part in SOURCE_EXCLUDE_DIRS for part in sub.relative_to(ROOT).parts):
                         continue
-                    zf.write(sub, f"jagent-{VERSION}/" + sub.relative_to(ROOT).as_posix())
+                    add_file(zf, sub, f"jagent-{VERSION}/" + sub.relative_to(ROOT).as_posix())
             elif path.is_file():
-                zf.write(path, f"jagent-{VERSION}/{item}")
+                add_file(zf, path, f"jagent-{VERSION}/{item}")
 
     lines = []
     for archive in (pages_zip, source_zip):
@@ -84,7 +95,8 @@ def main() -> int:
 
     print(f"pages archive:  {pages_zip.name}  {count} files, {pages_zip.stat().st_size / 1024:.0f} KB")
     print(f"source archive: {source_zip.name}  {source_zip.stat().st_size / 1024:.0f} KB")
-    print(f"checksums:      SHA256SUMS.txt")
+    print("checksums:      SHA256SUMS.txt")
+    print("archives use a fixed entry timestamp, so the same commit packages to the same bytes")
     return 0
 
 
