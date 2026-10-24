@@ -1,0 +1,16 @@
+{
+  "name": "jagent",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Browser checks and brand generators for the jAgent skill library.",
+  "type": "module",
+  "scripts": {
+    "brand": "node tools/make_brand.mjs",
+    "check:browser": "node build/browser_check.mjs",
+    "check:browser:shots": "node build/browser_check.mjs --shots /tmp/jagent-shots"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "puppeteer-core": "^23.11.1"
+  }
+}
