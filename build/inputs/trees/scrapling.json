@@ -1,0 +1,3453 @@
+{
+ "resource": "scrapling",
+ "source": "https://github.com/d4vinci/Scrapling",
+ "commit": "82180a1b3e1835888e4e90bee44963179f1e1ca0",
+ "format": "recorded tracked paths at the pinned commit",
+ "path_count": 688,
+ "file_count": 688,
+ "submodule_count": 0,
+ "tracked_bytes": 10504809,
+ "note": "Paths come from the repository tree at the pinned commit. Directories and .git are not listed. A listed path means it exists upstream, not that its contents were read.",
+ "entries": [
+  {
+   "path": ".bandit.yml",
+   "bytes": 558,
+   "sha256": "765acbc94511cf323135602e71f1ffc51e518872560fd4cd9191f478ff702c6c"
+  },
+  {
+   "path": ".dockerignore",
+   "bytes": 936,
+   "sha256": "a06ba36f090c8c017ae1d07611b8b9a9fc6d4cad3f1cbe3d52a7a74d8da7ebc1"
+  },
+  {
+   "path": ".github/FUNDING.yml",
+   "bytes": 56,
+   "sha256": "dec47248e6b5dc26d9cd326a1ebda5bb1f061db4d41670118ac17259525f75fa"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/01-bug_report.yml",
+   "bytes": 2111,
+   "sha256": "4541e64febbfc32c43ee7ebc8e850107c0069563120ede5b8b96b512aebaff3e"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/02-feature_request.yml",
+   "bytes": 662,
+   "sha256": "5fbb6a9386e05c8a3c356111ea363bab6d0c665f95581421410431f5ac91d625"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/03-other.yml",
+   "bytes": 556,
+   "sha256": "20ebfc5cb1be211804fef68daefa6fc698f64072fc264d823146fef3e9dab41c"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/04-docs_issue.yml",
+   "bytes": 1132,
+   "sha256": "0c4e8b7c865da4275a341819be8716bf1040f02eafe0761a22c14b87d51ed15e"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/config.yml",
+   "bytes": 302,
+   "sha256": "bb2f1c12fa25da80c3f4c869f624b90a7be5332ca99e2376d8b82b51fd9131d6"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 2184,
+   "sha256": "a29c4574815292e37d3ac6e368086b9475c071137b18dd7773188291405bb959"
+  },
+  {
+   "path": ".github/workflows/code-quality.yml",
+   "bytes": 5948,
+   "sha256": "d7ce95fa337cd0425250b52f7dad4b2a61e16d5f075f76aff4da412e157e4e5a"
+  },
+  {
+   "path": ".github/workflows/docker-build.yml",
+   "bytes": 3713,
+   "sha256": "e6891321996e7c2811658016c9f0daedf86750cbd6bd289030fb417c0358cf61"
+  },
+  {
+   "path": ".github/workflows/release-and-publish.yml",
+   "bytes": 2331,
+   "sha256": "2bd4732a6a46626b4a086b7962396fb28935b68410862d614a7b9ef4671623a2"
+  },
+  {
+   "path": ".github/workflows/tests.yml",
+   "bytes": 4004,
+   "sha256": "a731cace84e46ce2f0183d85b044afaa9e46a7260d02927ccc2768a7f8e43afc"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 984,
+   "sha256": "886a243cf289df4d7294c1d699850a172b9c7f60958712af89bab89f46e93eba"
+  },
+  {
+   "path": ".pre-commit-config.yaml",
+   "bytes": 472,
+   "sha256": "f36eaa2f636b43cf0091ac4ca0e33256b31e961abdf9787316d7f44c856700b6"
+  },
+  {
+   "path": ".readthedocs.yaml",
+   "bytes": 789,
+   "sha256": "7168eaebdfb68cf7ce26c4e5477170d29aa23334164d413e63e95d709fe62e00"
+  },
+  {
+   "path": "AI_POLICY.md",
+   "bytes": 2784,
+   "sha256": "897a8c5e7115db8d7f84165183df66c6b06596fee15e53ff6fdc428b073947cf"
+  },
+  {
+   "path": "CODE_OF_CONDUCT.md",
+   "bytes": 5221,
+   "sha256": "6d8e30af1e09f1d81122a71c8052986b5b184bf9802b3c9f495d2bfb6778a9c7"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 8340,
+   "sha256": "9c8816705fbd785634c090ab1b54654f1e0eeacd25e766425356f6eb62efc556"
+  },
+  {
+   "path": "Dockerfile",
+   "bytes": 1158,
+   "sha256": "733625cc28dffee7040c381d46aea662e10883b13676314a3e0767af3d2f47df"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1499,
+   "sha256": "5c782ef0346e4fbfe0dc76fd435f181a0f1e4a1a7a6b13c169c6e74314ff5964"
+  },
+  {
+   "path": "MANIFEST.in",
+   "bytes": 296,
+   "sha256": "b79909b47f95f0133140c0648c93f7c2b16fc93eeb644504d1431aa4805794b3"
+  },
+  {
+   "path": "README.md",
+   "bytes": 36092,
+   "sha256": "92ff531422e51baa392438ed6035254f480fc2a9852ae011cb803893b53c8c51"
+  },
+  {
+   "path": "ROADMAP.md",
+   "bytes": 1097,
+   "sha256": "d2ffb48682433bef6e598dbb6ceeb9a183586ff317636fbd1e133ba065fb4b18"
+  },
+  {
+   "path": "agent-skill/README.md",
+   "bytes": 1721,
+   "sha256": "113d95e7544cf748de4a1e5c4df6d1ffafcfbd0ca885968a5432cccb0afa3f41"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill.zip",
+   "bytes": 96977,
+   "sha256": "6e12b2a12afdfb3aefc90eb6248ef5f6c6eda50af68ead73c4f70e38971a9db7"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/LICENSE.txt",
+   "bytes": 1499,
+   "sha256": "5c782ef0346e4fbfe0dc76fd435f181a0f1e4a1a7a6b13c169c6e74314ff5964"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/SKILL.md",
+   "bytes": 25980,
+   "sha256": "c6ea3753922e1c21669139ebf60a989499f326c10879257ab958c258386ed088"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/examples/01_fetcher_session.py",
+   "bytes": 853,
+   "sha256": "05fdb45c20a304f0fc8c979eabe7eb78b467951219be7b0a6a45d44c05b3ff68"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/examples/02_browser_session.py",
+   "bytes": 954,
+   "sha256": "786c2925550d36f0cfb84c0d53736ada24e7a5b6c0e0ad3f043a46d27a0dee33"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/examples/03_stealthy_session.py",
+   "bytes": 952,
+   "sha256": "a461dd666b82ce478e4bfdb966724d1c1b8807a3a10ce6b918d449c4d553bd4d"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/examples/04_spider.py",
+   "bytes": 1941,
+   "sha256": "2a899a24ebc827bec0b395f60d276813a99d27575255d28ede30e2cce38beac7"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/examples/README.md",
+   "bytes": 1375,
+   "sha256": "b965495f4d620dea8d4e988df1d3b6b8c6589019c239c2f2afc3a2b6b8634871"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/building-rag-systems.md",
+   "bytes": 4934,
+   "sha256": "6caf201c1e3bc55071f950457db8a40b93afb3395de98c435e30a426b8055a99"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/fetching/choosing.md",
+   "bytes": 6447,
+   "sha256": "a2aeeca0f256e2ded491311c5b1e8f90a5108637d12c999760ea9aac74c27e45"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/fetching/static.md",
+   "bytes": 17626,
+   "sha256": "782785aeec3abb641a659f889f3608d0e3d26a288ba9ff1587846fd1b32eb836"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/fetching/stealthy.md",
+   "bytes": 35160,
+   "sha256": "616a1b03bbf0e4065129ea3b6290e69653a8f0896c275976d987a1cae80e2681"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/integrations/scrapy.md",
+   "bytes": 2985,
+   "sha256": "911f5524b6cb8a5cf36f6971a7794b158912cbf1afcf40f51b888a539b51186d"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/mcp-server.md",
+   "bytes": 26567,
+   "sha256": "946e7b7093a037ddc6cda3fcd7fc9589d61f256a82fd9775c4895789854d4079"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/migrating_from_beautifulsoup.md",
+   "bytes": 12646,
+   "sha256": "b168e29be6eb94dcb442611e003f3dc74b87a4702f631d6baef220c1400d9a48"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/parsing/adaptive.md",
+   "bytes": 12777,
+   "sha256": "ca20857787e826ff380ca6c4e9483156c3f8feecd8e2285f8a9c630330481bcb"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/parsing/main_classes.md",
+   "bytes": 28470,
+   "sha256": "d7096792810392e97d2b9f6a8c06c999944badcc935d6da73f1eec2a839bab3c"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/parsing/selection.md",
+   "bytes": 24754,
+   "sha256": "1f558ce3162d2e24f19919c11fc2600b7d2515958ddc6cf051a1bc55ca0695de"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/advanced.md",
+   "bytes": 18923,
+   "sha256": "279d0fffed34b1ed1020e458c8dbce54b0576a9eb1bbeb594c611412b698e980"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/architecture.md",
+   "bytes": 7448,
+   "sha256": "ac24904d1bc4867fc51656456ade695e6c2245ac34278612aa0f1a7548ae6cc9"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/generic-templates.md",
+   "bytes": 12419,
+   "sha256": "18177ecb7fe26a974bc7fb9cc0d20411f98e3e92dc7f18da78ca504361e14b11"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/getting-started.md",
+   "bytes": 7260,
+   "sha256": "bb339e385338bf4fe3ed9cb72c75f4982b245311f28d607dc3290af00722d069"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/platform-templates.md",
+   "bytes": 3306,
+   "sha256": "0f557e46385d218b4c7976ea6763b0bb948fa2dc453b8bbf3ef33f07bf2fe88c"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/proxy-blocking.md",
+   "bytes": 9075,
+   "sha256": "cdb56ac5564cc0a9556f947c050a4adcb5b8f8b6c6f8a4a269310315eec91c6f"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/requests-responses.md",
+   "bytes": 8988,
+   "sha256": "c238afb9ab0f6f513deb68583cff2dfe8197b2e26441f717f0a38d6885404cab"
+  },
+  {
+   "path": "agent-skill/Scrapling-Skill/references/spiders/sessions.md",
+   "bytes": 9750,
+   "sha256": "ab92cc48e882f1bdebc76cffe8304ab74e9a003de1908e29d1312fa25800e6a1"
+  },
+  {
+   "path": "benchmarks.py",
+   "bytes": 4454,
+   "sha256": "790ad223bc6fcf6fa240926e74c6b6a99185ffa44b526ed9e9a5b1e64d6c920b"
+  },
+  {
+   "path": "cleanup.py",
+   "bytes": 1033,
+   "sha256": "27897248f3b5849c3c8ee2702edbeb0fb26800a94b743428a57958d93a1979b0"
+  },
+  {
+   "path": "docs/README_AR.md",
+   "bytes": 41191,
+   "sha256": "382ea567804285cc9905901ff39d8768ca8cfc9a1bec7d030cca85b82f49a6a3"
+  },
+  {
+   "path": "docs/README_CN.md",
+   "bytes": 32575,
+   "sha256": "8b89d3716c142fa6738316b3fc51c0861987ab84a425093e2fd9426d5a68125b"
+  },
+  {
+   "path": "docs/README_DE.md",
+   "bytes": 35629,
+   "sha256": "2060fa89f0539a13eeb8ddc48b02802b9b5c3021b8817087c16a3c5793214719"
+  },
+  {
+   "path": "docs/README_ES.md",
+   "bytes": 35692,
+   "sha256": "5154bc7b1c3e2e55a7a3eefdf9e018139cbe8700d18dcef4a0bbe0b839286a3e"
+  },
+  {
+   "path": "docs/README_FR.md",
+   "bytes": 36782,
+   "sha256": "3f4d06057e584b0f5be994d0e4a3b5590f02e2089057a51f42efa754c74abb28"
+  },
+  {
+   "path": "docs/README_JP.md",
+   "bytes": 39175,
+   "sha256": "63ca09fb6a6b748090e33e834abea1381ecf0c75c9169743b4dc3416b888e917"
+  },
+  {
+   "path": "docs/README_KR.md",
+   "bytes": 37106,
+   "sha256": "f215a5e799e21a27fe9522edaf20d1ee85c09af26fc244f5a7bd20dc3a6f477f"
+  },
+  {
+   "path": "docs/README_PT_BR.md",
+   "bytes": 35675,
+   "sha256": "997726046f440b562b894a5d8c22715f417295054835702ec94fba3ad40263ba"
+  },
+  {
+   "path": "docs/README_RU.md",
+   "bytes": 44956,
+   "sha256": "37e80d79e646fdf117bffa0ec185f34b07f0551c1f4d02c2282c7f2d93c1f5b6"
+  },
+  {
+   "path": "docs/ai/agent-skill.md",
+   "bytes": 2735,
+   "sha256": "be0abdedc927ad254b9050c78aa842f313f08f79c8a15138ae533cab50764004"
+  },
+  {
+   "path": "docs/ai/building-rag-systems.md",
+   "bytes": 5260,
+   "sha256": "1f8a0ba797430162e6d2362a7adcaae2c0b2283bb35a24a7ac37989531b0ff6a"
+  },
+  {
+   "path": "docs/ai/mcp-server.md",
+   "bytes": 29602,
+   "sha256": "9c59ef47969863f62d516018b3909fbb2863885bede163e9d22bfd2426eb88c6"
+  },
+  {
+   "path": "docs/api-reference/custom-types.md",
+   "bytes": 786,
+   "sha256": "5f9d8253a0a1f44cfa2b542fa7ba736276de9d376cbc52e7d8f7db7845317aa0"
+  },
+  {
+   "path": "docs/api-reference/fetchers.md",
+   "bytes": 1046,
+   "sha256": "b875af75af1af456d49be6642ef919af37093e3fe9cedb67e948144f7838c8a7"
+  },
+  {
+   "path": "docs/api-reference/mcp-server.md",
+   "bytes": 6492,
+   "sha256": "ec402827dcb2b6030369a7ab9450ef714e9d8c6dd811a82c2079f079f7ffdddd"
+  },
+  {
+   "path": "docs/api-reference/proxy-rotation.md",
+   "bytes": 477,
+   "sha256": "688a04f5082a4ff7264336103248d63a7d83d4a67300f9b961adfbe11786cf28"
+  },
+  {
+   "path": "docs/api-reference/response.md",
+   "bytes": 574,
+   "sha256": "168acfc96c33ca3cd4384201a3da49ca2887b4a965cdfd431170b4104e9c8da1"
+  },
+  {
+   "path": "docs/api-reference/selector.md",
+   "bytes": 704,
+   "sha256": "6020b90323fcb7f63268186b1cd33f7abd571a78627d0b878f6318e25c63bc71"
+  },
+  {
+   "path": "docs/api-reference/spiders.md",
+   "bytes": 963,
+   "sha256": "686a06f234ea05f43950c65fd7f894301d708c9c14999b90b0277509bd147132"
+  },
+  {
+   "path": "docs/assets/cover_dark.png",
+   "bytes": 105285,
+   "sha256": "c3487732515810cd84052cd1b080d7a2cb16b1407191c4469a58b0f6ee5eb436"
+  },
+  {
+   "path": "docs/assets/cover_dark.svg",
+   "bytes": 163510,
+   "sha256": "4efd82c87dcf619e96b85e9d2640803d2e1ef3e96085662ce79077e61aeb62a0"
+  },
+  {
+   "path": "docs/assets/cover_light.png",
+   "bytes": 49787,
+   "sha256": "bbde629d9e9b81f6ac8ae85c1d320e59721d6f24847096955dafaa23885fd093"
+  },
+  {
+   "path": "docs/assets/cover_light.svg",
+   "bytes": 63232,
+   "sha256": "0767bf9a4be97d04e8d6acdbd912ba94a604a4bcd837f2b1768323690a843e92"
+  },
+  {
+   "path": "docs/assets/favicon.ico",
+   "bytes": 267230,
+   "sha256": "18f26390bdf7c13bc46d403b1a2355762c529c9e81eb5e27ea1041f488996b81"
+  },
+  {
+   "path": "docs/assets/javascripts/language-links.js",
+   "bytes": 669,
+   "sha256": "8ae578f6d2ea3b1213a5e3e00a3b276a51363bf3a91bb80e406cfd8be3e360e3"
+  },
+  {
+   "path": "docs/assets/logo.png",
+   "bytes": 43514,
+   "sha256": "0ab2d21207ff80accc2b3af864636fe859a284bfe7bddd99af34a2c119afd060"
+  },
+  {
+   "path": "docs/assets/main_cover.png",
+   "bytes": 297998,
+   "sha256": "c7f84020e537395b432faf3c66815efd5ca1a9cf6394e81bdaadff8ac9010952"
+  },
+  {
+   "path": "docs/assets/scrapling_shell_curl.png",
+   "bytes": 351213,
+   "sha256": "39c5c7aa963d31dc4f8584f34058600487c1941160dcfdcb8d11f1c699935c13"
+  },
+  {
+   "path": "docs/assets/spider_architecture.png",
+   "bytes": 129786,
+   "sha256": "49bca39a1cb9a532074bc6530ec2b6b1ea625e7a9f042659d2bfffcb7dcee84a"
+  },
+  {
+   "path": "docs/benchmarks.md",
+   "bytes": 1440,
+   "sha256": "134deaf093eaab403b95c5e2d1c0650c056f3598c6221882f993335783826ab5"
+  },
+  {
+   "path": "docs/changelog.md",
+   "bytes": 110500,
+   "sha256": "e8c5312712de2b2577d0d3f8884ca1e9aef362e4a16abce70a4a3a82338eb690"
+  },
+  {
+   "path": "docs/cli/extract-commands.md",
+   "bytes": 18719,
+   "sha256": "597ff96ab27311875ed7523d9681c56aca857f5df326f13139d3c92caf760985"
+  },
+  {
+   "path": "docs/cli/interactive-shell.md",
+   "bytes": 8452,
+   "sha256": "f6328256c37000d094170366d181cf5daebe68b3a2eaa49218eb7e9916d1bf2d"
+  },
+  {
+   "path": "docs/cli/overview.md",
+   "bytes": 1220,
+   "sha256": "96bb3f42e2bb49cd2e5466000518e5a97b5e6c0ade8ffc271dcafe2fe1696c93"
+  },
+  {
+   "path": "docs/development/adaptive_storage_system.md",
+   "bytes": 3786,
+   "sha256": "a11b2205ebaf0165078006fd7365c0ce2c27c2ffe3bcf7baded0e7de8e085391"
+  },
+  {
+   "path": "docs/development/scrapling_custom_types.md",
+   "bytes": 1789,
+   "sha256": "21873231fdce5cef4d866327e312f0a75a8c4ed04b3eabde99337a88535ad07b"
+  },
+  {
+   "path": "docs/donate.md",
+   "bytes": 2874,
+   "sha256": "67a569adba64a43f82caabb6335a3f1aaeb42fc3870d85e2ba18fccccdaf041b"
+  },
+  {
+   "path": "docs/fetching/choosing.md",
+   "bytes": 6786,
+   "sha256": "253421047a8f722f968eb42eed7b23f3db586b7070a265c78ffc01c08b3fd924"
+  },
+  {
+   "path": "docs/fetching/static.md",
+   "bytes": 18713,
+   "sha256": "4169596a463c02ba203093d13d440c4100cd4a0f75fbb97f8c30756bdb591e0c"
+  },
+  {
+   "path": "docs/fetching/stealthy.md",
+   "bytes": 36483,
+   "sha256": "d481cede8caf5f3f6508b18f60f535bfe706896b66d4f21f277475071378cd59"
+  },
+  {
+   "path": "docs/index.md",
+   "bytes": 14725,
+   "sha256": "76075174c907463acdabb427bdaf30fc0354d3ca633db620b54b5ed17f19b320"
+  },
+  {
+   "path": "docs/integrations/scrapy.md",
+   "bytes": 3206,
+   "sha256": "d4db2a9205246d1a9fb3801d27affb4d2ff6db1746f7950cf5ee5a7b7b4fc6dd"
+  },
+  {
+   "path": "docs/locales/ar/ai/agent-skill.md",
+   "bytes": 3774,
+   "sha256": "5bf2e572c24fce8fb9c4e6a5e531fd0b0da7341d117d72aa0cffe377f950badc"
+  },
+  {
+   "path": "docs/locales/ar/ai/building-rag-systems.md",
+   "bytes": 7547,
+   "sha256": "34c17943ec149890e25e6cbdc43a94346cab4f5235ebd521fbf3b9bcd0778c36"
+  },
+  {
+   "path": "docs/locales/ar/ai/mcp-server.md",
+   "bytes": 40199,
+   "sha256": "9e388aab353f87949ff14804722e3f8d506baeb78c7227285aeaa1bb9c25b4bf"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/custom-types.md",
+   "bytes": 925,
+   "sha256": "5f4b49d47adcb33d769a39bfe80844e352d8647753d127bd2687a05334ac1e55"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/fetchers.md",
+   "bytes": 1236,
+   "sha256": "0facfe302ebecf484ce8d6c280fbe4f97a77e17237b8126b015b6e283b5d5e35"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/mcp-server.md",
+   "bytes": 9785,
+   "sha256": "a338b1d350dc777d5347d53331695d9b02a0da8b2c5ecb5fa7c81281d1306056"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/proxy-rotation.md",
+   "bytes": 608,
+   "sha256": "cedffc3de41b6a0977f80becd94a5a245b98e1c37b9333dc046242288d0e8425"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/response.md",
+   "bytes": 849,
+   "sha256": "75fa48d16633baf71dbd74e9add2e0c348f6cbcdb8a2205370da24d42da7ad7a"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/selector.md",
+   "bytes": 757,
+   "sha256": "c3b2e6fe9d26136410e93a3c00173c21bff635775ea5fd82e8e3723ae3f30aef"
+  },
+  {
+   "path": "docs/locales/ar/api-reference/spiders.md",
+   "bytes": 1118,
+   "sha256": "21abd7c6d0903d46b0caee2f9981d1468f60c6302eb60122a4a242e3f4b16b93"
+  },
+  {
+   "path": "docs/locales/ar/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ar/benchmarks.md",
+   "bytes": 1890,
+   "sha256": "b8648114bad46f8d91f2c6f18d82ba75f542098e7293993e13f9f641802fbe09"
+  },
+  {
+   "path": "docs/locales/ar/changelog.md",
+   "bytes": 147664,
+   "sha256": "b9e7bd8f8be781e0c0e2a8d3d1e2499946662f7e01087617a175122a67f4fbb8"
+  },
+  {
+   "path": "docs/locales/ar/cli/extract-commands.md",
+   "bytes": 20570,
+   "sha256": "96006a90bc7b472039737ca3d59679b7d26275aad06c6c1c73410f0cac4a9c5b"
+  },
+  {
+   "path": "docs/locales/ar/cli/interactive-shell.md",
+   "bytes": 10058,
+   "sha256": "476cda268bbde47252e32accb12dcbb640bd57cb65bb1434221f5bc3f4deaa48"
+  },
+  {
+   "path": "docs/locales/ar/cli/overview.md",
+   "bytes": 1658,
+   "sha256": "775ffee4c7298327b60dd2847adb87a3d49dd3b71df4518ff60e5963375bc435"
+  },
+  {
+   "path": "docs/locales/ar/development/adaptive_storage_system.md",
+   "bytes": 4746,
+   "sha256": "e8f46cb5ea5d4ec460f25b28529d88224e0dc3cd5867abf3500359d93120764e"
+  },
+  {
+   "path": "docs/locales/ar/development/scrapling_custom_types.md",
+   "bytes": 2328,
+   "sha256": "2de8f85859977a9c067defeaf7645f07d03552bb7f9d612d017f7f989a4d3b47"
+  },
+  {
+   "path": "docs/locales/ar/donate.md",
+   "bytes": 3463,
+   "sha256": "4e82fa7938e722c3b027c068da87d45a1858c57b4e071235e381b67b69f107d3"
+  },
+  {
+   "path": "docs/locales/ar/fetching/choosing.md",
+   "bytes": 6926,
+   "sha256": "31c9b6d8bb96114f0a2287940de55def6cc2d41d32165221bb1bde5c65fe6399"
+  },
+  {
+   "path": "docs/locales/ar/fetching/static.md",
+   "bytes": 21268,
+   "sha256": "c546d0e6c22aa40bf637e8731b79c7626f9eb3efe62d9465878de129ffb6cf4d"
+  },
+  {
+   "path": "docs/locales/ar/fetching/stealthy.md",
+   "bytes": 39155,
+   "sha256": "284e14d0d488035b7255800afdb949748ff366afb8a2b6fd150f5e4492301838"
+  },
+  {
+   "path": "docs/locales/ar/index.md",
+   "bytes": 19733,
+   "sha256": "06095e0d7500a061d4bfac3f3465ade1c88eb1b32a7cdb8cb5ddcaf6f314bf3a"
+  },
+  {
+   "path": "docs/locales/ar/integrations/scrapy.md",
+   "bytes": 4047,
+   "sha256": "0c4ad462390d5bbf817a64c3f9fae0cde2cc04b7069afb830df3082fd7dc6e94"
+  },
+  {
+   "path": "docs/locales/ar/migrating-to-v0.5.md",
+   "bytes": 25166,
+   "sha256": "dffaa42d2601e048ef3464fe5879cbf9ecd2da20febc5eacb2cf7fedca538927"
+  },
+  {
+   "path": "docs/locales/ar/overview.md",
+   "bytes": 19468,
+   "sha256": "97cb06956d13f333d3be84b5b2a5b8f9d184690f88c9ae8b7997eec47b7376ff"
+  },
+  {
+   "path": "docs/locales/ar/parsing/adaptive.md",
+   "bytes": 15464,
+   "sha256": "23ef9cb142b74e6a935ba45fb4bebb290b00b083abcac1ca13a5bb242e275007"
+  },
+  {
+   "path": "docs/locales/ar/parsing/main_classes.md",
+   "bytes": 32412,
+   "sha256": "d19913a547abf6b16ae4d5ed58840dc244314dbea1c76b86c0aa1aa031c8fc6a"
+  },
+  {
+   "path": "docs/locales/ar/parsing/selection.md",
+   "bytes": 28545,
+   "sha256": "b9a3fa62deeccdab33043496a1d54da7f0f4c426320b04d3be155705af39185a"
+  },
+  {
+   "path": "docs/locales/ar/spiders/advanced.md",
+   "bytes": 25179,
+   "sha256": "13b27017664080e94887c03f22cb2801064c19bf0aa325c2aea08eb589ef2020"
+  },
+  {
+   "path": "docs/locales/ar/spiders/architecture.md",
+   "bytes": 10256,
+   "sha256": "e83fcd4e2e263ec3f5c4d9fefc75ed1a4273247653fdcbc596e98a107865dbeb"
+  },
+  {
+   "path": "docs/locales/ar/spiders/generic-templates.md",
+   "bytes": 15686,
+   "sha256": "5bab3514be557cf8a8e98d8e75a9e950cd4d69f56257f09c190b85e36b74b704"
+  },
+  {
+   "path": "docs/locales/ar/spiders/getting-started.md",
+   "bytes": 11217,
+   "sha256": "1ff6398cab1bf1207676c99ccab6a6d2d844e966f3ded8be5925aafe191f06f9"
+  },
+  {
+   "path": "docs/locales/ar/spiders/platform-templates.md",
+   "bytes": 5001,
+   "sha256": "bada2671882397f76ec95e5c4db811046826f58f276769e3df6cc9defb4514ef"
+  },
+  {
+   "path": "docs/locales/ar/spiders/proxy-blocking.md",
+   "bytes": 11810,
+   "sha256": "fc6db3f126e90645be84ac80d2613e1f3be71612061de6d82fb7243e40480534"
+  },
+  {
+   "path": "docs/locales/ar/spiders/requests-responses.md",
+   "bytes": 10568,
+   "sha256": "efaa6b55cb29e3688f940937c631547d3a9043651eb519d01b6b00e2e595484d"
+  },
+  {
+   "path": "docs/locales/ar/spiders/sessions.md",
+   "bytes": 11847,
+   "sha256": "16256e00c68cbe972e685171e0ad79dbf512e5dba2f66496877e7e136559dd30"
+  },
+  {
+   "path": "docs/locales/ar/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ar/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 13848,
+   "sha256": "9ffd08878612f96a21bbaaf16f789bcb1d69d95119d3162c4168ee44ebe2e397"
+  },
+  {
+   "path": "docs/locales/ar/tutorials/replacing_ai.md",
+   "bytes": 13131,
+   "sha256": "7de69c7157442ee4d2ec9bbbbb8f369664c286c80a0ba085f6807b22c6799853"
+  },
+  {
+   "path": "docs/locales/de/ai/agent-skill.md",
+   "bytes": 3103,
+   "sha256": "bb037b4ca7b5733985855121c49df1079af6018e16c7d5bc567490efabb5583c"
+  },
+  {
+   "path": "docs/locales/de/ai/building-rag-systems.md",
+   "bytes": 6179,
+   "sha256": "80f42d7f0ef6f5323faa99026beadc8488e3ee82fd9f48633524ec06fe35fa96"
+  },
+  {
+   "path": "docs/locales/de/ai/mcp-server.md",
+   "bytes": 33709,
+   "sha256": "f2c0f03d2bc51b8ae3c85c7f50de605e86e455b93e052f31016b0c0dda321e3c"
+  },
+  {
+   "path": "docs/locales/de/api-reference/custom-types.md",
+   "bytes": 802,
+   "sha256": "aebec3d3c9333636d000c38f8f10593de6714db5b53a2130b5a33a9c1117f5e4"
+  },
+  {
+   "path": "docs/locales/de/api-reference/fetchers.md",
+   "bytes": 1109,
+   "sha256": "3c5bb83b08ae9e104dc4e580e45d7b646e349cb51412c206e4d50ed10ef53421"
+  },
+  {
+   "path": "docs/locales/de/api-reference/mcp-server.md",
+   "bytes": 7730,
+   "sha256": "6f712aab008fea054ca0e15724ee0539665044601023ba137be9435ae56179fe"
+  },
+  {
+   "path": "docs/locales/de/api-reference/proxy-rotation.md",
+   "bytes": 534,
+   "sha256": "900b05d97b314d4b1ef8c49f8db6d12175a6f5e6e8ecdae4d8251299cdb68a7a"
+  },
+  {
+   "path": "docs/locales/de/api-reference/response.md",
+   "bytes": 620,
+   "sha256": "6d667a324033fdbaaf73d1739e42ee99552458b286089f77f384e1e2bb4fa234"
+  },
+  {
+   "path": "docs/locales/de/api-reference/selector.md",
+   "bytes": 675,
+   "sha256": "2c2ef65b4f8da9fa0d2ea26bc21b6e7a58d0ab3898d2038cdda4193441239696"
+  },
+  {
+   "path": "docs/locales/de/api-reference/spiders.md",
+   "bytes": 984,
+   "sha256": "fbaf466d9110e30a37b8b88345b6749f658ae2f4046d9ff50319b06cbc8d4a9d"
+  },
+  {
+   "path": "docs/locales/de/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/de/benchmarks.md",
+   "bytes": 1601,
+   "sha256": "78133aa44433e3ee8a7db61db43c42de7fc3e03336cb788813473d71c693205f"
+  },
+  {
+   "path": "docs/locales/de/changelog.md",
+   "bytes": 124039,
+   "sha256": "2b2f29251defc9ac3ead2f28becd342215728d267ad20904b598336023c1836d"
+  },
+  {
+   "path": "docs/locales/de/cli/extract-commands.md",
+   "bytes": 19239,
+   "sha256": "3d7253d70d4ef6bf1e39419cb0e300694167294127316c7675773a9a15f35363"
+  },
+  {
+   "path": "docs/locales/de/cli/interactive-shell.md",
+   "bytes": 8963,
+   "sha256": "c78606b2a7be6a209f96eb7457f4f6303be9b2564bcf7def19b74db901c5af4c"
+  },
+  {
+   "path": "docs/locales/de/cli/overview.md",
+   "bytes": 1420,
+   "sha256": "a8ea85dbe5e3582da5543ee092a93c6ade1a798a3d3ded13bcf78127fc5c2ffd"
+  },
+  {
+   "path": "docs/locales/de/development/adaptive_storage_system.md",
+   "bytes": 4013,
+   "sha256": "d6a701dca783aefdd9e060b8a089a874c0e42d19f643eece2a3269da8a3a91d7"
+  },
+  {
+   "path": "docs/locales/de/development/scrapling_custom_types.md",
+   "bytes": 1918,
+   "sha256": "952ab6291a61d607291f5f5b8fd4c9f86568e68aa55ebd5661655632827bc582"
+  },
+  {
+   "path": "docs/locales/de/donate.md",
+   "bytes": 2829,
+   "sha256": "5807dbb5ace6fec7078620f7d36ef373dd157d8b3dcb17fd9eaba2cefa8d2a83"
+  },
+  {
+   "path": "docs/locales/de/fetching/choosing.md",
+   "bytes": 5932,
+   "sha256": "73ea5fa0cfc3469f78f4a4d86e22b1a17e79907a37381cb1ccd8f270722bf887"
+  },
+  {
+   "path": "docs/locales/de/fetching/static.md",
+   "bytes": 19577,
+   "sha256": "bc0a119fb0b83185203e2a14f24821cc64a0a39859931cdba73465fcb22e2aa4"
+  },
+  {
+   "path": "docs/locales/de/fetching/stealthy.md",
+   "bytes": 33787,
+   "sha256": "34f791a601a74e95a160a1e40ceb00d1b25f2ee4e26fce241ed6ac29e740a356"
+  },
+  {
+   "path": "docs/locales/de/index.md",
+   "bytes": 16157,
+   "sha256": "86f66f8c8b77456cde33b11df863e9adc5a437301b3f3c65aa92ab6a456fb273"
+  },
+  {
+   "path": "docs/locales/de/integrations/scrapy.md",
+   "bytes": 3517,
+   "sha256": "e0082ac7ec851e1fe633d7a0dac04bada76487e10b137f704016f08597cf450d"
+  },
+  {
+   "path": "docs/locales/de/migrating-to-v0.5.md",
+   "bytes": 21667,
+   "sha256": "c972d9c0b1bc6d1a10d2969ece66ddf27025ed32511d966a35868fae24fd5df5"
+  },
+  {
+   "path": "docs/locales/de/overview.md",
+   "bytes": 17697,
+   "sha256": "691f1e9c4e785e90c99d19a205f4dc2bbc5b0f4d6d7dbe4d1d8fa9674a076ecc"
+  },
+  {
+   "path": "docs/locales/de/parsing/adaptive.md",
+   "bytes": 14044,
+   "sha256": "819707d362bb3f183653e563634fa47a84bdc8be7205acd7d50f7ffdabe7510c"
+  },
+  {
+   "path": "docs/locales/de/parsing/main_classes.md",
+   "bytes": 30218,
+   "sha256": "18a11ef06ba4e7fa50bc31507843af393859416fe1ed02de7d61cee5a8597ec9"
+  },
+  {
+   "path": "docs/locales/de/parsing/selection.md",
+   "bytes": 26032,
+   "sha256": "acb05de20621a97d38bc0235c6a59208efc5de991418706db27205e20986ff1e"
+  },
+  {
+   "path": "docs/locales/de/spiders/advanced.md",
+   "bytes": 21797,
+   "sha256": "f96cb593ae193b6e256bc714c2596bc0727ebcf1e3a08e8d28ffa5405debea03"
+  },
+  {
+   "path": "docs/locales/de/spiders/architecture.md",
+   "bytes": 9236,
+   "sha256": "576754bc874e43c99e04e1731e63dfe28e170f3021e4dc3f31977719b3866e0d"
+  },
+  {
+   "path": "docs/locales/de/spiders/generic-templates.md",
+   "bytes": 14097,
+   "sha256": "399dcedf7b7c8acd525f2584f3cb6f376b1f888a0fa4d305ebd2fb1408048288"
+  },
+  {
+   "path": "docs/locales/de/spiders/getting-started.md",
+   "bytes": 9501,
+   "sha256": "9fb2e5c20abeaf9cad8730d3dfcbae2238c7e61b38cefd1a65de11b807907df8"
+  },
+  {
+   "path": "docs/locales/de/spiders/platform-templates.md",
+   "bytes": 4372,
+   "sha256": "8a079aec325e506a52e2b9b745127d46a35a658467a4f6988f3250154140ac72"
+  },
+  {
+   "path": "docs/locales/de/spiders/proxy-blocking.md",
+   "bytes": 10409,
+   "sha256": "2ab158a95517eb4ca41331b5678c5b1b02e8b94ca4ae82f8d32bf259cf0d1308"
+  },
+  {
+   "path": "docs/locales/de/spiders/requests-responses.md",
+   "bytes": 10326,
+   "sha256": "106cf311906c55a6c46f8d3fb721c2d44814a1fcf2c587ad63966c126aaa264b"
+  },
+  {
+   "path": "docs/locales/de/spiders/sessions.md",
+   "bytes": 10720,
+   "sha256": "6f4fc6d15f8e08d3be01379384e2d552496c60b6cd2852d068a93316d883e406"
+  },
+  {
+   "path": "docs/locales/de/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/de/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12272,
+   "sha256": "23ed70904581c96db0c80d65efdc4b450782d5f8bac0f5b9101477cb7503d156"
+  },
+  {
+   "path": "docs/locales/de/tutorials/replacing_ai.md",
+   "bytes": 9906,
+   "sha256": "88175331c7242bd870c4cf5d648429446562e446dae1b6e23fe502d3381f8e5a"
+  },
+  {
+   "path": "docs/locales/es/ai/agent-skill.md",
+   "bytes": 3103,
+   "sha256": "185ee02a68058be9c5531d60a4c04bf1684ff182db346002c8cf317e13522a9c"
+  },
+  {
+   "path": "docs/locales/es/ai/building-rag-systems.md",
+   "bytes": 6079,
+   "sha256": "88d0fbe892852d85a7715dc3238f7469e49d2c910bbca733de7e04b73ff0d061"
+  },
+  {
+   "path": "docs/locales/es/ai/mcp-server.md",
+   "bytes": 32704,
+   "sha256": "5234c3792c46f8b094d4138fd3711fc45c5bd75e12478e74586a5c6569e7c954"
+  },
+  {
+   "path": "docs/locales/es/api-reference/custom-types.md",
+   "bytes": 805,
+   "sha256": "d18d7a3d12884c4b3aa4c340b4a83da4051986aec5a4634d85003392a5b0952c"
+  },
+  {
+   "path": "docs/locales/es/api-reference/fetchers.md",
+   "bytes": 1127,
+   "sha256": "7d5df4040aff4f0a8a818efc79c407fffdbcd141127713b9ee71f58df0ed14a4"
+  },
+  {
+   "path": "docs/locales/es/api-reference/mcp-server.md",
+   "bytes": 7294,
+   "sha256": "0f454886925009df66658854475eec10a093f2268651f800b1aee3a3ace64374"
+  },
+  {
+   "path": "docs/locales/es/api-reference/proxy-rotation.md",
+   "bytes": 522,
+   "sha256": "8767eeb5812e78cd42c8087da88dffd9b7db15dea1d591c8572ddceda8c6bde4"
+  },
+  {
+   "path": "docs/locales/es/api-reference/response.md",
+   "bytes": 646,
+   "sha256": "04089042dcfde3befc48b3205bd8a62bb42ab3f6e242df695c5afa5d492d2fd2"
+  },
+  {
+   "path": "docs/locales/es/api-reference/selector.md",
+   "bytes": 672,
+   "sha256": "5a7033b85a668f9510a14daf2b3e0117c23005b409d4937f63f30aca3fc51619"
+  },
+  {
+   "path": "docs/locales/es/api-reference/spiders.md",
+   "bytes": 1045,
+   "sha256": "48b871c3db7a66fe605b67157787d13699d567fe31a9bf676dc724effecee31f"
+  },
+  {
+   "path": "docs/locales/es/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/es/benchmarks.md",
+   "bytes": 1590,
+   "sha256": "7392cb992cf2e17ce34430bdfea7ce539576a8fc392745295460e8ac35635894"
+  },
+  {
+   "path": "docs/locales/es/changelog.md",
+   "bytes": 123508,
+   "sha256": "aa637fe1c6d4d1a382a4e49c2e712c16f4fe9cdf76460af4be15f55efb77c2a2"
+  },
+  {
+   "path": "docs/locales/es/cli/extract-commands.md",
+   "bytes": 19122,
+   "sha256": "53a226f2cfbe24134ae3a4fba49b97563da8f24fb9e4e3689349b44694f3f6fd"
+  },
+  {
+   "path": "docs/locales/es/cli/interactive-shell.md",
+   "bytes": 8962,
+   "sha256": "984314f9b495848f7ea972d238b11881c3e866215e222faa25145c6b158849a5"
+  },
+  {
+   "path": "docs/locales/es/cli/overview.md",
+   "bytes": 1355,
+   "sha256": "5be8bda5ece7a836050262773a507509f6a211db69e9d241cdfc0905014a9c03"
+  },
+  {
+   "path": "docs/locales/es/development/adaptive_storage_system.md",
+   "bytes": 3878,
+   "sha256": "81770ff620d36a3b61c8e862a6811f0dba51cc60b45749d6fc8097fa75d6d52b"
+  },
+  {
+   "path": "docs/locales/es/development/scrapling_custom_types.md",
+   "bytes": 1762,
+   "sha256": "e735d756b1240c6780cfa190c3f4d4800e2cd60deaa6a17a892acd4d742dde81"
+  },
+  {
+   "path": "docs/locales/es/donate.md",
+   "bytes": 2886,
+   "sha256": "3746dcee9c2c2b8ed2ea8371e8deefc0fe6df7a297c6ed047a6524e55263e52a"
+  },
+  {
+   "path": "docs/locales/es/fetching/choosing.md",
+   "bytes": 5693,
+   "sha256": "85b7116c3ecb3b1479ca562d79f9f24089190ddbcd6ca8b7910ea38aca547803"
+  },
+  {
+   "path": "docs/locales/es/fetching/static.md",
+   "bytes": 18722,
+   "sha256": "d5f26155aece230a818790f1defacfa3ccd96c92ad751b282806503760e86fdb"
+  },
+  {
+   "path": "docs/locales/es/fetching/stealthy.md",
+   "bytes": 32129,
+   "sha256": "28c9d318b0cca411abf3287048ef3c776d0385dd3e79c1da3765baa23159fb8e"
+  },
+  {
+   "path": "docs/locales/es/index.md",
+   "bytes": 15985,
+   "sha256": "f60a7abe6b8a97d6ca4883c40c95e8111fb7eb030ab0aea87f30af400fe482c3"
+  },
+  {
+   "path": "docs/locales/es/integrations/scrapy.md",
+   "bytes": 3477,
+   "sha256": "a887f66d9fa246c801c00472b6503da824d87eef06bcaeadb17cc5ea7dcc2fe4"
+  },
+  {
+   "path": "docs/locales/es/migrating-to-v0.5.md",
+   "bytes": 21002,
+   "sha256": "262a304feac9eee36bea753b96d9f04b7ed762c674e1b31c42b91b5ab7c77a43"
+  },
+  {
+   "path": "docs/locales/es/overview.md",
+   "bytes": 17608,
+   "sha256": "281a1b3f8a7817047c81a4a26cf2a336cfdc073c413816ae8c288d2d527e77b8"
+  },
+  {
+   "path": "docs/locales/es/parsing/adaptive.md",
+   "bytes": 13120,
+   "sha256": "6e5cd094788d3f8e59cada2b9cd03eb1a7e14f91ab131ba49ee501050d5969e3"
+  },
+  {
+   "path": "docs/locales/es/parsing/main_classes.md",
+   "bytes": 27728,
+   "sha256": "d12ae1fc4a2ba2ad650da5f68ee53989233f2f683df10fc0aa06bc9a96aeb464"
+  },
+  {
+   "path": "docs/locales/es/parsing/selection.md",
+   "bytes": 24477,
+   "sha256": "3026b210bec97fc05f67fa565df5fc51a9dd7a5ba6abf6e56bc390d997cb4c60"
+  },
+  {
+   "path": "docs/locales/es/spiders/advanced.md",
+   "bytes": 20251,
+   "sha256": "6e3732c4ab4f5ab8438ef4f07ab966b43853ea3c762a576929560d98a8188d43"
+  },
+  {
+   "path": "docs/locales/es/spiders/architecture.md",
+   "bytes": 8070,
+   "sha256": "5dd66b8181912f88fa647b5b6f08538430fa92d3ec6c45e0a813718b783b38f6"
+  },
+  {
+   "path": "docs/locales/es/spiders/generic-templates.md",
+   "bytes": 13108,
+   "sha256": "218dcbe5a302ae36e79288ee200631cda87d6e104f3afcef314df3068b69ff25"
+  },
+  {
+   "path": "docs/locales/es/spiders/getting-started.md",
+   "bytes": 9075,
+   "sha256": "5e98a8eea2d01012c42a9527a1617a9ba40d7f3aa551c5dd8583a1f02b352667"
+  },
+  {
+   "path": "docs/locales/es/spiders/platform-templates.md",
+   "bytes": 3873,
+   "sha256": "609930252ca7bd2bee68f14dff98d8f7478026fd21c4976ac9d37225b7ffd4f6"
+  },
+  {
+   "path": "docs/locales/es/spiders/proxy-blocking.md",
+   "bytes": 10215,
+   "sha256": "c4fccc358ac1efa48c3e15b781030aa7a2f7a4bb8dfce9870ce30dc90d5d48cd"
+  },
+  {
+   "path": "docs/locales/es/spiders/requests-responses.md",
+   "bytes": 8891,
+   "sha256": "e9d4b8144f4623f7c4aead2961071013d758b52624644b022894b1e01ec9647e"
+  },
+  {
+   "path": "docs/locales/es/spiders/sessions.md",
+   "bytes": 10310,
+   "sha256": "6469f00815a9413a53305e2d003f3653134c8cad728fd55d1822493dd3e7c39b"
+  },
+  {
+   "path": "docs/locales/es/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/es/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12066,
+   "sha256": "e11eff6e7fb822bc5cfcb66e53e57e7c7ea5744b0d53d5b0fc45565b068bddf4"
+  },
+  {
+   "path": "docs/locales/es/tutorials/replacing_ai.md",
+   "bytes": 9712,
+   "sha256": "ec7cc1b07abede4f6ff21a4baeb7b9bac2eb9ed4d066c2c218411362c68e1c40"
+  },
+  {
+   "path": "docs/locales/fr/ai/agent-skill.md",
+   "bytes": 3323,
+   "sha256": "978e1799ef177df354b06f578c738aaa27c23d3e803698ad09e872cbd1f65687"
+  },
+  {
+   "path": "docs/locales/fr/ai/building-rag-systems.md",
+   "bytes": 6275,
+   "sha256": "9d663f027fdd999cbc4c5834fd8d90e526c0486cdad9c91124a54a8761f894b4"
+  },
+  {
+   "path": "docs/locales/fr/ai/mcp-server.md",
+   "bytes": 34714,
+   "sha256": "895290a16fcd7ceaf856a4ad2cab8eb31aee0727e60745d4ccead6e63ae9dcce"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/custom-types.md",
+   "bytes": 814,
+   "sha256": "3dc72cc945324df4391d4bcaaa94e1a23b07a037bf7fb9e28f7bb9e6797d81bb"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/fetchers.md",
+   "bytes": 1148,
+   "sha256": "3d9f937b3389fe3408790a9913be8148ed820fddc4c88e9d9af7409f7db5eeb6"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/mcp-server.md",
+   "bytes": 7604,
+   "sha256": "70babed81ec74a2ae30a5cc157600ea3d586072e56b3fc4e8ec28e28d9278219"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/proxy-rotation.md",
+   "bytes": 571,
+   "sha256": "ef9e94247c345ca36e3886541c3bb2ebd8e4aae9c35cda2a200d645905acc994"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/response.md",
+   "bytes": 686,
+   "sha256": "19eca48009b6f71159c39b83ca695137780f66aaa8b1dcfc589e30fdbf4fa3f2"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/selector.md",
+   "bytes": 698,
+   "sha256": "c6bf851140064dbd9d3076727b4f37e1936903351c9e02d565b06fd4688faf3e"
+  },
+  {
+   "path": "docs/locales/fr/api-reference/spiders.md",
+   "bytes": 1050,
+   "sha256": "c8e5273b115918a8972c84f409d83b25b47c605dc14a5ce7af9f41fe72b33dec"
+  },
+  {
+   "path": "docs/locales/fr/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/fr/benchmarks.md",
+   "bytes": 1649,
+   "sha256": "fc65583ac9098198ce88b67bb1ec716124f588f791d7c83b82ab4b96bb89b2a1"
+  },
+  {
+   "path": "docs/locales/fr/changelog.md",
+   "bytes": 130034,
+   "sha256": "04a82a9e0eb97d0edb65ebb9823a0184008892af8f445b002616658cfe37a9f4"
+  },
+  {
+   "path": "docs/locales/fr/cli/extract-commands.md",
+   "bytes": 19568,
+   "sha256": "24e7350a66e7a0e312b4be7aa18032d873faa1901c31a5bcd3cc0114dd9cb8b9"
+  },
+  {
+   "path": "docs/locales/fr/cli/interactive-shell.md",
+   "bytes": 9222,
+   "sha256": "3a190559f86e7b9658743eada11a128bc7a592792acb807d63fa75deebc801b0"
+  },
+  {
+   "path": "docs/locales/fr/cli/overview.md",
+   "bytes": 1452,
+   "sha256": "be904ba0034384f7a32951fc1cd8557b0e90b20c5637229f312573062a1fa8f1"
+  },
+  {
+   "path": "docs/locales/fr/development/adaptive_storage_system.md",
+   "bytes": 4013,
+   "sha256": "dd2584014b72168ea9146b82360a175d5b70408f0063c21a753317636223336f"
+  },
+  {
+   "path": "docs/locales/fr/development/scrapling_custom_types.md",
+   "bytes": 1909,
+   "sha256": "981d866f3f127a69b9dda0bb927f37980af838bf2c45d802553b336f5d771dc9"
+  },
+  {
+   "path": "docs/locales/fr/donate.md",
+   "bytes": 2824,
+   "sha256": "01fbd7840f1a44ae9e32d769a595d823605906e548077a5461465d6179352936"
+  },
+  {
+   "path": "docs/locales/fr/fetching/choosing.md",
+   "bytes": 5929,
+   "sha256": "01c2c298524e5d3ead8b1954a6b9b8ccf7d132115b02250f99af0921a694dcc5"
+  },
+  {
+   "path": "docs/locales/fr/fetching/static.md",
+   "bytes": 19201,
+   "sha256": "c9aff8bb847572c31a47068fb5f50aeed9fc193f25d4db065d1a48d60e47353c"
+  },
+  {
+   "path": "docs/locales/fr/fetching/stealthy.md",
+   "bytes": 33935,
+   "sha256": "81b6f4e2729a218dec7d9f6e7aad34cd4937174c797e3156e560275dfdbaabf1"
+  },
+  {
+   "path": "docs/locales/fr/index.md",
+   "bytes": 16908,
+   "sha256": "c0424e3efd91f7dbb833358bb70e0af587aee17b869f512af39cf5f3cc204ea8"
+  },
+  {
+   "path": "docs/locales/fr/integrations/scrapy.md",
+   "bytes": 3600,
+   "sha256": "37864591616d31490edc9ec083f2f6dab9a9c4175f399c64c16b29956296f9f5"
+  },
+  {
+   "path": "docs/locales/fr/migrating-to-v0.5.md",
+   "bytes": 22380,
+   "sha256": "99ec3b1e1a18b165f8ff90e12f96c7ab8fe615be968ae33c8f9ffe81a29f3463"
+  },
+  {
+   "path": "docs/locales/fr/overview.md",
+   "bytes": 18045,
+   "sha256": "26841f2134c5975758bfc9818933ca444998f24eaef2d66ab89ffb64d6f17cfa"
+  },
+  {
+   "path": "docs/locales/fr/parsing/adaptive.md",
+   "bytes": 14081,
+   "sha256": "8612034335749b7c70f38a79a2ecaf8e632180d4d478fbdd7485c88e61cbc6fa"
+  },
+  {
+   "path": "docs/locales/fr/parsing/main_classes.md",
+   "bytes": 29114,
+   "sha256": "d12d6664de96e029c634f749df7dcada3b7f6a3582778e406eea7868a9a8c940"
+  },
+  {
+   "path": "docs/locales/fr/parsing/selection.md",
+   "bytes": 26116,
+   "sha256": "3bb83b336145b71a856303c279d4388ed8a9392187db49a6ee96085509695f63"
+  },
+  {
+   "path": "docs/locales/fr/spiders/advanced.md",
+   "bytes": 20921,
+   "sha256": "28f7b3a9e65ed130c4b675fcad84b0dbceeea9534d9f0e571eb1504c30c0d11c"
+  },
+  {
+   "path": "docs/locales/fr/spiders/architecture.md",
+   "bytes": 8568,
+   "sha256": "f4bae3a44961acccf3aaec7b9ccae8fa850f98158c06101a505d60261aca36f1"
+  },
+  {
+   "path": "docs/locales/fr/spiders/generic-templates.md",
+   "bytes": 13508,
+   "sha256": "edff4ff5195ecd17cd79fc3bf3c5d3de57ddd5a600702d5a6ab901949d1b56aa"
+  },
+  {
+   "path": "docs/locales/fr/spiders/getting-started.md",
+   "bytes": 9477,
+   "sha256": "dd152cec9b336cb5de69af6c69ba7942d8340665ebbc808461fef058e2592027"
+  },
+  {
+   "path": "docs/locales/fr/spiders/platform-templates.md",
+   "bytes": 4047,
+   "sha256": "acb6da31b83fb52fcd8c3f8bb83fb6796cb3db2d76aecb0131824e1ecdbf2931"
+  },
+  {
+   "path": "docs/locales/fr/spiders/proxy-blocking.md",
+   "bytes": 10502,
+   "sha256": "b717cf6ce6226824e7971c72876e2a52a18c79c0b6207ea329852f0a0ffcf18c"
+  },
+  {
+   "path": "docs/locales/fr/spiders/requests-responses.md",
+   "bytes": 9179,
+   "sha256": "064ed5fcb949e1ffdbc4a6ac107290c0bee489d6a608d1775fdf87d41b6d00d6"
+  },
+  {
+   "path": "docs/locales/fr/spiders/sessions.md",
+   "bytes": 10572,
+   "sha256": "0e6a535382fe07390a086b6517a6e18ad1647e9329e57726531803b638a36c2b"
+  },
+  {
+   "path": "docs/locales/fr/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/fr/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12495,
+   "sha256": "b8c1004a30f8f51683b3da8569d6d93f6be746beea36f7189376bf47f25aa12c"
+  },
+  {
+   "path": "docs/locales/fr/tutorials/replacing_ai.md",
+   "bytes": 10566,
+   "sha256": "b120303ec775c9d4c57c28032fa56b985ffebc339591b882b1a95a4df661f381"
+  },
+  {
+   "path": "docs/locales/ja/ai/agent-skill.md",
+   "bytes": 3677,
+   "sha256": "0e0a82e46930a1280afe572ad5c7653184be6e589fab93ef7ca31b19f7ed02cb"
+  },
+  {
+   "path": "docs/locales/ja/ai/building-rag-systems.md",
+   "bytes": 7064,
+   "sha256": "f0b6d16e5ba5900a1e155cc2556c9374108536ab72c0c05bcb547d2ffaef817d"
+  },
+  {
+   "path": "docs/locales/ja/ai/mcp-server.md",
+   "bytes": 37523,
+   "sha256": "61a5a70e240b8e8c28b59301401856e09768e8aad8ba58664467b7bd8272de10"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/custom-types.md",
+   "bytes": 846,
+   "sha256": "4907be9025f57447e0887d169307e5ea07fb2e5ea6d4c9288cc94559ad9a7fa3"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/fetchers.md",
+   "bytes": 1212,
+   "sha256": "62f41cb4ff0541a5d75b231dd660cd9c6cb84fecc9b01c466fb858479fca0133"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/mcp-server.md",
+   "bytes": 8747,
+   "sha256": "b8dfad426832d7a32f8a4a0473e74d4745cbd96c1509906e12a898abc46cd759"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/proxy-rotation.md",
+   "bytes": 621,
+   "sha256": "855a42191f37dcbd75256f7552a2e8fdaba76a01087f2643a1bec6cf6449d86e"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/response.md",
+   "bytes": 740,
+   "sha256": "f4b9efd87b036fa12683c1279c0d36766bc6a46d5daa615815c3c7c448f55718"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/selector.md",
+   "bytes": 717,
+   "sha256": "83b93e682ebb8db5c0216d1cbe092c338bd65159d771fa03f275b76d9d78e2ca"
+  },
+  {
+   "path": "docs/locales/ja/api-reference/spiders.md",
+   "bytes": 1071,
+   "sha256": "ea6eb10c82759af151c5b8b1c7657cf0877c33167fb102469885b57e84578797"
+  },
+  {
+   "path": "docs/locales/ja/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ja/benchmarks.md",
+   "bytes": 1639,
+   "sha256": "cc8edfb7f3d3b2266c003c319148e4543a9002c76ddafe73b6396e1d8d992877"
+  },
+  {
+   "path": "docs/locales/ja/changelog.md",
+   "bytes": 140842,
+   "sha256": "818d165cf394bd6d228a3ad005916bd01cad285e3236be1a2ad7845eedbf0dd2"
+  },
+  {
+   "path": "docs/locales/ja/cli/extract-commands.md",
+   "bytes": 20137,
+   "sha256": "4481294dc3bdd78f1d5e11c9d6e9c91be24e4bbec6eb70b7f3f9b626c9920622"
+  },
+  {
+   "path": "docs/locales/ja/cli/interactive-shell.md",
+   "bytes": 9763,
+   "sha256": "065a5d3d99b4869daef7204614d48a621283722b39d95c86cb6b5a3e5a0b238f"
+  },
+  {
+   "path": "docs/locales/ja/cli/overview.md",
+   "bytes": 1660,
+   "sha256": "a65df8d609d6561592d74e21cc8b89df7f575ea8505831bf1f04105ba9519faf"
+  },
+  {
+   "path": "docs/locales/ja/development/adaptive_storage_system.md",
+   "bytes": 4108,
+   "sha256": "2b6500392ef49a97c7447068bd77fc953c94daba43aad895455f2f0d7c393a42"
+  },
+  {
+   "path": "docs/locales/ja/development/scrapling_custom_types.md",
+   "bytes": 1982,
+   "sha256": "76bc669aa89095c3f88da2c00fdf023e2d53a81685aa84e0f69a2b04a6820ca5"
+  },
+  {
+   "path": "docs/locales/ja/donate.md",
+   "bytes": 3149,
+   "sha256": "ac4c1095c57ff4715a8d2b859d3ee3e5f18daa7f6f1fbe95e22ed864431612e6"
+  },
+  {
+   "path": "docs/locales/ja/fetching/choosing.md",
+   "bytes": 6308,
+   "sha256": "3c5c4f19e8ab99c83c2af66da37db137b0592f4e5c284bd0ef330a42504a7202"
+  },
+  {
+   "path": "docs/locales/ja/fetching/static.md",
+   "bytes": 19969,
+   "sha256": "225076f3ba78bef48e873dcd0e740f6109cbafb6604f29b9cba88d626d6eb401"
+  },
+  {
+   "path": "docs/locales/ja/fetching/stealthy.md",
+   "bytes": 38790,
+   "sha256": "f232df1fe6c9c1f3e6a99b1282650d0e86a26408d25b0bb828ea0d55ae454f5b"
+  },
+  {
+   "path": "docs/locales/ja/index.md",
+   "bytes": 18289,
+   "sha256": "98d05fc157f34847487a21a312e30f153bd47219e67056c02dce037370b4bc49"
+  },
+  {
+   "path": "docs/locales/ja/integrations/scrapy.md",
+   "bytes": 3956,
+   "sha256": "aa69b97b5c4aa15421e225fdfea74d1ec2129da49c3b3e909c34c39bb9df36cb"
+  },
+  {
+   "path": "docs/locales/ja/migrating-to-v0.5.md",
+   "bytes": 25183,
+   "sha256": "c8309a9138d88fc5b16686148812f2f272974ce04195666fde4975673f84d85b"
+  },
+  {
+   "path": "docs/locales/ja/overview.md",
+   "bytes": 18254,
+   "sha256": "832ff39b22877ef5aae44410f3d3a774ce031aca010d3ba4df4ad46f2caf1bc8"
+  },
+  {
+   "path": "docs/locales/ja/parsing/adaptive.md",
+   "bytes": 14097,
+   "sha256": "1124ae18e4cb854d2bb8976c37aec077fe8a3dccfede5869a95c882fe9e06188"
+  },
+  {
+   "path": "docs/locales/ja/parsing/main_classes.md",
+   "bytes": 29945,
+   "sha256": "d6e6505a727444a7687440017df582e79b396b0ba288dd74ec82af898b98cff4"
+  },
+  {
+   "path": "docs/locales/ja/parsing/selection.md",
+   "bytes": 26306,
+   "sha256": "b9f0a53b6a00913a07678c93c277c72cafb394a03866a0f50c66270e6896cc4d"
+  },
+  {
+   "path": "docs/locales/ja/spiders/advanced.md",
+   "bytes": 21608,
+   "sha256": "79f027e1aef84751ada4b78da4aeddc43cf91589448ecbd1fe4ef34aec7b3071"
+  },
+  {
+   "path": "docs/locales/ja/spiders/architecture.md",
+   "bytes": 9369,
+   "sha256": "9df0530e2e32a0d9e28ca31b692e4a918200122b3ce12acdae0417ced9f5f2e4"
+  },
+  {
+   "path": "docs/locales/ja/spiders/generic-templates.md",
+   "bytes": 14272,
+   "sha256": "1566c441a6aa226ebfd1335b27773a19aa01f361a6f41af0ac358da589b6b79a"
+  },
+  {
+   "path": "docs/locales/ja/spiders/getting-started.md",
+   "bytes": 10287,
+   "sha256": "27565acd45f5e98b1e630870bef443ba23b5d9b46dc383bfcd4b4c960dccb0b2"
+  },
+  {
+   "path": "docs/locales/ja/spiders/platform-templates.md",
+   "bytes": 4642,
+   "sha256": "8d883bacab074853409f0407a1160e6232592db2ceeae4927c78a2f0f5affdf9"
+  },
+  {
+   "path": "docs/locales/ja/spiders/proxy-blocking.md",
+   "bytes": 11062,
+   "sha256": "6afce821fd2f28fa21bb6ad42c8d70adcc059d5162bd25b937b66afd0a030bb0"
+  },
+  {
+   "path": "docs/locales/ja/spiders/requests-responses.md",
+   "bytes": 9509,
+   "sha256": "85bf61036e12707729b11ba46ee0be2029fb892e69838c4f56a8999af6bd16c4"
+  },
+  {
+   "path": "docs/locales/ja/spiders/sessions.md",
+   "bytes": 10917,
+   "sha256": "b24df55c6e157d742993c92ad57f673c5fb4a5389cb7940c85f9112c16cf3aed"
+  },
+  {
+   "path": "docs/locales/ja/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ja/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12714,
+   "sha256": "cf68b4d659f92b0356ab6194e8e83f3c62754bf608227c04256452e476ddc9bd"
+  },
+  {
+   "path": "docs/locales/ja/tutorials/replacing_ai.md",
+   "bytes": 11414,
+   "sha256": "4ede7acdc2c1fab652124c60f344e8062c977c245b9ec7412c92a13d10976b56"
+  },
+  {
+   "path": "docs/locales/ko/ai/agent-skill.md",
+   "bytes": 3261,
+   "sha256": "9d53b70520c0db527f59f4d457eb2a37d22e918a5feb6f8e1274a5a14a0a8d41"
+  },
+  {
+   "path": "docs/locales/ko/ai/building-rag-systems.md",
+   "bytes": 6513,
+   "sha256": "bf4375a62691767c84d7e786eba23ba14fda8a43813f81270989660fe3d612fd"
+  },
+  {
+   "path": "docs/locales/ko/ai/mcp-server.md",
+   "bytes": 34790,
+   "sha256": "b3601805a92b2af3fc0572bfbc4dde891be13b288596359a0a8ed26961c4f924"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/custom-types.md",
+   "bytes": 795,
+   "sha256": "79e522ee6e8fcc73ca2307492be9ced67933453688cbbd4523c24b6282d97db4"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/fetchers.md",
+   "bytes": 1127,
+   "sha256": "ba153a380f9541e80da1dee5652fb957e03ddcc8f107a1cb2c08cfe4b621303c"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/mcp-server.md",
+   "bytes": 7921,
+   "sha256": "bda7d2215a87b56193ce5e5fd9cc6bdea3889b89477cb26e2575b4a56393b8b8"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/proxy-rotation.md",
+   "bytes": 566,
+   "sha256": "83aeac1567a695d42b8851101f3b5f782c192d621779e33dd38badad588a4cb2"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/response.md",
+   "bytes": 683,
+   "sha256": "d045118c01cda80301adde222c0675d0adef79bc6497276558fe9ba971baee44"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/selector.md",
+   "bytes": 667,
+   "sha256": "4b28cf23ba9e8d096c5c8b280c9b44491fa7f34f6ebf70d2f7e1f091ed8aeac7"
+  },
+  {
+   "path": "docs/locales/ko/api-reference/spiders.md",
+   "bytes": 1006,
+   "sha256": "5a46ca8bfcdd42d51d4f82cc284e8ad8a5b2a2ef1d53ca9c9c2c05c943598a99"
+  },
+  {
+   "path": "docs/locales/ko/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ko/benchmarks.md",
+   "bytes": 1619,
+   "sha256": "2a672f15dd5237f15157c34600b22bbce69d7bfcc55307d122eb39bdbbc06a08"
+  },
+  {
+   "path": "docs/locales/ko/changelog.md",
+   "bytes": 129896,
+   "sha256": "2228bf3b0bb841ab4dbd161fa01632ee1d51f8345dd954f27773220165f47399"
+  },
+  {
+   "path": "docs/locales/ko/cli/extract-commands.md",
+   "bytes": 19395,
+   "sha256": "fdf9194e28e5641780514f758104ce97ac570d7ebf2f9fbd20167be6d8faad47"
+  },
+  {
+   "path": "docs/locales/ko/cli/interactive-shell.md",
+   "bytes": 9112,
+   "sha256": "d1081e673bf55c6284dfe1542325ba36171ec5e60910808a63f14a8fccc907db"
+  },
+  {
+   "path": "docs/locales/ko/cli/overview.md",
+   "bytes": 1401,
+   "sha256": "fbbf472da982cb6bb47201902236b075e8c9b802419dcb9a44c10a607b0495f4"
+  },
+  {
+   "path": "docs/locales/ko/development/adaptive_storage_system.md",
+   "bytes": 3958,
+   "sha256": "0cb2f42a11294efb55c5fda5a2c6824c90aa500c4a8219be378ab83af9ece4fd"
+  },
+  {
+   "path": "docs/locales/ko/development/scrapling_custom_types.md",
+   "bytes": 1902,
+   "sha256": "8bb8f66e13e5a64b94af4e5e0846620bbfdfabe02e6eb59f0a5bbbb8c62d53f9"
+  },
+  {
+   "path": "docs/locales/ko/donate.md",
+   "bytes": 2918,
+   "sha256": "943478a2252f12d3e200f24031e016f0303e6af567763a8d686b4609ebff613d"
+  },
+  {
+   "path": "docs/locales/ko/fetching/choosing.md",
+   "bytes": 5984,
+   "sha256": "f47983c9ef4fe6535bd45ac6677fc6d2e5e48c4bcc65d79a3030a2397283e989"
+  },
+  {
+   "path": "docs/locales/ko/fetching/static.md",
+   "bytes": 19535,
+   "sha256": "0477f18638afe561a368fda2e6a3a54f9b3bdab174994158c48b2afd6d203ca8"
+  },
+  {
+   "path": "docs/locales/ko/fetching/stealthy.md",
+   "bytes": 34854,
+   "sha256": "9631ca1fd3b669c64d644fa19b51210bd7859904817e3fdcc8cb2a7bdf21390e"
+  },
+  {
+   "path": "docs/locales/ko/index.md",
+   "bytes": 16829,
+   "sha256": "872660dfc1dda4c10eb407e2727f7f1df364d8c8a3e47b4432d44b9808459dd0"
+  },
+  {
+   "path": "docs/locales/ko/integrations/scrapy.md",
+   "bytes": 3620,
+   "sha256": "846c6d573d83301b5c1b11b7e0f2960e97c8b36489d7cbec144fc000833d7ad2"
+  },
+  {
+   "path": "docs/locales/ko/migrating-to-v0.5.md",
+   "bytes": 21861,
+   "sha256": "c3c66251711fdb8f9d0bba11766fa77441fcc02178f5fca2d26be7e80290891a"
+  },
+  {
+   "path": "docs/locales/ko/overview.md",
+   "bytes": 17872,
+   "sha256": "35dac5067cd548fb9d0fb7815183affb3519713bd38d0035428bf4b39dc88475"
+  },
+  {
+   "path": "docs/locales/ko/parsing/adaptive.md",
+   "bytes": 14290,
+   "sha256": "077eb645d4f6238a74367be77d11310b988951bb54a192a9a4e928351ac95194"
+  },
+  {
+   "path": "docs/locales/ko/parsing/main_classes.md",
+   "bytes": 30079,
+   "sha256": "dcd0c737de2f8547e891a31960caf0db2ca75dcdfd4aee6b503b7af4830fc9d6"
+  },
+  {
+   "path": "docs/locales/ko/parsing/selection.md",
+   "bytes": 26035,
+   "sha256": "c1cfc5ec22fafab03ee04cb758be074bc9cf1b5719473b412338eff03d52f891"
+  },
+  {
+   "path": "docs/locales/ko/spiders/advanced.md",
+   "bytes": 20594,
+   "sha256": "a37bef646268e9cd881855157ab11a52db083c4219af631e300860bfaa513c94"
+  },
+  {
+   "path": "docs/locales/ko/spiders/architecture.md",
+   "bytes": 8341,
+   "sha256": "db298498af11a898cd5cd842b61afcc64e7e6d1921208e8599dd025a35983791"
+  },
+  {
+   "path": "docs/locales/ko/spiders/generic-templates.md",
+   "bytes": 13607,
+   "sha256": "905dbce1f015f32650424d01961480d6c9459101a566662d6ee6681bb2540b41"
+  },
+  {
+   "path": "docs/locales/ko/spiders/getting-started.md",
+   "bytes": 9541,
+   "sha256": "0a1fdfd21a662cb0a66052f4b8b9fa249f09a66b7067b9da77cd544e44c6f7fc"
+  },
+  {
+   "path": "docs/locales/ko/spiders/platform-templates.md",
+   "bytes": 4220,
+   "sha256": "4b2362b5a1cc28db25b9bbbd2f93ed6507c85e69903659db5c0188bbc978a20a"
+  },
+  {
+   "path": "docs/locales/ko/spiders/proxy-blocking.md",
+   "bytes": 10470,
+   "sha256": "245f4dc9006017b5bb3a698635d414cc02d1a8a001b2d54d767edfee542ab85f"
+  },
+  {
+   "path": "docs/locales/ko/spiders/requests-responses.md",
+   "bytes": 9198,
+   "sha256": "f5d01d3bbb80fa64755cfc6f9a724ccec2745294e87d69a3cc6f0a9e5432f4df"
+  },
+  {
+   "path": "docs/locales/ko/spiders/sessions.md",
+   "bytes": 10452,
+   "sha256": "2fc604bf12978ef51c7a917d6d6f9fc2b089ac7347b60641f31bdb65cda04888"
+  },
+  {
+   "path": "docs/locales/ko/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ko/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12510,
+   "sha256": "7877911153903f370c467410f9ab6cf15b87ef2aa7e9eeca87960d040eab8de4"
+  },
+  {
+   "path": "docs/locales/ko/tutorials/replacing_ai.md",
+   "bytes": 10634,
+   "sha256": "8a45f62361654df694008e23e6f8a80916cfdadc8d97fc710a0300b12a1d4789"
+  },
+  {
+   "path": "docs/locales/pt-BR/ai/agent-skill.md",
+   "bytes": 3141,
+   "sha256": "f4e1b7c561267d9764e7b93ee4f34dc524d477b9997e54ac56f388f25165005a"
+  },
+  {
+   "path": "docs/locales/pt-BR/ai/building-rag-systems.md",
+   "bytes": 6011,
+   "sha256": "e60f91d24ea5c7c03cf83aed734f3f5eda2043e8c0291441374bcfb6132ee5a2"
+  },
+  {
+   "path": "docs/locales/pt-BR/ai/mcp-server.md",
+   "bytes": 32499,
+   "sha256": "c91887f540732bff09e096765ef443bfe0cb213585627f4f3734335d9858a35f"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/custom-types.md",
+   "bytes": 791,
+   "sha256": "f16ea20b297451f957bfeb8087e1cf22dd0b3a1df57c65271f920a7ca3798b09"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/fetchers.md",
+   "bytes": 1125,
+   "sha256": "ea7603053782848482d6671f6f20ada3a2123c65a3d14e023a4622f3396f9579"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/mcp-server.md",
+   "bytes": 7189,
+   "sha256": "1b77789a1a10af659235a77926a76bdfa28cc4855e30b6c1ebaffe2628d72ec1"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/proxy-rotation.md",
+   "bytes": 522,
+   "sha256": "a9a02ef9574bf413ecb54518feb29053288b4770b7b924345efe748e3e130eff"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/response.md",
+   "bytes": 647,
+   "sha256": "5653bbe0bedb772d4dee2b0f09b5303f39d98ce68b282f5cf60fee56ce852ed0"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/selector.md",
+   "bytes": 660,
+   "sha256": "d57f209204ee7a9e52f31e5a54d76498dc55f96d115c74676331496a18b1975d"
+  },
+  {
+   "path": "docs/locales/pt-BR/api-reference/spiders.md",
+   "bytes": 1046,
+   "sha256": "cc42e82758cc0bc538361c6ba5ec0a1d2731407c615c136f6e7acea90109ab69"
+  },
+  {
+   "path": "docs/locales/pt-BR/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/pt-BR/benchmarks.md",
+   "bytes": 1591,
+   "sha256": "290642b4bb4d9cc34beece8d5b438ea7d4ffcfc70cb219c12ae49913eb368d56"
+  },
+  {
+   "path": "docs/locales/pt-BR/changelog.md",
+   "bytes": 122261,
+   "sha256": "a07edc0f01de2f1e56bdd23744c52138d194b5675ee97798d51ab3d495e2a9ed"
+  },
+  {
+   "path": "docs/locales/pt-BR/cli/extract-commands.md",
+   "bytes": 19039,
+   "sha256": "ba9a2766222b55617453f9da7bc659b29715a2d33362b8771dba454f3488828f"
+  },
+  {
+   "path": "docs/locales/pt-BR/cli/interactive-shell.md",
+   "bytes": 8948,
+   "sha256": "c6a632068f2f4988c9676ca2f262ca509d26c7bd037808a0393a6beef379e6fc"
+  },
+  {
+   "path": "docs/locales/pt-BR/cli/overview.md",
+   "bytes": 1352,
+   "sha256": "96da20bcccc1b89849a32f8b8d73ad3317772d0f20b622bdefaa5c1fb982fc09"
+  },
+  {
+   "path": "docs/locales/pt-BR/development/adaptive_storage_system.md",
+   "bytes": 3818,
+   "sha256": "4eb8a824d3023bc588302a1490ac51887d4f96599adfe49a94a49a0f07c8bba0"
+  },
+  {
+   "path": "docs/locales/pt-BR/development/scrapling_custom_types.md",
+   "bytes": 1773,
+   "sha256": "2d5dbfe0ccbcd3d41a715389b3cd7461902925dfb19794d70dca8f59846a83a9"
+  },
+  {
+   "path": "docs/locales/pt-BR/donate.md",
+   "bytes": 2771,
+   "sha256": "c81a13885a68f9773cff2e65b9d544ace2d3958ae1d510d96520dab29c20b071"
+  },
+  {
+   "path": "docs/locales/pt-BR/fetching/choosing.md",
+   "bytes": 5671,
+   "sha256": "4406869ff86a191cb8fa2ce18156da5f557f70dcd91c44cc4ff1621dc11fc29b"
+  },
+  {
+   "path": "docs/locales/pt-BR/fetching/static.md",
+   "bytes": 18881,
+   "sha256": "7f4f43d92de74e5f65fe3550b364600e59c5b43b1858663b769b78c671796f6f"
+  },
+  {
+   "path": "docs/locales/pt-BR/fetching/stealthy.md",
+   "bytes": 32016,
+   "sha256": "80c7ece6208ed2a0552bead72d5fb68f0f298e1539ed5e0e0cbd88825b901320"
+  },
+  {
+   "path": "docs/locales/pt-BR/index.md",
+   "bytes": 15876,
+   "sha256": "f4c263de87baf28599e509d2e0125562eafb3b92dd025ccc5c2edd3399acbab6"
+  },
+  {
+   "path": "docs/locales/pt-BR/integrations/scrapy.md",
+   "bytes": 3438,
+   "sha256": "bac93dcdff2001fa84aa7b0a6783fccdece9ffb86836dbb2bb71d0f870083939"
+  },
+  {
+   "path": "docs/locales/pt-BR/migrating-to-v0.5.md",
+   "bytes": 20585,
+   "sha256": "58a361c93edd4c6b2c56b76a35e75ec473024beb7a4ebfaf4af30357027fd1b5"
+  },
+  {
+   "path": "docs/locales/pt-BR/overview.md",
+   "bytes": 17590,
+   "sha256": "6d247f9d0d83f026399959e40f39abb5baafb836e00f1a2c34c43d0980e6a489"
+  },
+  {
+   "path": "docs/locales/pt-BR/parsing/adaptive.md",
+   "bytes": 12948,
+   "sha256": "28dfffec54252ef6a8b34a845f486ed2461124b5d9a0aff196f3d620189b61ac"
+  },
+  {
+   "path": "docs/locales/pt-BR/parsing/main_classes.md",
+   "bytes": 27733,
+   "sha256": "612118e7eb7ef84e37db5d60f42e2b2f4c7beadf7697130b9d86e427f08abcd0"
+  },
+  {
+   "path": "docs/locales/pt-BR/parsing/selection.md",
+   "bytes": 24383,
+   "sha256": "f1a10571c05bee605f8982dab632f6109bcb46b1e8b9945575974b60dce1c680"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/advanced.md",
+   "bytes": 19919,
+   "sha256": "41125b7ec57718c90cf04f7a2d8516b1f1177a4d08f7df352f56f4f5b26a7460"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/architecture.md",
+   "bytes": 8111,
+   "sha256": "565dc198ca789c56a71477e838ba71231cf1d30937d00b01c70d3086c907875a"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/generic-templates.md",
+   "bytes": 12909,
+   "sha256": "c060affd443f08766aac0af254a82320aabe272a8f7ba5b55d7e0b6c0b844922"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/getting-started.md",
+   "bytes": 9046,
+   "sha256": "526b16f6e1e1f89228c73be9a1b14096f74da2d59bdc437d5ae9973a0bfc2ff5"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/platform-templates.md",
+   "bytes": 3735,
+   "sha256": "d05db0ffff5ef8f0b008390afed2b02347648413661702091468628cae2c9af2"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/proxy-blocking.md",
+   "bytes": 10144,
+   "sha256": "95be74d0f079611c7a3fc2575ee26535900432ab3e14c895e1a148f490945154"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/requests-responses.md",
+   "bytes": 8782,
+   "sha256": "927c976d464f6364338f0d256d1644e6355068ac40ac74b62b7b4b76d69f7ae7"
+  },
+  {
+   "path": "docs/locales/pt-BR/spiders/sessions.md",
+   "bytes": 10157,
+   "sha256": "9aeeb458bbb77bc33a3b12bc5cca8ddeda0795dc3a2e5c9efbfc5e7bf8051241"
+  },
+  {
+   "path": "docs/locales/pt-BR/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/pt-BR/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 12062,
+   "sha256": "755e92d2fea145411f1d6a2ad0dae48d267118f062162b57c6092eb0795fc89a"
+  },
+  {
+   "path": "docs/locales/pt-BR/tutorials/replacing_ai.md",
+   "bytes": 9796,
+   "sha256": "9b40c516167126d69d2194f3e22a275693885cdace4c6f7eec451e8c17ba425e"
+  },
+  {
+   "path": "docs/locales/ru/ai/agent-skill.md",
+   "bytes": 4245,
+   "sha256": "042e55ff8fae468fe58646243b5b3af13d0205e0249efd0cf0fbc7b93373cc05"
+  },
+  {
+   "path": "docs/locales/ru/ai/building-rag-systems.md",
+   "bytes": 8313,
+   "sha256": "e3d5e3abafa9a424be55ae1c832e08751bc269f7790d8d39005fe1f9eae30d4b"
+  },
+  {
+   "path": "docs/locales/ru/ai/mcp-server.md",
+   "bytes": 46965,
+   "sha256": "0eeebf99eb368c65101ce3f0ff27ffa9b0df3143b9ed205733b501c624f9fbea"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/custom-types.md",
+   "bytes": 899,
+   "sha256": "18dea20316b6eea68b7b24aa6ae32ba5f46680d670f358d701ce7c79352da34f"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/fetchers.md",
+   "bytes": 1239,
+   "sha256": "7725d76ca820607547003c5504c47e916a50ea78c89c5e3820c1d5906f955287"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/mcp-server.md",
+   "bytes": 10958,
+   "sha256": "09af26812d943f8594d4e8c5d54fc467f1e12baf2162003ba023ef8312e36ec2"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/proxy-rotation.md",
+   "bytes": 639,
+   "sha256": "9b282f9045f7de73fb433302b2f121a04385e0083f9176055c081621c7aab2b3"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/response.md",
+   "bytes": 769,
+   "sha256": "fab85c3a68aed372007843f5ab70c629c1073e31382601fab971bc99b1710c12"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/selector.md",
+   "bytes": 816,
+   "sha256": "ca2d0f963e769abd006bf1d89d1d90cad429a09052779eeb1729f7654eeffea5"
+  },
+  {
+   "path": "docs/locales/ru/api-reference/spiders.md",
+   "bytes": 1146,
+   "sha256": "57afa99b8f475995c05e982bc0ebb0fbf45ecc8557957e14683331f3fa3ae91b"
+  },
+  {
+   "path": "docs/locales/ru/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ru/benchmarks.md",
+   "bytes": 1998,
+   "sha256": "fb760f9727596172245d259d9345e6e61967275900b6e6f8cadf81cd0b2082da"
+  },
+  {
+   "path": "docs/locales/ru/changelog.md",
+   "bytes": 173017,
+   "sha256": "bbb4760c27228d7d566fbcb3330036cef8cd07b1ab17f23ec641922b4f022fb5"
+  },
+  {
+   "path": "docs/locales/ru/cli/extract-commands.md",
+   "bytes": 22073,
+   "sha256": "38162924e5c96cdb4fbfb332e9b909d6fd45a4eea143bcef90ba409e060809cc"
+  },
+  {
+   "path": "docs/locales/ru/cli/interactive-shell.md",
+   "bytes": 10892,
+   "sha256": "4c8b0d21e2ceb883ae5256abdc550daadecc42292e809341d5f58d93bd4f87d0"
+  },
+  {
+   "path": "docs/locales/ru/cli/overview.md",
+   "bytes": 1909,
+   "sha256": "15b2179d94453200d6b8e6095d3030d89e47766b847674c17cb8033f3660b21e"
+  },
+  {
+   "path": "docs/locales/ru/development/adaptive_storage_system.md",
+   "bytes": 5087,
+   "sha256": "8914a3574572efc732845ebb7ea08f06613127f6f51bb8c4da97b7ea6638bafe"
+  },
+  {
+   "path": "docs/locales/ru/development/scrapling_custom_types.md",
+   "bytes": 2447,
+   "sha256": "c7ed7e86942e3bc38e27d1834b63c38e116efb08d870f5e1ef6d8d2f8fb95909"
+  },
+  {
+   "path": "docs/locales/ru/donate.md",
+   "bytes": 3665,
+   "sha256": "3a64cd857a7daaf63280403c40ce469d96bae8e104234aa29654d0da4732399c"
+  },
+  {
+   "path": "docs/locales/ru/fetching/choosing.md",
+   "bytes": 8205,
+   "sha256": "61982dec6be6fd3de45db25bca3e9728a2496057b3b5f50b4da4aaa836795a4a"
+  },
+  {
+   "path": "docs/locales/ru/fetching/static.md",
+   "bytes": 23249,
+   "sha256": "e9d3fc9397f86fc2657f3b43615ee9de05c780405b29fe4cdede8a41d6e6e937"
+  },
+  {
+   "path": "docs/locales/ru/fetching/stealthy.md",
+   "bytes": 46007,
+   "sha256": "03d44bb2d2f295450f172f21667c75c1e77cefa3a8b199e0fcaf48ac34cdaa15"
+  },
+  {
+   "path": "docs/locales/ru/index.md",
+   "bytes": 21806,
+   "sha256": "c0f5e4789ae8780fae51aff7140cd6c9fdcb2f9d3191e6694b2e5ec705485613"
+  },
+  {
+   "path": "docs/locales/ru/integrations/scrapy.md",
+   "bytes": 4451,
+   "sha256": "2ebbd24bd4e7456c3f90431ac2e0a73ed877622decb7d2c1374f51f597f5e490"
+  },
+  {
+   "path": "docs/locales/ru/migrating-to-v0.5.md",
+   "bytes": 29847,
+   "sha256": "e658466a2bbd838b15794e1b71ceaf9a29e77c6d41c63a14f5ee18ec07d2fce8"
+  },
+  {
+   "path": "docs/locales/ru/overview.md",
+   "bytes": 19827,
+   "sha256": "0b5621edb008b6b83a368928eaeca49ed2d5de11785a9eeaf4ecaf25df871b52"
+  },
+  {
+   "path": "docs/locales/ru/parsing/adaptive.md",
+   "bytes": 18957,
+   "sha256": "26564a50e209b0e0b5bf92594dd2d73a485a8d0d22e7bc06d933a95f3fde4b5e"
+  },
+  {
+   "path": "docs/locales/ru/parsing/main_classes.md",
+   "bytes": 38344,
+   "sha256": "8a2dc0b2560b42794a884c00682ecbf62f4b8a59eeb46b8e2a94230b13875a83"
+  },
+  {
+   "path": "docs/locales/ru/parsing/selection.md",
+   "bytes": 32544,
+   "sha256": "b9f4e457fed5da7721257639f945d82827493e71367dd2bd0c5ab85814c132db"
+  },
+  {
+   "path": "docs/locales/ru/spiders/advanced.md",
+   "bytes": 27028,
+   "sha256": "4e62857f2191f2b1ecea8f39636b9d90c755f297d7923ff86f1a3b2a7421d907"
+  },
+  {
+   "path": "docs/locales/ru/spiders/architecture.md",
+   "bytes": 11777,
+   "sha256": "673516c3dd5e645915226d33a65398759cad9869f168a32ab4082d9469e40cff"
+  },
+  {
+   "path": "docs/locales/ru/spiders/generic-templates.md",
+   "bytes": 16859,
+   "sha256": "d7a8cced2447eac53d53169a2d1a7ecb8582aa25dd994d35a99fa9751de15537"
+  },
+  {
+   "path": "docs/locales/ru/spiders/getting-started.md",
+   "bytes": 12453,
+   "sha256": "4399b0e9307a2bbf8faf78fb2bbbc1eca81b5eb1ede30632ecd84a1fa552be11"
+  },
+  {
+   "path": "docs/locales/ru/spiders/platform-templates.md",
+   "bytes": 5636,
+   "sha256": "03fbda880cb0a6489a089c8de0fd5503fda2c4964230ae187b09a0553ff40f61"
+  },
+  {
+   "path": "docs/locales/ru/spiders/proxy-blocking.md",
+   "bytes": 12561,
+   "sha256": "b334033c89e92c8a294ca1139b9acf2310f89cf7ed32e7570900eca54ac62e0c"
+  },
+  {
+   "path": "docs/locales/ru/spiders/requests-responses.md",
+   "bytes": 11794,
+   "sha256": "c310863ebca73513256c673a0931743fba039265f6351ca36baaefde8d999ec8"
+  },
+  {
+   "path": "docs/locales/ru/spiders/sessions.md",
+   "bytes": 12743,
+   "sha256": "6462fcab8e3a88176dd23e322df2fafa867257cf8c736581175383dcf420c86d"
+  },
+  {
+   "path": "docs/locales/ru/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/ru/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 14800,
+   "sha256": "778c54c95ebd78eccb19bfcf1bffb5ce64adb7e91e7016b95d6c5bce47a16d52"
+  },
+  {
+   "path": "docs/locales/ru/tutorials/replacing_ai.md",
+   "bytes": 14250,
+   "sha256": "1c4e897abbae9d7fca35f912eb76a99ea6131da5891ac0318e9d0d499ab44926"
+  },
+  {
+   "path": "docs/locales/zh/ai/agent-skill.md",
+   "bytes": 2706,
+   "sha256": "38415d5aec890c34e97dbc9f8b18dd326b6bc66485b3f38ad5f52e80669cee9a"
+  },
+  {
+   "path": "docs/locales/zh/ai/building-rag-systems.md",
+   "bytes": 5458,
+   "sha256": "afb7c10e751f6a914d36f03fbf9db863d3b208c2bb5539273eabd2917755f739"
+  },
+  {
+   "path": "docs/locales/zh/ai/mcp-server.md",
+   "bytes": 28781,
+   "sha256": "5fd59b42f9999e51cbfd96036c67e6c4c988df7710c7bdcacf97e97699efd2d6"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/custom-types.md",
+   "bytes": 691,
+   "sha256": "15b71fadaaf6e9d200d1940b42f5c2a11549909a05bf961a27f5fdb79d4f6c9c"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/fetchers.md",
+   "bytes": 1048,
+   "sha256": "ac2faf1e1ca0768a00843c6c7ddc631638413186e8684cba8714012cf3b8e56d"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/mcp-server.md",
+   "bytes": 6398,
+   "sha256": "3aeab67111a10b61dd87c3264be2a8b5202462a607289503ecd9b66cecc101f3"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/proxy-rotation.md",
+   "bytes": 474,
+   "sha256": "0caf79f53406f634894962d31be8e28a86822f2edc0aaf1769f48b636375cb0f"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/response.md",
+   "bytes": 569,
+   "sha256": "66b3a56458898d282fc1149d1f3b01b0fb32d3a4caa8c2e5795eb11e559644c3"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/selector.md",
+   "bytes": 593,
+   "sha256": "a3ffb651568b506314b3a376ea8f94c6f83737005f0902713d74d02d3de3b089"
+  },
+  {
+   "path": "docs/locales/zh/api-reference/spiders.md",
+   "bytes": 900,
+   "sha256": "9176473ea889f403b9518f83b8a16781e7817527af1715f0e0de1a0578b9a11b"
+  },
+  {
+   "path": "docs/locales/zh/assets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/zh/benchmarks.md",
+   "bytes": 1405,
+   "sha256": "6dce71e2a16af3f6a54997f802481bb6ae14e47a05332799eda8d5c0ac32ee00"
+  },
+  {
+   "path": "docs/locales/zh/changelog.md",
+   "bytes": 106130,
+   "sha256": "40047d8747341b7da0dee26e95c2c53eb4ccb5ac7e2fd6cf11d10aeb420fcf1b"
+  },
+  {
+   "path": "docs/locales/zh/cli/extract-commands.md",
+   "bytes": 18149,
+   "sha256": "d01d9af71f0d4ce61d83f0ea6b7ae4229ce98d404ad47883fe44f3bc78c91935"
+  },
+  {
+   "path": "docs/locales/zh/cli/interactive-shell.md",
+   "bytes": 8200,
+   "sha256": "205b05016d3c8d867134dc3e29ff7db4fa7ab5352a13aa0f4f665b5b8f388902"
+  },
+  {
+   "path": "docs/locales/zh/cli/overview.md",
+   "bytes": 1166,
+   "sha256": "eec34df0c86101d0358ea976bf2b0abb9c19ac76fd5979ae50ed2c69961c8e37"
+  },
+  {
+   "path": "docs/locales/zh/development/adaptive_storage_system.md",
+   "bytes": 3399,
+   "sha256": "56c39891b1b576a991f7e1d235343e47aba17cd07dbda312e85c9f256ae5768d"
+  },
+  {
+   "path": "docs/locales/zh/development/scrapling_custom_types.md",
+   "bytes": 1647,
+   "sha256": "e25e2ad07328d4836667586263c3b071bcfdd1e48ba3d24fd40bb459f8313735"
+  },
+  {
+   "path": "docs/locales/zh/donate.md",
+   "bytes": 2618,
+   "sha256": "527788753f5ec59d07ff752d123d919054fd5bc2e154f72057c3163ca438fcd9"
+  },
+  {
+   "path": "docs/locales/zh/fetching/choosing.md",
+   "bytes": 5142,
+   "sha256": "6470b77d010db38a07339df71e0f2eb3224dfbb593cb4d319650efa42211f130"
+  },
+  {
+   "path": "docs/locales/zh/fetching/static.md",
+   "bytes": 17895,
+   "sha256": "6d164abfb170db354e10a931bef8e8c747e20b759c2fbd4f05617af7c3490112"
+  },
+  {
+   "path": "docs/locales/zh/fetching/stealthy.md",
+   "bytes": 29160,
+   "sha256": "7fb3c7ddb19d2254f4fe2d018456a0072c26a4720cf4a25ed3b63370878712d7"
+  },
+  {
+   "path": "docs/locales/zh/index.md",
+   "bytes": 14026,
+   "sha256": "5065ca02a25f6804fc5d16b523ef36e742fcab652d1dd55511ed382bc5efa2ba"
+  },
+  {
+   "path": "docs/locales/zh/integrations/scrapy.md",
+   "bytes": 3154,
+   "sha256": "dee2a78febc8a8416a4df84d337f3cbbd613141e0d0bcf7d6a2bb0889e1c3541"
+  },
+  {
+   "path": "docs/locales/zh/migrating-to-v0.5.md",
+   "bytes": 18010,
+   "sha256": "4584774fd005cde123b81f34aabf7cbb73e4ccb5f2105ecb7c4c739489641cf9"
+  },
+  {
+   "path": "docs/locales/zh/overview.md",
+   "bytes": 16630,
+   "sha256": "d63d733a5b796e8be9183e677bdc17ce7513c8088beaf537b3968d52b757cf06"
+  },
+  {
+   "path": "docs/locales/zh/parsing/adaptive.md",
+   "bytes": 12001,
+   "sha256": "ddfe211655d83e8afb987b862866c3cd3842a5e4b51942d03b815477c31b736a"
+  },
+  {
+   "path": "docs/locales/zh/parsing/main_classes.md",
+   "bytes": 26414,
+   "sha256": "e6e43fa96ac677a3c541e8bd1adc298d73b29403954d9a8ecd1147d5435f7632"
+  },
+  {
+   "path": "docs/locales/zh/parsing/selection.md",
+   "bytes": 23172,
+   "sha256": "386c854931b7812110eaf023ce2a20cfd30950386c22040d1a249a8a543ab1b0"
+  },
+  {
+   "path": "docs/locales/zh/spiders/advanced.md",
+   "bytes": 18108,
+   "sha256": "87c303999a0df9006c7c9edba2ee2c64c01e93f8ecf95ba99467c7cd34c88fa6"
+  },
+  {
+   "path": "docs/locales/zh/spiders/architecture.md",
+   "bytes": 6994,
+   "sha256": "e1e203d1c5b8e8389791026b76c9d93773691db8616855e0be1992a8ce6c7a86"
+  },
+  {
+   "path": "docs/locales/zh/spiders/generic-templates.md",
+   "bytes": 12202,
+   "sha256": "bf2f3a645527f5a0b6c16db20adc5917453838c264d47acd8730f45446d60605"
+  },
+  {
+   "path": "docs/locales/zh/spiders/getting-started.md",
+   "bytes": 8426,
+   "sha256": "5dea0b7edcc4031390510c5660b5c54a25927ea1b33f8958dcfedc0c0983cfc4"
+  },
+  {
+   "path": "docs/locales/zh/spiders/platform-templates.md",
+   "bytes": 3348,
+   "sha256": "737a50db2845ee7ad005649e25fb829468adb94e84f83baf9f37c790b9c6a0d5"
+  },
+  {
+   "path": "docs/locales/zh/spiders/proxy-blocking.md",
+   "bytes": 9463,
+   "sha256": "ade6698202d88add8b984724b833010c6a289464e4baf6b98bed7bd44914dfca"
+  },
+  {
+   "path": "docs/locales/zh/spiders/requests-responses.md",
+   "bytes": 7823,
+   "sha256": "86782e54385a623a300d6532063799f901c3bfd2c66d417100b8691a55fa53c1"
+  },
+  {
+   "path": "docs/locales/zh/spiders/sessions.md",
+   "bytes": 9553,
+   "sha256": "62a330a5a76845e7139fe36fbc8cc04fbe53de132fbfdc4067f25fc62c23d192"
+  },
+  {
+   "path": "docs/locales/zh/stylesheets",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "docs/locales/zh/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 11274,
+   "sha256": "537cc917d8d6b8de1c6c7a0ecb978006b1a84408a679dd60d365cf1c56fd73d8"
+  },
+  {
+   "path": "docs/locales/zh/tutorials/replacing_ai.md",
+   "bytes": 8408,
+   "sha256": "3075c39d5e79cb067fcdbdff2c5d9cb2c38ee99c00d307084999cbb18ab43091"
+  },
+  {
+   "path": "docs/migrating-to-v0.5.md",
+   "bytes": 17975,
+   "sha256": "f98d340267e6ca67569d0af0144149cc29966944892e7ef6d26aa31d79fab301"
+  },
+  {
+   "path": "docs/overrides/api/python/material/class.html.jinja",
+   "bytes": 322,
+   "sha256": "2c6769470d76a85e75ac6596734370e3ee12dc3c299d47b808a56971bac95fde"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/ar.html.jinja",
+   "bytes": 1969,
+   "sha256": "547e94baf5d01debabb8f66fe919bca529408fb35e71511be66ca8ccbfdca6bb"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/de.html.jinja",
+   "bytes": 1546,
+   "sha256": "2b827e4955da916a51a08df5d3c165e517a78e2476fedca649829156c779f9c7"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/es.html.jinja",
+   "bytes": 1602,
+   "sha256": "7c9d9b639dee4823097b4f8730e69347c303267c40c634e898bf8daf6bb1b81b"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/fr.html.jinja",
+   "bytes": 1617,
+   "sha256": "9fcd015d3ca4690790fa554ee4634f89570c075e27ed9f7db3075d0b3a8c5fe9"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/ja.html.jinja",
+   "bytes": 1684,
+   "sha256": "fcecb97578c1c4753a4e5769a2f7722852d45dc7623fc145db8bce79c13ad84b"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/ko.html.jinja",
+   "bytes": 1594,
+   "sha256": "9857940dbe3b41c0cd3f3a1f0b86581af6b5ee2562dc1a03e30549a32834a2b2"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/pt-BR.html.jinja",
+   "bytes": 1560,
+   "sha256": "80e7551cbbf0b14d2cca444bc0a936731cba0f612c7e7ef8da7a84a4168361ee"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/ru.html.jinja",
+   "bytes": 2049,
+   "sha256": "edea02f637430407254c6bce31ff83b3f5add84c292369f0de43fba7e2aaaa1b"
+  },
+  {
+   "path": "docs/overrides/api/python/material/languages/zh.html.jinja",
+   "bytes": 1462,
+   "sha256": "ac87ed979527b43573dcc60d9cc56e6596e7d736170f4b73e92d02b0f1fc4d01"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/ar.html.jinja",
+   "bytes": 90137,
+   "sha256": "2079e1f6b773036a7ce36a2b7ae22bfe6758e33a68add7dfde20f5f706cc2948"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/de.html.jinja",
+   "bytes": 80292,
+   "sha256": "0bd5efa5afaecc7ebd515f62c52cdb8a9c513f0dda99a2b007ef642b1db8cc15"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/es.html.jinja",
+   "bytes": 78860,
+   "sha256": "5210aeeb888407c9fddde548558426c90238470305cc9bb79bbc9c7a081c612a"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/fr.html.jinja",
+   "bytes": 80681,
+   "sha256": "6075e0e1d93303a9ce0b837d7b9e0beb8217ba923bd95c3a5171a689a65162b1"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/ja.html.jinja",
+   "bytes": 86876,
+   "sha256": "cfce805989ce1ab015b1a0aaa320b0fe0a7998335f5881a1dc892598383dac23"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/ko.html.jinja",
+   "bytes": 81908,
+   "sha256": "b6b49c79519c42be902fd5d21be52bad00d91d5e8bae8454e6d45e08abf835ea"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/pt-BR.html.jinja",
+   "bytes": 77524,
+   "sha256": "45f1366f832a02c3e081f128a954c76297b2587833d6818b25ea4bbfcfb3b97d"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/ru.html.jinja",
+   "bytes": 99548,
+   "sha256": "ddfa0deaed40bbc5231031886086f36b7631d6f161475f36d191a25a71729c0a"
+  },
+  {
+   "path": "docs/overrides/api/python/material/translations/zh.html.jinja",
+   "bytes": 72357,
+   "sha256": "47e32f88001e98f27dfba6c1f4048af32abde40bbefe35d23ed35526f9fdaea2"
+  },
+  {
+   "path": "docs/overrides/main.html",
+   "bytes": 2504,
+   "sha256": "3ca0cdfb7021927ffc2f216a90c387cacf1e0edbdf7e7641930a0e71f37cce07"
+  },
+  {
+   "path": "docs/overview.md",
+   "bytes": 17562,
+   "sha256": "3c9c1be272b4de09a91814694f57add41156cb226597ea330729bd2ce8cb58be"
+  },
+  {
+   "path": "docs/parsing/adaptive.md",
+   "bytes": 14077,
+   "sha256": "b5c2864fa87af1e0f2181da2fa5d431f6143c5132af10c74dea2ec3c1d229e18"
+  },
+  {
+   "path": "docs/parsing/main_classes.md",
+   "bytes": 30784,
+   "sha256": "672b5fbed25eaa1b8ee997ad958a2bf61c81468369bcaa01b719fecd0fe592de"
+  },
+  {
+   "path": "docs/parsing/selection.md",
+   "bytes": 26033,
+   "sha256": "021bda5798b8f67cb91563580d953543dc1c9077f920661d1662d70e9e4c4178"
+  },
+  {
+   "path": "docs/requirements.txt",
+   "bytes": 173,
+   "sha256": "5d916ce5c6d15c2f2cf5175710d8c350a47394f19539f1d53bded7a6a1d2916e"
+  },
+  {
+   "path": "docs/spiders/advanced.md",
+   "bytes": 19538,
+   "sha256": "c0899da06dd6f34857725d9c0197828b7e2a0cfcb74a1d93f4ccec67c63b6811"
+  },
+  {
+   "path": "docs/spiders/architecture.md",
+   "bytes": 8441,
+   "sha256": "5afa04df42b232a006939f17248d7b64cfc0836f4ee7bd4fdabce6698c4e4147"
+  },
+  {
+   "path": "docs/spiders/generic-templates.md",
+   "bytes": 12689,
+   "sha256": "17762553809cf83ac340a6a1ff3f6c8f1c5a12c8ebab88637efeaa64d8e52828"
+  },
+  {
+   "path": "docs/spiders/getting-started.md",
+   "bytes": 8678,
+   "sha256": "55672e23a4248a5be388717592a96aa565f4efcac4c34e5e6099a0387fe76e60"
+  },
+  {
+   "path": "docs/spiders/platform-templates.md",
+   "bytes": 3801,
+   "sha256": "2cff9cd815851d4c6904dfd83b5e7859a74720e6950c0b9c152bec515c1bf587"
+  },
+  {
+   "path": "docs/spiders/proxy-blocking.md",
+   "bytes": 9722,
+   "sha256": "72fde57207e4956a72b7ff9b81a3a0bfb4f861f064ad8192cb3657c48ecdc6b5"
+  },
+  {
+   "path": "docs/spiders/requests-responses.md",
+   "bytes": 9541,
+   "sha256": "91c9a4d7d7d0c37952a69584cd370cb2253d3d9ae857948cf7769295c8c8ff5e"
+  },
+  {
+   "path": "docs/spiders/sessions.md",
+   "bytes": 10363,
+   "sha256": "3e99d178918c513bcf5933a366f2250782347a1a30420afad194ae69764c45df"
+  },
+  {
+   "path": "docs/stylesheets/extra.css",
+   "bytes": 1064,
+   "sha256": "955d026c611ce66ef5f0011a26d6c13cf2df52f36f5cebda3c3aef4924212621"
+  },
+  {
+   "path": "docs/tutorials/migrating_from_beautifulsoup.md",
+   "bytes": 13199,
+   "sha256": "be22b8e38b1236f80beeef6c11c3ba6ff683c4908c0dff186ce9cbd563a3871f"
+  },
+  {
+   "path": "docs/tutorials/replacing_ai.md",
+   "bytes": 9855,
+   "sha256": "ac80050d0c760a6a66fb3a6f61db09fcb0afa5850558fa62d341e53ca4ecb287"
+  },
+  {
+   "path": "images/DataImpulse.png",
+   "bytes": 55403,
+   "sha256": "fc51f0bbf7e2983acad0036f8b62de65f55946ef09d909c02338c63631db4f5f"
+  },
+  {
+   "path": "images/DataImpulse_Platinum.png",
+   "bytes": 36922,
+   "sha256": "e6702f695bb81aee673fdfa487dbf090dd96766399f4dc7cadc56d7c118efeb4"
+  },
+  {
+   "path": "images/HyperSolutions.png",
+   "bytes": 26495,
+   "sha256": "f03a7dbf0208c785619c194f8fe7612679de4381022538432040ced0ee2132dd"
+  },
+  {
+   "path": "images/NodeMaven.jpg",
+   "bytes": 6711,
+   "sha256": "9c3ff0d2c2a98b24ea191a5a854402830d9c7f9148bf88ee034368a6ffa4ba74"
+  },
+  {
+   "path": "images/ProxyEmpire.png",
+   "bytes": 8765,
+   "sha256": "19ee14abba2c67645480b97ebab218f71e4b4feb3b8e816d019e8e1428be4922"
+  },
+  {
+   "path": "images/SerpApi.png",
+   "bytes": 16486,
+   "sha256": "8ecc2c507d66ea863fbd53c7f8d2b84a0ea69dff26417f48797b6184a988e7d6"
+  },
+  {
+   "path": "images/SwiftProxy.png",
+   "bytes": 7710,
+   "sha256": "a1d65371cd2a18dfd498e83ad27bd28ea63bc054ef910754dfb45dbf20f9c4db"
+  },
+  {
+   "path": "images/TWSC.png",
+   "bytes": 11549,
+   "sha256": "668a618911ce54ed072acc246f013f7435ef6bafc99d7c550734af90edac5299"
+  },
+  {
+   "path": "images/byteful.png",
+   "bytes": 17284,
+   "sha256": "a081a456f8592f11e45717060904ae15b86c91a515af79268051798006e89f4f"
+  },
+  {
+   "path": "images/cloro.jpg",
+   "bytes": 3739,
+   "sha256": "2539264e0cf256bbff79fa085fb5de068c3f8ea788fc511543afb3354eb7031d"
+  },
+  {
+   "path": "images/decodo.png",
+   "bytes": 44890,
+   "sha256": "a1f43abbb7b721da4b00a1a3cad54b18d6f650cdd59ebc99e333b5541ff69ddd"
+  },
+  {
+   "path": "images/evomi.png",
+   "bytes": 27565,
+   "sha256": "2c8ec42b88319c3cf4a8e6cc7615458009d4f9a113a6e6af53dd53d8c037ef8e"
+  },
+  {
+   "path": "images/lundproxy.png",
+   "bytes": 31665,
+   "sha256": "7dc758987a214440407937a0dddd7fa47af065655259cd7f3d78e8f564c40c69"
+  },
+  {
+   "path": "images/proxiware.png",
+   "bytes": 13319,
+   "sha256": "356aa7ced78e7b80e7a5c6df3cd22db82fdcfb40cae9d2c1287ec450eebcfde2"
+  },
+  {
+   "path": "images/proxylane.png",
+   "bytes": 10236,
+   "sha256": "b866cdac807b8b30d5a18a50aaa394303e597122a2fb8839862ca7ef4e3a01e2"
+  },
+  {
+   "path": "images/webshare.png",
+   "bytes": 38822,
+   "sha256": "f803c2c7a75f8e48e16fd193e7cbc134031254f7c55a41bb600ece2af364f9fb"
+  },
+  {
+   "path": "includes/sponsors.html",
+   "bytes": 3073,
+   "sha256": "d767338b1ddb06d4e5079a8e2bb03e4f90a43917982c15de0c2fd4105788e12c"
+  },
+  {
+   "path": "pyproject.toml",
+   "bytes": 3859,
+   "sha256": "eea027f3a06ec1b9704024e89dc59fc2a568f9656bf7546b01be1e65883524ba"
+  },
+  {
+   "path": "pytest.ini",
+   "bytes": 269,
+   "sha256": "86ef0b0bf160e3315f29036817fd8e2eccc070f9f44381a4b7b42f70f1396c97"
+  },
+  {
+   "path": "ruff.toml",
+   "bytes": 433,
+   "sha256": "f86d438ad214147d749fb9267724c8f5f56640964db50c067555555c8bce8fa0"
+  },
+  {
+   "path": "scrapling/__init__.py",
+   "bytes": 1423,
+   "sha256": "60938b3c6224e36bd8e5ff04f7682796f95c819a287d24723ceafdef7f820f62"
+  },
+  {
+   "path": "scrapling/cli.py",
+   "bytes": 20870,
+   "sha256": "e2ad4ccd4ef69eb49513fdb1c00e80d1044b749b1471a46947ea017a8454d392"
+  },
+  {
+   "path": "scrapling/core/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "scrapling/core/_shell_signatures.py",
+   "bytes": 2721,
+   "sha256": "70d87bfebe9ba38eab7ad9b3e410b1c7084ecdafe03fe89038592347c92ab3a3"
+  },
+  {
+   "path": "scrapling/core/_types.py",
+   "bytes": 1461,
+   "sha256": "2e372cce65ca65d7848a8c250849c9c19a039f6d46ce170f9d847a6bc15a5c01"
+  },
+  {
+   "path": "scrapling/core/ai/__init__.py",
+   "bytes": 406,
+   "sha256": "884f2e87db8fbc700de1926710768b96cfef9b3614c22851015001673b078eba"
+  },
+  {
+   "path": "scrapling/core/ai/_browser_actions.py",
+   "bytes": 11267,
+   "sha256": "5f4042fd57496c5d0ac4c3dde633a49aa1694b9f4233f391be84e4f3697eacb1"
+  },
+  {
+   "path": "scrapling/core/ai/_network_formatting.py",
+   "bytes": 2460,
+   "sha256": "897b1ea0e830c8f4fd8eca30a4caa85907da5e86495c509c4ba9d35b014bbfdc"
+  },
+  {
+   "path": "scrapling/core/ai/_snapshot_search.py",
+   "bytes": 1196,
+   "sha256": "1117c9f1fef3e945ca673042eff124e2b113c021e99e89458c0310a8057758c3"
+  },
+  {
+   "path": "scrapling/core/ai/server.py",
+   "bytes": 55367,
+   "sha256": "09f9a1f7ae24439e01284e632a18e7e4449f26c64fd28c0fbc8756f2d67e41b7"
+  },
+  {
+   "path": "scrapling/core/custom_types.py",
+   "bytes": 13517,
+   "sha256": "1e128a2756953524ce835225f974a75149a29865fff2b26e0bc3394d3502c1ae"
+  },
+  {
+   "path": "scrapling/core/mixins.py",
+   "bytes": 3788,
+   "sha256": "eef23d208c596a4b09e681e8cc79de64b2615994a3fd3927aa926a7497f09306"
+  },
+  {
+   "path": "scrapling/core/shell.py",
+   "bytes": 29607,
+   "sha256": "c60ed4bdc478f01ae0e2fa0d9fd21a9f43c5150eb7ee4a60332474b2f12a4ca6"
+  },
+  {
+   "path": "scrapling/core/storage.py",
+   "bytes": 6621,
+   "sha256": "e5792ebeebdd68743f4cd31a90526c8a4b6db892dc5f6fa09924850b42d179f3"
+  },
+  {
+   "path": "scrapling/core/translator.py",
+   "bytes": 5358,
+   "sha256": "d79a023ca8e821858be1525380a0b37d0542299b0da847edfed0fe921b5c1960"
+  },
+  {
+   "path": "scrapling/core/utils/__init__.py",
+   "bytes": 189,
+   "sha256": "cb23051a9bfa9713a3710bf5ddb8b8a3a7ae8f0439e7f33713ee60dd1185f76b"
+  },
+  {
+   "path": "scrapling/core/utils/_shell.py",
+   "bytes": 1707,
+   "sha256": "cdeb3bd4c9854eced5f5fd0916cb5a59c8d084a35937ac6fb29bb6f58550b517"
+  },
+  {
+   "path": "scrapling/core/utils/_utils.py",
+   "bytes": 3684,
+   "sha256": "821e7c9e390a5d0ad7bbd67202aefc42221a3bf48f200f2f5674a0a3aa3b2d1c"
+  },
+  {
+   "path": "scrapling/engines/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "scrapling/engines/_browsers/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_base.py",
+   "bytes": 27456,
+   "sha256": "7803dc18a799e6be2709cd35c9129f3d751d8aa9c761a10ae3e5bc9b61c817a9"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_config_tools.py",
+   "bytes": 237,
+   "sha256": "fbfbe21a57dee0f93d12934d405cba0f13c2f3dbf1f2d3803f73d71666a146f7"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_network.py",
+   "bytes": 5858,
+   "sha256": "77fcbf6ca0ea9d846ea655ea62f8b540c12fe9660828756324a8d46ac6ec3c2b"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_page.py",
+   "bytes": 3707,
+   "sha256": "fc453ef520cf5f16416b8abd812ef8df591232887c71f098863e9204073b8c22"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_stealth.py",
+   "bytes": 40661,
+   "sha256": "dd6a09580d45124f73220fa78fd31a101db4e6d54221aafbb4bf9f849f63eaf4"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_types.py",
+   "bytes": 3562,
+   "sha256": "8714358a0ab6950475f730100c495fcf29d0af3fd429631d6c3dbc42a1a6fd4c"
+  },
+  {
+   "path": "scrapling/engines/_browsers/_validators.py",
+   "bytes": 9511,
+   "sha256": "53db03a9e93113f75f24f6ad09f53e5258ff8ebd616666bd228294057e204590"
+  },
+  {
+   "path": "scrapling/engines/constants.py",
+   "bytes": 3294,
+   "sha256": "14e874df0268141a6e04b22beb1b6654071cfcaebb5c4c03ea1819cd8c9d147d"
+  },
+  {
+   "path": "scrapling/engines/static.py",
+   "bytes": 41449,
+   "sha256": "aaba44831c2798700a6caed17954f91803940c38cfbf0c39f16255cecbe27ae1"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/__init__.py",
+   "bytes": 139,
+   "sha256": "b1c3da3ac28e885964b3774b79fc1cb1736cd5774a8caf9864cee6732af19fc6"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/ad_domains.py",
+   "bytes": 97511,
+   "sha256": "ccde0b6f4d29b01cd870ef3822c38fc66e11ff738157f8d457cb97d94f247a9c"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/convertor.py",
+   "bytes": 23154,
+   "sha256": "28f94e5ebd087da73fe7be655478529a558d9247a3390497f2a9b7f3577cf47c"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/custom.py",
+   "bytes": 12271,
+   "sha256": "b55afa773d81f5bbd74633fddf22607687b272440310b392f2e64cef2594fc86"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/fingerprints.py",
+   "bytes": 3588,
+   "sha256": "e109b312c35cb91c8f52039616ff22a233579d6d2ce76f8e021a61543e9aee7a"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/navigation.py",
+   "bytes": 5111,
+   "sha256": "0dd2fd2b54a8ce54333a6cf1bbf4175ef5e4d4cc2a96993a7099fadc3325c32d"
+  },
+  {
+   "path": "scrapling/engines/toolbelt/proxy_rotation.py",
+   "bytes": 3729,
+   "sha256": "76744bb0527a50fa387c87b0cbf98f621c847e442db092a1cdc1ecd2834cb4ad"
+  },
+  {
+   "path": "scrapling/fetchers/__init__.py",
+   "bytes": 1399,
+   "sha256": "fc910699c088da2f3a4c863fdec71b658c3c37a05d6728c6a0fba9ab9f1222bc"
+  },
+  {
+   "path": "scrapling/fetchers/requests.py",
+   "bytes": 2836,
+   "sha256": "44adec41c8f6c97cefde2462eefd850c4416fa845a8f53c8426215f65e194de5"
+  },
+  {
+   "path": "scrapling/fetchers/stealth_chrome.py",
+   "bytes": 10852,
+   "sha256": "e5e2f819fe209f777670c4bdbad78e442e8f966ee7f272e11eb54b362f9f8a36"
+  },
+  {
+   "path": "scrapling/integrations/__init__.py",
+   "bytes": 262,
+   "sha256": "2a55c991f0b6626698ecac609de3afe0f6b87f2a191e7fe1e5108357e140b940"
+  },
+  {
+   "path": "scrapling/integrations/scrapy.py",
+   "bytes": 5684,
+   "sha256": "b743a70b2761f1ed987c98163b4bc78b334486df6e1419d774cc9ffb7d4bf30d"
+  },
+  {
+   "path": "scrapling/parser.py",
+   "bytes": 58671,
+   "sha256": "bb2a11ea672f2aeec79e35a90b002c87b346ef8360d1d6bfbebcf847bde90fc0"
+  },
+  {
+   "path": "scrapling/py.typed",
+   "bytes": 2,
+   "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+  },
+  {
+   "path": "scrapling/spiders/__init__.py",
+   "bytes": 848,
+   "sha256": "1b2a2b4bd1f0e2d7ff905e5aed7bb821507d04836c2fb21b6d654cd4c2497890"
+  },
+  {
+   "path": "scrapling/spiders/cache.py",
+   "bytes": 3921,
+   "sha256": "d5182916f85d7f5ccdd6b3707b364f910857a8ce184e6affd60cb8e23cb91e53"
+  },
+  {
+   "path": "scrapling/spiders/checkpoint.py",
+   "bytes": 3169,
+   "sha256": "e6ea1f3007062ff23c6b372c3c5be899d6b4978ea2ff4e5cb2e05e4f5d265ad8"
+  },
+  {
+   "path": "scrapling/spiders/engine.py",
+   "bytes": 20240,
+   "sha256": "59df612a5fbad7afd7f557ad3ebe1644259f0ceda83382bd184c24198b08b5d5"
+  },
+  {
+   "path": "scrapling/spiders/links.py",
+   "bytes": 9007,
+   "sha256": "acd2f11415fdf3280920f8feb02da2b63df2f77387161ef6eb0b7bf5e965ecfa"
+  },
+  {
+   "path": "scrapling/spiders/request.py",
+   "bytes": 6608,
+   "sha256": "eeab219253cbb6929ee127ae75657d7113522991fb9388c8d76879c7f138b042"
+  },
+  {
+   "path": "scrapling/spiders/result.py",
+   "bytes": 8707,
+   "sha256": "66b7e639983b0616d650d0a54c94de79aa195ecc98e6a44dbca146026cfe5291"
+  },
+  {
+   "path": "scrapling/spiders/robotstxt.py",
+   "bytes": 3346,
+   "sha256": "27716ee92ede563e2a21e45d5811dcc825e787ba74a17edaf899d96f21207c7f"
+  },
+  {
+   "path": "scrapling/spiders/scheduler.py",
+   "bytes": 3812,
+   "sha256": "cfac99301807d0a13e97dd3d8f2ce272fe5bff6f3916117196e8042d284cf109"
+  },
+  {
+   "path": "scrapling/spiders/session.py",
+   "bytes": 5661,
+   "sha256": "b9838c5da4099c3b46b73496e55e07197d7bbbedcf30fb4a0ee2bdd10ee00404"
+  },
+  {
+   "path": "scrapling/spiders/spider.py",
+   "bytes": 12672,
+   "sha256": "ed8b7dd572bd4fac1ac136f8ec106b61a0e07ab2c36129578e3279d284011e90"
+  },
+  {
+   "path": "scrapling/spiders/templates/__init__.py",
+   "bytes": 411,
+   "sha256": "7d1655f95af16351375fc0e8e54ea43f82dd87ec09cbc2ff4c0c1c4ec3f22362"
+  },
+  {
+   "path": "scrapling/spiders/templates/_utils.py",
+   "bytes": 864,
+   "sha256": "b57d334fc28dee8f1b561773d94c24f5d8a689c58d734db46572cb481582e076"
+  },
+  {
+   "path": "scrapling/spiders/templates/crawler.py",
+   "bytes": 2493,
+   "sha256": "c1aa60b280047d4c3da60ca88285ffe3e753ae82690f3177fddc1f4eef8774c9"
+  },
+  {
+   "path": "scrapling/spiders/templates/feed.py",
+   "bytes": 5868,
+   "sha256": "91f587a019b3521ac02fec3475027e42e45f93b2c17f734a5782700fe625ade0"
+  },
+  {
+   "path": "scrapling/spiders/templates/shopify.py",
+   "bytes": 4944,
+   "sha256": "6693fbfec42269acfbbd5af9464a860df9c727ec36a9dbc8f41b29c911d58d5e"
+  },
+  {
+   "path": "scrapling/spiders/templates/site_to_markdown.py",
+   "bytes": 4001,
+   "sha256": "648d796964e2e4fc4f7f39a4391ed9b453006f1e5599ed9cf756259b416d5893"
+  },
+  {
+   "path": "scrapling/spiders/templates/sitemap.py",
+   "bytes": 7008,
+   "sha256": "e593ffffcc01b9b3dfb4a7f856121e23f18796961cb99a0009540184bdb7f861"
+  },
+  {
+   "path": "scrapling/spiders/throttle.py",
+   "bytes": 4333,
+   "sha256": "dad85c45a635e9b98b587f32fe76b5fe3bc8633980ab5558eecfa1878c727db3"
+  },
+  {
+   "path": "server.json",
+   "bytes": 1273,
+   "sha256": "665344d30f22e473fabe05d037411f65746179f9c99d626947daf6ae53ac6fe5"
+  },
+  {
+   "path": "setup.cfg",
+   "bytes": 318,
+   "sha256": "91f698d835904f653a629ebc84bf6a5324d5b673b8bcd5eea389810114a42a0e"
+  },
+  {
+   "path": "tests/__init__.py",
+   "bytes": 32,
+   "sha256": "607141e5fb7380b41587a81b3df6d8718e32392f43381a797416ba23eaad9bc5"
+  },
+  {
+   "path": "tests/ai/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/ai/test_ai_mcp.py",
+   "bytes": 71259,
+   "sha256": "ffe4e4205c9abf9e294eb3fa7d49a28ad851461eaa6ea5818428e228ac9a5f5c"
+  },
+  {
+   "path": "tests/ai/test_browser_actions.py",
+   "bytes": 12125,
+   "sha256": "6fcf8a6629905e3aacf77557e8b4d0904cd7927aa60dbef82c9b8ddf59d4fd3b"
+  },
+  {
+   "path": "tests/ai/test_browser_dialog.py",
+   "bytes": 6485,
+   "sha256": "0176488ffa3168fb7ecb2e0d505f711d9871bb1854c2ae0911b754e160f2bdc6"
+  },
+  {
+   "path": "tests/ai/test_browser_dialog_live.py",
+   "bytes": 12111,
+   "sha256": "7cf4f3661578c506aba1d12964eb7c8b83c01a3a669c8c250ad46721f2e444a7"
+  },
+  {
+   "path": "tests/ai/test_browser_evaluate.py",
+   "bytes": 16140,
+   "sha256": "b8080b7ddf1b2f2ebb6d78b0e2098acf65272f80bea677e43886c8d22efd4ac7"
+  },
+  {
+   "path": "tests/ai/test_browser_extract.py",
+   "bytes": 27263,
+   "sha256": "25a29ab6892c604dd28279e672951d5eb11f02bb0554bee684f1809e15d48df0"
+  },
+  {
+   "path": "tests/ai/test_browser_extract_content.py",
+   "bytes": 16952,
+   "sha256": "1bf986fd25ffb839b1c0573316bc2d738220107962369c245eaa31e6f7098dff"
+  },
+  {
+   "path": "tests/ai/test_browser_fill_fields.py",
+   "bytes": 32951,
+   "sha256": "1c0b1dbc5685235044d069a4c87427efc068c756d5cbc4daac41af36fca9fd0a"
+  },
+  {
+   "path": "tests/ai/test_browser_mouse.py",
+   "bytes": 40013,
+   "sha256": "887e01596f8b4998fb2c85797e4ee5ab04d000182ceda0b7d6770696ba1291b3"
+  },
+  {
+   "path": "tests/ai/test_browser_network.py",
+   "bytes": 49138,
+   "sha256": "3af9b742aea3b98455a9e686fe21f05ca3574bb9b21df90686d46d233de17d1f"
+  },
+  {
+   "path": "tests/ai/test_browser_press_key.py",
+   "bytes": 12575,
+   "sha256": "869e10efe977a15218f95c1a5d52e3cffe85ae8056011f0639f5da961ae32a91"
+  },
+  {
+   "path": "tests/ai/test_browser_screenshot.py",
+   "bytes": 25414,
+   "sha256": "2b459ac9d93fe1f9d0de6b5207df80fd352bd868f97e1a9bc2dd074290714539"
+  },
+  {
+   "path": "tests/ai/test_browser_state.py",
+   "bytes": 7653,
+   "sha256": "8b8dd14778ef4d49c880f25544adaaa49d10d0a1f0cff5333923243164e09b60"
+  },
+  {
+   "path": "tests/ai/test_browser_wait.py",
+   "bytes": 21007,
+   "sha256": "58f4633a6c14e04bbdfbb70382d31078a9af1e5326ead4ffd382f4294c428f21"
+  },
+  {
+   "path": "tests/ai/test_browser_wheel.py",
+   "bytes": 11304,
+   "sha256": "7540f9ebea1559bc3353c1fdd9adc656640cd10af9eac8b692f1915f105c857e"
+  },
+  {
+   "path": "tests/ai/test_tool_descriptions.py",
+   "bytes": 675,
+   "sha256": "30d745e7826729d8b8720f9dbd072499aaf56a857eac4da91c18fb7831e5de4f"
+  },
+  {
+   "path": "tests/ai/test_tool_errors.py",
+   "bytes": 2695,
+   "sha256": "49e4e025bee6867eeaa8aa7ccc8418271ec0386ff92714bae2e3c7a61566264a"
+  },
+  {
+   "path": "tests/cli/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/cli/test_browser_commands.py",
+   "bytes": 6919,
+   "sha256": "14029399f9eca87258aeb645d9f794b942ea8854fdc8aaa5800278d0520e7303"
+  },
+  {
+   "path": "tests/cli/test_cli.py",
+   "bytes": 15139,
+   "sha256": "0fcb58d3b5e2941c24f94218131b5d13f5ba6d1cab699a2bbe000180ab3b1461"
+  },
+  {
+   "path": "tests/cli/test_markdown_blocks.py",
+   "bytes": 849,
+   "sha256": "b5784d1dee7f8f5d1da8f761d1458becfc39a4d86446d7e03fca578a04235214"
+  },
+  {
+   "path": "tests/cli/test_shadow_cli.py",
+   "bytes": 1321,
+   "sha256": "6f8d902d0ded91efffa379293b4ec1693a6c5fcdcaace03d2967014dfd4c8695"
+  },
+  {
+   "path": "tests/cli/test_shell_functionality.py",
+   "bytes": 10203,
+   "sha256": "4984ff654270ed126d8cd2e8fc56aaa162d0975f9756bd90791f7c9b5816ebfb"
+  },
+  {
+   "path": "tests/core/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/core/test_shell_core.py",
+   "bytes": 8749,
+   "sha256": "3017608863a64a35c4c256f9701e16517d0f13fb3f2807bbc83e8b099e69f82d"
+  },
+  {
+   "path": "tests/core/test_storage_core.py",
+   "bytes": 10270,
+   "sha256": "5ba9751758fb1bc539c7c05bbd895fbe5c793695efde967888190ccbdbaa0ca5"
+  },
+  {
+   "path": "tests/fetchers/__init__.py",
+   "bytes": 43,
+   "sha256": "e87e0d800461c9370619dddd34229027c91415dac010c4927102fb19afef5377"
+  },
+  {
+   "path": "tests/fetchers/async/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/fetchers/async/test_requests.py",
+   "bytes": 6305,
+   "sha256": "7307390aac27bc94eec1b48d46d427a702d0d70bf18ba9aea7fff6defa5f1ecd"
+  },
+  {
+   "path": "tests/fetchers/async/test_requests_session.py",
+   "bytes": 4210,
+   "sha256": "d0138b0e86cfb7ce431b6c45d12127bdf6c0dc4b42ebc380ccb2bd79b123ad79"
+  },
+  {
+   "path": "tests/fetchers/async/test_stealth.py",
+   "bytes": 3493,
+   "sha256": "2289d826a8635b1898044594b7ce7f85bd63b1de49a5745f851264063bbb1d92"
+  },
+  {
+   "path": "tests/fetchers/async/test_stealth_session.py",
+   "bytes": 5928,
+   "sha256": "0839b6ce9b3c746646a8082c8a20a94c182610bc3b0383badd4cff900b06f3db"
+  },
+  {
+   "path": "tests/fetchers/sync/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/fetchers/sync/test_requests.py",
+   "bytes": 8651,
+   "sha256": "3c25fbed823b792f280d53247c062e89c5cd797a3acb0cbceea283778832f844"
+  },
+  {
+   "path": "tests/fetchers/sync/test_requests_session.py",
+   "bytes": 6724,
+   "sha256": "f0cc15a8d0a14af6839dc6caa6a1fbf6542f689a4c445ca4e1c118392312105b"
+  },
+  {
+   "path": "tests/fetchers/sync/test_stealth.py",
+   "bytes": 3038,
+   "sha256": "dbec47c2a4dbdb7eec2444e0f4d44858faa3249506bbfa7f0dd16264b6a905cb"
+  },
+  {
+   "path": "tests/fetchers/sync/test_stealth_session.py",
+   "bytes": 5373,
+   "sha256": "6a8bded6fcfbcf76914f4c7c8e1827ed4505843138a3c79ec40f0c726fdc6440"
+  },
+  {
+   "path": "tests/fetchers/test_base.py",
+   "bytes": 2556,
+   "sha256": "1149dfde6465ea679f9a7b8228a3f5a375fa51598e1ec06f72019fe2b4154cef"
+  },
+  {
+   "path": "tests/fetchers/test_cloudflare_optional_widget.py",
+   "bytes": 9592,
+   "sha256": "f4fcc983e29a85e42fff881d113a4735d3f15f6e7c585c674941274f02a5d045"
+  },
+  {
+   "path": "tests/fetchers/test_cloudflare_polling.py",
+   "bytes": 5782,
+   "sha256": "138c0bcc3056f2e8ee6ba0f0b1add4b792b032c6ba473bd082670ae8367f9fc9"
+  },
+  {
+   "path": "tests/fetchers/test_cloudflare_readiness.py",
+   "bytes": 7009,
+   "sha256": "cf8bc37310e3648ad6768827dbdf2693c64a4b0d427b8f6f2216672b16e2d720"
+  },
+  {
+   "path": "tests/fetchers/test_cloudflare_solver.py",
+   "bytes": 7482,
+   "sha256": "9c2fc00eefdef5ab57a14597c09e31fcde5730e48b97164c25f1fd5ab0571098"
+  },
+  {
+   "path": "tests/fetchers/test_constants.py",
+   "bytes": 854,
+   "sha256": "2d8fc9b9fddb0b76ca122b71e1f7d123e1c8e253448c833a9e6e85d83970e765"
+  },
+  {
+   "path": "tests/fetchers/test_impersonate_list.py",
+   "bytes": 6416,
+   "sha256": "743a95763d51fa9985023c17fc13a52c078ae3a4695698a68355378145d396e7"
+  },
+  {
+   "path": "tests/fetchers/test_merge_request_args.py",
+   "bytes": 7002,
+   "sha256": "a5045fc45709abba4df8a61c4463a320c30c0d8639e395564b9d2325d1739e91"
+  },
+  {
+   "path": "tests/fetchers/test_network_browser.py",
+   "bytes": 49990,
+   "sha256": "b0934c87918d08bcfb14c6e49edbfaf2d7154c9b444dd9da829e1b01a612acab"
+  },
+  {
+   "path": "tests/fetchers/test_network_cleanup.py",
+   "bytes": 3490,
+   "sha256": "5db459bae8674b386c82de91083117b60813fb6f239cff30e182d4018716ed0f"
+  },
+  {
+   "path": "tests/fetchers/test_network_config.py",
+   "bytes": 1377,
+   "sha256": "81f8032fd69200af9ba6ad14d76e911a2c1b05e080ef41c6c5f6fa5bcb474bd4"
+  },
+  {
+   "path": "tests/fetchers/test_network_history.py",
+   "bytes": 27330,
+   "sha256": "6c14c138f1d61d7a712589ec7cfa066f79e748b40cbbbbf5a4358a6edd20c787"
+  },
+  {
+   "path": "tests/fetchers/test_page_reuse.py",
+   "bytes": 4913,
+   "sha256": "4d950383ed89b8070f7756423d8534fd1d2db7bca05426aee1ac7be02194a6b4"
+  },
+  {
+   "path": "tests/fetchers/test_pages.py",
+   "bytes": 4216,
+   "sha256": "da5cc74c1083aa390e14c3ee588fa304c82b46a3e7ffd54c5543ed820e83ecf0"
+  },
+  {
+   "path": "tests/fetchers/test_proxy_rotation.py",
+   "bytes": 11083,
+   "sha256": "5b753d325fa4bbc040bdb3da170853ca1000da2826617fe56f6c65d123339097"
+  },
+  {
+   "path": "tests/fetchers/test_public_api.py",
+   "bytes": 2144,
+   "sha256": "26efad04d17260f0e1c8904b62517b1b725313cf46bae457cec94f229d49f86d"
+  },
+  {
+   "path": "tests/fetchers/test_response_handling.py",
+   "bytes": 23904,
+   "sha256": "f74549728db1ec442a45bea2e5f1deea06ba189cf43ed6b6921cf10451493e0c"
+  },
+  {
+   "path": "tests/fetchers/test_response_markdown.py",
+   "bytes": 9366,
+   "sha256": "62fd4bc39eef1e0037d6d1d5e926255ced01d49211165311a61b52897e83a4cd"
+  },
+  {
+   "path": "tests/fetchers/test_session_state.py",
+   "bytes": 10676,
+   "sha256": "c422c8cbd1a3fbf1842e49f3929d1818546434a34f88437d8bbfda907c5be099"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_browser.py",
+   "bytes": 3440,
+   "sha256": "5cb68fe5c9d8c300ddc90fbc03c5c9eeec58cee2f3f3c8b45478cabb15c676fc"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_config.py",
+   "bytes": 1785,
+   "sha256": "440171df294f18d79349f8c9bdf53f32adde63d290cbd0bebe23602ae9ff3966"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_hidden_slots.py",
+   "bytes": 6380,
+   "sha256": "d5ba6cf312109fb97bc7dac04629a6e6df3108ed68bde69fbea3484ddbb46f15"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_order.py",
+   "bytes": 6263,
+   "sha256": "f50e992e890b7679b7d5832f55788181bf6c7dae7065c5d1aa2a32b4734f9df4"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_response.py",
+   "bytes": 5306,
+   "sha256": "24f0ca1840598bb7413d89d3972518d339c600f041144369df42e8af8bae2c73"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_roundtrip.py",
+   "bytes": 3181,
+   "sha256": "1c65e6629ae8e2686093b3baf61eb310c86e9d6ed1fc33ecc50eaf941d4a80b2"
+  },
+  {
+   "path": "tests/fetchers/test_shadow_snapshot.py",
+   "bytes": 7529,
+   "sha256": "9fe9e5b1e03860ca8ad7adf34fd80fbab781c8ae7dfcd5311e54f9db0cff7e4c"
+  },
+  {
+   "path": "tests/fetchers/test_snapshot.py",
+   "bytes": 5322,
+   "sha256": "2ea49559cc0f26111a34046bb65d755bd8afd4b4fcc829aabf6725d5d9a8e636"
+  },
+  {
+   "path": "tests/fetchers/test_utils.py",
+   "bytes": 23682,
+   "sha256": "40595f0cfe110ab4c8869afb2ebde6776a6891b84c82475f51e5d976496fe301"
+  },
+  {
+   "path": "tests/fetchers/test_validator.py",
+   "bytes": 5413,
+   "sha256": "7c31ddaf4674c5513168d0d94acafc9d4e56e53d49dca4513db84a970a680ed1"
+  },
+  {
+   "path": "tests/integrations/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/integrations/test_scrapy.py",
+   "bytes": 6341,
+   "sha256": "5369116dbe167557a99c2c98c30faa9beba09c56ef195b1f60c6f5bbbc102c93"
+  },
+  {
+   "path": "tests/parser/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/parser/test_adaptive.py",
+   "bytes": 6146,
+   "sha256": "97ff43dfb5c903e308bf9313435570bdf2ed132037ec6b8ae857f10fd35b809d"
+  },
+  {
+   "path": "tests/parser/test_ancestor_navigation.py",
+   "bytes": 2783,
+   "sha256": "39572d3bbe924bf0194220bee109d7d5271e39aa5deb24c96318573d48bcb7ac"
+  },
+  {
+   "path": "tests/parser/test_attributes_handler.py",
+   "bytes": 12025,
+   "sha256": "dd04dbdb2861f94b5fb93ea8e07b52586c8aa23c30fe18be11cdf9435b69f919"
+  },
+  {
+   "path": "tests/parser/test_find_similar_advanced.py",
+   "bytes": 4995,
+   "sha256": "c21359dac6d9ee39af0b2cf811f1f050023d8d969a9318944ef29d26df619023"
+  },
+  {
+   "path": "tests/parser/test_general.py",
+   "bytes": 15688,
+   "sha256": "983404da392a1d485271b21d5a7f67362ad40a79e461bff750f3608d1d760368"
+  },
+  {
+   "path": "tests/parser/test_parser_advanced.py",
+   "bytes": 13945,
+   "sha256": "7f06789e2ef02e6288f58bfdaeed9e779c47b8562edd97d968f5978a77cc5663"
+  },
+  {
+   "path": "tests/parser/test_selector_generation.py",
+   "bytes": 4079,
+   "sha256": "f504db48ffe696b0f70c8ba3de028b97e2ca5312c3113812c1f674cc8befc601"
+  },
+  {
+   "path": "tests/parser/test_selectors_filter.py",
+   "bytes": 2413,
+   "sha256": "236f23af43f647e9f7c48dfeb2c8b689ac76927a5cb617a9b40dc373e1557019"
+  },
+  {
+   "path": "tests/requirements.txt",
+   "bytes": 135,
+   "sha256": "82edb3ef04f25bcc178ecc29e5d9af72d78103d121ce2bb44f70734a955fc552"
+  },
+  {
+   "path": "tests/spiders/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "tests/spiders/test_browser_session.py",
+   "bytes": 1201,
+   "sha256": "c9f629d4250892b51ba85285754ec91465046c6acccc3b65024b4b7acaa81d9d"
+  },
+  {
+   "path": "tests/spiders/test_cache.py",
+   "bytes": 16482,
+   "sha256": "06c31668787a78a722d1425555a389b5aec47dcd4c70bf36a4bd62c1e8d209ad"
+  },
+  {
+   "path": "tests/spiders/test_checkpoint.py",
+   "bytes": 11560,
+   "sha256": "2f8c1bb72bf1eff22bc8f11f1bc33208709fed812ed4ea475c4965eaaa4cc87d"
+  },
+  {
+   "path": "tests/spiders/test_engine.py",
+   "bytes": 35291,
+   "sha256": "12d14b5cd21b0069e6d6d3cab5b4be0882f56d1140583b2efaa78268da2ed6ab"
+  },
+  {
+   "path": "tests/spiders/test_feed.py",
+   "bytes": 9137,
+   "sha256": "ba6c5fb02e3fa2cbc630abeb28b58a663808626fd9422654725d93486c1e2596"
+  },
+  {
+   "path": "tests/spiders/test_force_stop_checkpoint.py",
+   "bytes": 11605,
+   "sha256": "584b5b67554aa110d37b7ead4f5a7be137658478c32940c68784feb5d28549f9"
+  },
+  {
+   "path": "tests/spiders/test_links.py",
+   "bytes": 12307,
+   "sha256": "7696328ce2782ecc59f3e46d2b80d0433f5a4b9dd161f13ae9035a9d4eca32d6"
+  },
+  {
+   "path": "tests/spiders/test_request.py",
+   "bytes": 20846,
+   "sha256": "c2fd5d91e31672b070792d6f328c7ca4b1c98f165b67d345918239d68b9631f8"
+  },
+  {
+   "path": "tests/spiders/test_result.py",
+   "bytes": 16773,
+   "sha256": "0e55e13e2707985b91e56d2bf4b74cd9474d431dd0c3353812d723f86907e7c1"
+  },
+  {
+   "path": "tests/spiders/test_robotstxt.py",
+   "bytes": 20411,
+   "sha256": "dab7f2c5e3c164251c6940dec587557ec0c23ef74e11348c27811bd3c8ec8ff9"
+  },
+  {
+   "path": "tests/spiders/test_scheduler.py",
+   "bytes": 18526,
+   "sha256": "cf2cde6ce8615f1d5d64d0e2d5917108bc0cc99ee44196b7f05dbc0662c46120"
+  },
+  {
+   "path": "tests/spiders/test_session.py",
+   "bytes": 15237,
+   "sha256": "51576119146b9d17636646f1b5547f1e107e305026f48765c3fd2efdc6e8cd22"
+  },
+  {
+   "path": "tests/spiders/test_shadow_cache.py",
+   "bytes": 1138,
+   "sha256": "e22e981cd4ca602df9013a47f1471b6a80ad0e7ea65e3b56aa90ee2b5adbed29"
+  },
+  {
+   "path": "tests/spiders/test_shopify.py",
+   "bytes": 7521,
+   "sha256": "1a89fa55fafbf7d1f9ea17177fd03a724b88a78ec36d355afdbae22fe08d4108"
+  },
+  {
+   "path": "tests/spiders/test_site_to_markdown.py",
+   "bytes": 6097,
+   "sha256": "36ac4f406fa53bd1608d83130ba8e334368379e4011d6d449d457002c766f222"
+  },
+  {
+   "path": "tests/spiders/test_sitemap.py",
+   "bytes": 11701,
+   "sha256": "2fced139effc33aef2b21896486661ef9a3e0405b387ef5681565a08d565c071"
+  },
+  {
+   "path": "tests/spiders/test_spider.py",
+   "bytes": 18380,
+   "sha256": "edfec7d8ca7cb65b24ccd107994a28a089e52347ec6ea3641dfd625d31357670"
+  },
+  {
+   "path": "tests/spiders/test_templates.py",
+   "bytes": 9784,
+   "sha256": "bca13bdea712444e52e027dfc99745c81ee3bf3e5d43d86957631dcb60146d76"
+  },
+  {
+   "path": "tests/spiders/test_throttle.py",
+   "bytes": 14978,
+   "sha256": "15b1b055c541514a174e601d24bd3cded18c0d83c13243e5d9d721ee47d75d7d"
+  },
+  {
+   "path": "tox.ini",
+   "bytes": 1085,
+   "sha256": "bdbab5d84b9bc786c45e85a12f4b5ac30017de06eee437390085344e169915dd"
+  },
+  {
+   "path": "zensical-base.yml",
+   "bytes": 3928,
+   "sha256": "e4afb34c52a4625648745d9b6b7e13089617e47f8a254e4bbab71a9ac0dd6690"
+  },
+  {
+   "path": "zensical.ar.yml",
+   "bytes": 4188,
+   "sha256": "3093ed1cda353f936fd324d3818d4f840c9e335d0932c1077320d473b731d382"
+  },
+  {
+   "path": "zensical.de.yml",
+   "bytes": 3812,
+   "sha256": "850a91dd5258e14085404301f35df0c26e4c0175064d802032f3e3db856d3fd8"
+  },
+  {
+   "path": "zensical.es.yml",
+   "bytes": 3825,
+   "sha256": "1c922d74d2a56185b90f524c9e45b14a0b61788448b49aaffee9bce6aeb683f5"
+  },
+  {
+   "path": "zensical.fr.yml",
+   "bytes": 3937,
+   "sha256": "1d25ec84fa9470594b0d939c95f43fc79fa632b3d04ec9d2cdf3c5c68f803f97"
+  },
+  {
+   "path": "zensical.ja.yml",
+   "bytes": 3971,
+   "sha256": "7a024448ead68bde1af43589d5af0b2487f91cec29e1a15ad41c97eb33c063a2"
+  },
+  {
+   "path": "zensical.ko.yml",
+   "bytes": 3822,
+   "sha256": "8bb7a751f7836978c560a4a51743ed40bcb8a8c1ff0900224cea38deaffd51c1"
+  },
+  {
+   "path": "zensical.pt-BR.yml",
+   "bytes": 3832,
+   "sha256": "85c10ada44ae5d40415e5879fc9931dd004c3edd158a5980b7d29d02f24103c7"
+  },
+  {
+   "path": "zensical.ru.yml",
+   "bytes": 4593,
+   "sha256": "a7f3a2e6388b61cdb6c968d2d49454d8eed7da3df235e1fd197671a2b0c80690"
+  },
+  {
+   "path": "zensical.yml",
+   "bytes": 3594,
+   "sha256": "72ded52c32d639cc41889f007c4ff7fdc6177baf74bc41e3f48b1dd344f606f7"
+  },
+  {
+   "path": "zensical.zh.yml",
+   "bytes": 3435,
+   "sha256": "67a8a5c923a1a4b1e7a781d9df6687f58b432f9f11f5051eeaefa504e95a97a4"
+  }
+ ]
+}

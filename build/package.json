@@ -1,0 +1,14 @@
+{
+  "name": "jagent-site-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Browser checks for the jAgent static library",
+  "scripts": {
+    "check:browser": "node build/browser_check.mjs"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^138.0.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}

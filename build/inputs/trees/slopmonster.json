@@ -1,0 +1,123 @@
+{
+ "resource": "slopmonster",
+ "source": "https://github.com/ItsssssJack/SlopMonster",
+ "commit": "3fc9787d9337b57c599a80afbefbbb3be5a8eb0b",
+ "format": "recorded tracked paths at the pinned commit",
+ "path_count": 22,
+ "file_count": 22,
+ "submodule_count": 0,
+ "tracked_bytes": 3304395,
+ "note": "Paths come from the repository tree at the pinned commit. Directories and .git are not listed. A listed path means it exists upstream, not that its contents were read.",
+ "entries": [
+  {
+   "path": ".github/workflows/slop.yml",
+   "bytes": 1014,
+   "sha256": "0883b93f63e67d995a8be88a46f8f04c8724784e6a6a621dd9058c229a20ffa4"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 29,
+   "sha256": "53f0c100a33a56ebada040287b3d0f5dbab21c6ec6b66209fec5515c508f1144"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1069,
+   "sha256": "c0f18cfb62c0745fc89316fd691678f594dcf06b9a018ee2c78a5f202e214ab0"
+  },
+  {
+   "path": "README.md",
+   "bytes": 7832,
+   "sha256": "caf08e593e17dcad4ac7fc1a566940c1537c34c48d7b8bdc7216da8cf2fd3ec5"
+  },
+  {
+   "path": "SKILL.md",
+   "bytes": 6016,
+   "sha256": "c382c3188671ea2c2d533194e068fe03372f77d8d35f8015ffee69108fe83c3f"
+  },
+  {
+   "path": "docs/img/hero.png",
+   "bytes": 706062,
+   "sha256": "9a4e975e25a70c8b63e9134c1f2abea20285fcbe91c65a9f82af1aec586819f4"
+  },
+  {
+   "path": "docs/img/rule-1-vocab.png",
+   "bytes": 545687,
+   "sha256": "3aa5af89ea656423c8e86d87c9f78d2dd5856c26943b9fd0665fecea29c280a9"
+  },
+  {
+   "path": "docs/img/rule-2-phrases.png",
+   "bytes": 493032,
+   "sha256": "4d38cafa1e40ab110436d40bbf6325e6203075c36660e49aa5dd48eb36c0f835"
+  },
+  {
+   "path": "docs/img/rule-3-punctuation.png",
+   "bytes": 399836,
+   "sha256": "7d87823a282ebbe694ab9f1d0ab97c90bc5a5870fdccff5f5ea150786d4a903f"
+  },
+  {
+   "path": "docs/img/rule-4-rhythm.png",
+   "bytes": 462575,
+   "sha256": "ff5f9013d75722f26b459ceaddf1909c2cd615877e92f3b2bcad6d8b41ae4745"
+  },
+  {
+   "path": "docs/img/rule-5-conversion.png",
+   "bytes": 614321,
+   "sha256": "7300a9c93daf262fa1287d41b4becef8b5a61a5084a7ec194c92dfd50994d606"
+  },
+  {
+   "path": "examples/gate-sample.txt",
+   "bytes": 182,
+   "sha256": "0258133c95d66bd365f0e8e3659942f4ab1ede07ca74030c3a9a9856bbbeb62c"
+  },
+  {
+   "path": "examples/jasper-live-run.md",
+   "bytes": 3723,
+   "sha256": "319699e587395a3f86368414d8a49943926c1eb45237f3b1933d9d4037cb7d26"
+  },
+  {
+   "path": "examples/ridgeline-roofing.md",
+   "bytes": 5539,
+   "sha256": "d9e76f314c21e6a0528e820da1a5140b5212dbbf7395b2a91186432c7ff41662"
+  },
+  {
+   "path": "prompts/cleanse.txt",
+   "bytes": 3307,
+   "sha256": "61dcf03ecbeec0117d4fdd82ea7dd047dee4e3b94e504b9315fcb81741fb1c58"
+  },
+  {
+   "path": "references/principles.md",
+   "bytes": 3989,
+   "sha256": "54071dec8421e06187c5ae586d3572e55c5090f0992092a2b29d69607b8f9add"
+  },
+  {
+   "path": "references/signs-of-ai-writing.md",
+   "bytes": 4491,
+   "sha256": "e5aad737d0054fc9ea18f4d444cbe8c427b9eb3c74267ff1d1325d680a38ee8a"
+  },
+  {
+   "path": "references/sources.md",
+   "bytes": 2413,
+   "sha256": "5243fdf7672591b12145496b686bc8888c32d70a87656b6413ff0edabc8f4d8e"
+  },
+  {
+   "path": "tools/cleanse.sh",
+   "bytes": 6157,
+   "sha256": "6d26e9d8f4d80af640dd0485b63efe83edd87e62815c001d5e0f5d36cf82fe37"
+  },
+  {
+   "path": "tools/deslop.py",
+   "bytes": 18116,
+   "sha256": "d31fd8c9b7013bd857c38afa53b59aa734a9cf96e5026ff69921e43537a9fd5a"
+  },
+  {
+   "path": "tools/test_cleanse.sh",
+   "bytes": 4164,
+   "sha256": "2dd4540d6e11eedf211a8f16ff1ebaf60d2597d0a326379defd01f6a82c9fe6b"
+  },
+  {
+   "path": "tools/test_deslop.py",
+   "bytes": 14841,
+   "sha256": "b54be86a87ece908ea9b4ca9a79b15f034bcb083a2d2f4d775a25c855fd12733"
+  }
+ ]
+}
