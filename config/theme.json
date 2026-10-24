@@ -1,0 +1,88 @@
+{
+ "default": "system",
+ "modes": [
+  "system",
+  "light",
+  "dark"
+ ],
+ "palettes": {
+  "dark": {
+   "canvas": "#1c1d1c",
+   "surface": "#222423",
+   "raised": "#282a29",
+   "line": "#2f322f",
+   "lineStrong": "#3b3f3a",
+   "text": "#dedfdd",
+   "muted": "#a0a39f",
+   "action": "#b5cea5",
+   "actionHover": "#c6dcb6",
+   "onAction": "#1c211b",
+   "focus": "#cfe3bd",
+   "alert": "#f0a8a0",
+   "scheme": "dark",
+   "themeColor": "#1c1d1c",
+   "textStrong": "#eceeeb",
+   "surfaceHover": "#252725",
+   "markBg": "#3c4a33",
+   "markText": "#eef3e9",
+   "edge": "#3a3f39",
+   "nodeResourceFill": "#2b3a26",
+   "nodeResourceStroke": "#4c6440",
+   "nodeDocFill": "#2a2f38",
+   "nodeDocStroke": "#46505e",
+   "nodeTaskFill": "#2f2b26",
+   "nodeTaskStroke": "#574d3f",
+   "codeBg": "#282a29",
+   "alertBorder": "#6a4b46",
+   "alertBg": "#2c2422"
+  },
+  "light": {
+   "canvas": "#f6f7f4",
+   "surface": "#ffffff",
+   "raised": "#eef0ec",
+   "line": "#d9ddd7",
+   "lineStrong": "#c1c7bf",
+   "text": "#1b1d1a",
+   "muted": "#575d57",
+   "action": "#3a6630",
+   "actionHover": "#2d5126",
+   "onAction": "#f7f8f5",
+   "focus": "#2d5126",
+   "alert": "#96382c",
+   "scheme": "light",
+   "themeColor": "#f6f7f4",
+   "textStrong": "#101210",
+   "surfaceHover": "#f9faf8",
+   "markBg": "#dcead2",
+   "markText": "#1e2a18",
+   "edge": "#b9c0b6",
+   "nodeResourceFill": "#e3efdb",
+   "nodeResourceStroke": "#4e7040",
+   "nodeDocFill": "#e6ebf2",
+   "nodeDocStroke": "#55627a",
+   "nodeTaskFill": "#f0ece4",
+   "nodeTaskStroke": "#7a6a52",
+   "codeBg": "#eef0ec",
+   "alertBorder": "#d9b6ae",
+   "alertBg": "#f7ece9"
+  }
+ },
+ "contrast": {
+  "dark": {
+   "text/canvas": 12.65,
+   "muted/canvas": 6.63,
+   "muted/surface": 6.12,
+   "action/canvas": 9.93,
+   "onAction/action": 9.62,
+   "alert/canvas": 8.71
+  },
+  "light": {
+   "text/canvas": 15.78,
+   "muted/canvas": 6.28,
+   "muted/surface": 6.76,
+   "action/canvas": 6.25,
+   "onAction/action": 6.31,
+   "alert/canvas": 6.74
+  }
+ }
+}

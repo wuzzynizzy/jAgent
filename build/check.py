@@ -20,10 +20,10 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
-VERSION = json.loads((ROOT / "build/content/site.json").read_text())["version"]
+VERSION = json.loads((ROOT / "config/site.json").read_text())["version"]
 
 ALLOWED_SUFFIXES = {".html", ".md", ".txt", ".json", ".jsonl", ".css", ".js", ".woff2",
-                    ".xml", ".sha256", ".svg", ".ico", ".png"}
+                    ".xml", ".sha256", ".svg", ".ico", ".png", ".webmanifest"}
 PRIVATE_MARKERS = [
     "drive.google", "docs.google", "1Ppd4WcUj78ukmBBIPrw-pEbYbd4EEnxg", "restart kit",
     "handover", "google_drive", "source-manifest.json", "Review-evidence", "Reference-source-text",

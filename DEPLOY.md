@@ -4,18 +4,18 @@ Two hosts, one archive. Every path in the site is relative, so the same files wo
 
 ## Cloudflare Pages, direct upload
 
-1. Unzip `jagent-pages-<version>.zip`. The archive root contains `index.html`, `404.html`, `llms.txt`, `assets/`, `data/`, `docs/`, `resources/`, `tasks/`, `graph/`, `search/`.
+1. Unzip `jagent-pages-<version>.zip`. The archive root contains `index.html`, `404.html`, `llms.txt`, `skill.md`, `assets/`, `data/`, `docs/`, `resources/`, `tasks/`, `graph/`, `search/`, `skill/`.
 2. In the Cloudflare dashboard, open Workers and Pages, then Create, then Pages, then Upload assets.
 3. Name the project `jagent`. That matches the `jagent.pages.dev` host used in the sitemap and in `llms.txt`.
 4. Drag the unzipped folder, or select all of its contents, and upload. Do not upload the ZIP itself and do not upload a parent folder, or `index.html` ends up one level too deep.
 5. Publish. The first deployment becomes production.
 6. Optional but useful: add a custom 404 page. Cloudflare Pages serves `404.html` from the archive root automatically.
 
-Limits at the time of writing: 20,000 files per deployment and 25 MiB per asset on the free plan. This build is 90 files and 2.9 MB, so there is room to grow, but check the current limits before adding large assets.
+Limits at the time of writing: 20,000 files per deployment and 25 MiB per asset on the free plan. This build is 134 files and 4.3 MB, so there is room, but check the current limits before adding large assets. The largest file is a 1.3 MB social card set worth of PNGs at about 45 KB each.
 
 ### Changing the canonical URL
 
-`build/content/site.json` holds `canonical` and `mirrors`. Change them, rebuild, and the sitemap, `llms.txt` and page metadata follow. Nothing else hardcodes a host.
+`config/site.json` holds `canonical` and `mirrors`. Change them, rebuild, and the sitemap, `llms.txt` and page metadata follow. Nothing else hardcodes a host.
 
 ## GitHub Pages
 

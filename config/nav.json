@@ -1,0 +1,69 @@
+{
+ "primary": [
+  {
+   "id": "home",
+   "label": "Library",
+   "url": "/"
+  },
+  {
+   "id": "skill",
+   "label": "Skill",
+   "url": "/skill/"
+  },
+  {
+   "id": "resources",
+   "label": "Resources",
+   "url": "/resources/",
+   "count": true
+  },
+  {
+   "id": "tasks",
+   "label": "Task routes",
+   "url": "/tasks/",
+   "count": true
+  },
+  {
+   "id": "graph",
+   "label": "Knowledge graph",
+   "url": "/graph/"
+  },
+  {
+   "id": "search",
+   "label": "Search",
+   "url": "/search/"
+  },
+  {
+   "id": "data",
+   "label": "Data files",
+   "url": "/data/"
+  }
+ ],
+ "guidesLabel": "Guides",
+ "guidesIndex": {
+  "label": "All guides",
+  "url": "/docs/"
+ },
+ "agentsLabel": "Agent files",
+ "agentFiles": [
+  {
+   "label": "SKILL.md",
+   "url": "/skill.md",
+   "note": "skill entry"
+  },
+  {
+   "label": "llms.txt",
+   "url": "/llms.txt",
+   "note": "bootstrap"
+  },
+  {
+   "label": "manifest.json",
+   "url": "/data/manifest.json",
+   "note": "version"
+  },
+  {
+   "label": "checksums",
+   "url": "/checksums.sha256",
+   "note": "verify"
+  }
+ ]
+}

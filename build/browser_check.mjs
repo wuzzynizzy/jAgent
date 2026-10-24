@@ -50,7 +50,7 @@ const base = `http://127.0.0.1:${server.address().port}`;
 
 const browser = await puppeteer.launch({
   args: [...chromium.args, '--font-render-hinting=none'],
-  executablePath: await chromium.executablePath(),
+  executablePath: process.env.CHROME_PATH || await chromium.executablePath(),
   headless: 'shell',
 });
 
@@ -59,7 +59,7 @@ const notes = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
 const pages = [
-  ['', 'home'], ['resources/', 'resources'], ['resources/kumo/', 'kumo'], ['resources/rea/', 'rea'],
+  ['', 'home'], ['skill/', 'skill'], ['resources/', 'resources'], ['resources/kumo/', 'kumo'], ['resources/rea/', 'rea'],
   ['resources/humanizer/', 'humanizer'], ['tasks/', 'tasks'], ['graph/', 'graph'],
   ['search/', 'search'], ['data/', 'data'], ['docs/', 'docs'],
   ['docs/design-contract/', 'design-contract'], ['docs/context-protocol/', 'context-protocol'],
@@ -135,6 +135,184 @@ for (const [path, name] of pages) {
   check(page.__errors.length === 0, `${name}: console errors ${JSON.stringify(page.__errors)}`);
   await page.close();
   pageIndex += 1;
+}
+
+// --- metadata: every page carries the full social and structured-data set
+{
+  const page = await newPage();
+  for (const [path, name] of pages) {
+    await page.setViewport({ width: 1440, height: 900 });
+    await page.goto(base + '/' + path, { waitUntil: 'domcontentloaded' });
+    const meta = await page.evaluate(() => {
+      const get = (selector) => {
+        const el = document.querySelector(selector);
+        return el ? el.getAttribute('content') || el.getAttribute('href') : null;
+      };
+      const ld = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+        .map((node) => { try { return JSON.parse(node.textContent); } catch { return null; } });
+      const collect = (value, out = []) => {
+        if (!value || typeof value !== 'object') return out;
+        if (Array.isArray(value)) { value.forEach((item) => collect(item, out)); return out; }
+        if (value['@type']) out.push(value['@type']);
+        Object.values(value).forEach((child) => collect(child, out));
+        return out;
+      };
+      return {
+        ogImage: get('meta[property="og:image"]'),
+        twitter: get('meta[name="twitter:card"]'),
+        siteName: get('meta[property="og:site_name"]'),
+        locale: get('meta[property="og:locale"]'),
+        canonical: get('link[rel="canonical"]'),
+        icon: get('link[rel="icon"]'),
+        manifest: get('link[rel="manifest"]'),
+        jsonld: ld,
+        types: [...new Set(ld.flatMap((block) => collect(block)))],
+      };
+    });
+    check(meta.ogImage && /^https:\/\//.test(meta.ogImage), `${name}: og:image missing or relative`);
+    check(meta.twitter === 'summary_large_image', `${name}: twitter card is ${meta.twitter}`);
+    check(meta.siteName === 'jAgent', `${name}: og:site_name is ${meta.siteName}`);
+    check(meta.locale === 'en', `${name}: og:locale is ${meta.locale}`);
+    check(!!meta.icon && !!meta.manifest, `${name}: icon or manifest link missing`);
+    check(meta.types.length > 0, `${name}: no JSON-LD nodes`);
+    if (name === 'home') {
+      check(meta.types.includes('WebSite') && meta.types.includes('SearchAction'), 'home: WebSite or SearchAction missing');
+    }
+    if (name === 'kumo' || name === 'humanizer') {
+      check(meta.types.includes('TechArticle') && meta.types.includes('SoftwareSourceCode'),
+        `${name}: TechArticle or SoftwareSourceCode missing (${meta.types.join(',')})`);
+      check(meta.types.includes('BreadcrumbList'), `${name}: no breadcrumb JSON-LD`);
+    }
+  }
+  await page.close();
+}
+
+// --- themes: switch, persist, and stay readable in both
+{
+  const page = await newPage();
+  await page.setViewport({ width: 1440, height: 1000 });
+  await page.goto(base + '/', { waitUntil: 'networkidle0' });
+  const buttons = await page.$$eval('[data-theme-set]', (nodes) => nodes.map((n) => n.dataset.themeSet));
+  check(buttons.join(',') === 'system,light,dark', `theme: controls are ${buttons.join(',')}`);
+  await page.click('[data-theme-set="light"]');
+  const light = await page.evaluate(() => ({
+    attr: document.documentElement.dataset.theme,
+    canvas: getComputedStyle(document.body).backgroundColor,
+    stored: localStorage.getItem('jagent-theme'),
+    pressed: document.querySelector('[data-theme-set="light"]').getAttribute('aria-pressed'),
+    themeColor: document.querySelector('meta[name="theme-color"]').getAttribute('content'),
+  }));
+  check(light.attr === 'light' && light.stored === 'light', 'theme: light choice not applied or stored');
+  check(light.pressed === 'true', 'theme: aria-pressed not updated');
+  check(light.canvas === 'rgb(246, 247, 244)', `theme: light canvas is ${light.canvas}`);
+  check(light.themeColor === '#f6f7f4', `theme: theme-color not updated (${light.themeColor})`);
+
+  const contrast = await page.evaluate(() => {
+    const parse = (c) => c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number);
+    const lum = ([r, g, b]) => {
+      const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    };
+    const ratio = (a, b) => {
+      const [l1, l2] = [lum(parse(a)), lum(parse(b))].sort((x, y) => y - x);
+      return (l1 + 0.05) / (l2 + 0.05);
+    };
+    const body = getComputedStyle(document.body);
+    const canvas = getComputedStyle(document.querySelector('.main')).backgroundColor;
+    const pageBg = canvas === 'rgba(0, 0, 0, 0)' ? body.backgroundColor : canvas;
+    const link = document.querySelector('.resource-row h3 a') || document.querySelector('.footer-links a');
+    const muted = document.querySelector('.resource-row p') || document.querySelector('.small.muted');
+    return {
+      text: ratio(body.color, pageBg),
+      link: link ? ratio(getComputedStyle(link).color, pageBg) : null,
+      muted: muted ? ratio(getComputedStyle(muted).color, pageBg) : null,
+    };
+  });
+  check(contrast.text >= 4.5, `theme: body text contrast ${contrast.text.toFixed(2)} in light`);
+  check(!contrast.link || contrast.link >= 4.5, `theme: link contrast ${contrast.link?.toFixed(2)} in light`);
+  check(!contrast.muted || contrast.muted >= 4.5, `theme: muted text contrast ${contrast.muted?.toFixed(2)} in light`);
+
+  // Every palette token must resolve in every state; a self-referential custom
+  // property computes to nothing and silently drops the whole theme.
+  for (const mode of ['system', 'light', 'dark']) {
+    const tokens = await page.evaluate((mode) => {
+      const root = document.documentElement;
+      root.dataset.theme = mode;
+      const cs = getComputedStyle(root);
+      return ['canvas', 'surface', 'raised', 'line', 'text', 'muted', 'action', 'on-action', 'focus', 'alert']
+        .map((name) => [name, cs.getPropertyValue('--' + name).trim()]);
+    }, mode);
+    const empty = tokens.filter(([, value]) => !value).map(([name]) => name);
+    check(empty.length === 0, `theme: ${mode} has unresolved tokens: ${empty.join(', ')}`);
+  }
+  await page.evaluate(() => { document.documentElement.dataset.theme = 'light'; });
+  await page.reload({ waitUntil: 'networkidle0' });
+  const persisted = await page.evaluate(() => document.documentElement.dataset.theme);
+  check(persisted === 'light', `theme: choice did not survive reload (${persisted})`);
+  await page.screenshot({ path: '/tmp/jagent-light.png' });
+  await page.close();
+}
+
+// --- icons: Lucide paths are inlined, not hand-drawn
+{
+  const page = await newPage();
+  await page.goto(base + '/', { waitUntil: 'networkidle0' });
+  const svgs = await page.evaluate(() => Array.from(document.querySelectorAll('main svg')).map((s) => s.innerHTML.slice(0, 40)));
+  check(svgs.length > 0, 'icons: no inline icons on the home page');
+  const skillPage = await page.goto(base + '/skill/', { waitUntil: 'networkidle0' });
+  check(skillPage.status() === 200, `skill page returned ${skillPage.status()}`);
+  const install = await page.evaluate(() => document.body.textContent.includes('npx skills add'));
+  check(install, 'skill page does not show the install command');
+  await page.close();
+}
+
+// --- collapsed navigation on narrow screens
+{
+  const page = await newPage();
+  await page.setViewport({ width: 390, height: 844 });
+  await page.goto(base + '/', { waitUntil: 'networkidle0' });
+  const start = await page.evaluate(() => ({
+    toggle: getComputedStyle(document.querySelector('[data-nav-toggle]')).display,
+    nav: getComputedStyle(document.getElementById('site-nav')).display,
+    height: document.querySelector('.sidebar').getBoundingClientRect().height,
+  }));
+  check(start.toggle !== 'none', 'nav: toggle is not visible at 390px');
+  check(start.nav === 'none', 'nav: menu is open by default on a phone');
+  check(start.height < 260, `nav: header is ${Math.round(start.height)}px tall before the content`);
+  await page.click('[data-nav-toggle]');
+  const opened = await page.evaluate(() => ({
+    nav: getComputedStyle(document.getElementById('site-nav')).display,
+    expanded: document.querySelector('[data-nav-toggle]').getAttribute('aria-expanded'),
+    label: document.querySelector('[data-nav-toggle] span').textContent.trim(),
+  }));
+  check(opened.nav !== 'none' && opened.expanded === 'true', 'nav: toggle does not open the menu');
+  check(opened.label.length > 0, 'nav: toggle has no text label');
+  await page.keyboard.press('Escape');
+  check(await page.evaluate(() => document.querySelector('[data-nav-toggle]').getAttribute('aria-expanded')) === 'false',
+    'nav: Escape does not close the menu');
+  await page.setViewport({ width: 1440, height: 900 });
+  // Every palette token must resolve in every state; a self-referential custom
+  // property computes to nothing and silently drops the whole theme.
+  for (const mode of ['system', 'light', 'dark']) {
+    const tokens = await page.evaluate((mode) => {
+      const root = document.documentElement;
+      root.dataset.theme = mode;
+      const cs = getComputedStyle(root);
+      return ['canvas', 'surface', 'raised', 'line', 'text', 'muted', 'action', 'on-action', 'focus', 'alert']
+        .map((name) => [name, cs.getPropertyValue('--' + name).trim()]);
+    }, mode);
+    const empty = tokens.filter(([, value]) => !value).map(([name]) => name);
+    check(empty.length === 0, `theme: ${mode} has unresolved tokens: ${empty.join(', ')}`);
+  }
+  await page.evaluate(() => { document.documentElement.dataset.theme = 'light'; });
+  await page.reload({ waitUntil: 'networkidle0' });
+  const wide = await page.evaluate(() => ({
+    nav: getComputedStyle(document.getElementById('site-nav')).display,
+    toggle: getComputedStyle(document.querySelector('[data-nav-toggle]')).display,
+  }));
+  check(wide.nav !== 'none', 'nav: menu hidden on desktop');
+  check(wide.toggle === 'none', 'nav: toggle visible on desktop');
+  await page.close();
 }
 
 // --- keyboard: skip link is the first stop and moves focus into main
@@ -334,7 +512,8 @@ for (const [path, name] of pages) {
   check(md.status() === 200 && /^# Humanizer/.test(text.replace(/^\uFEFF/, '')), `markdown twin does not serve plain markdown (got ${JSON.stringify(text.slice(0, 40))})`);
   const manifest = await page.goto(base + '/data/manifest.json');
   const data = JSON.parse(await manifest.text());
-  check(data.version === '1.0.0', 'manifest version is not 1.0.0');
+  check(/^\d+\.\d+\.\d+$/.test(data.version), `manifest version is not semver (${data.version})`);
+  check(data.counts.resources === 14, `manifest counts ${data.counts.resources} resources`);
   check(Array.isArray(data.retrieval.not_implemented) && data.retrieval.not_implemented.includes('vector database'),
     'manifest does not state that no vector database is implemented');
   await page.close();

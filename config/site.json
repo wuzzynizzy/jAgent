@@ -2,14 +2,21 @@
  "name": "jAgent",
  "tagline": "Skills and reference material for agents and the people directing them",
  "description": "A reviewed library of fourteen agent skills, workflows and interface resources, with recorded source trees, typed relationships and retrieval-ready files.",
- "version": "1.0.0",
+ "version": "1.1.0",
  "released": "2026-10-24",
  "author": "Nizzy",
  "repository": "https://github.com/wuzzynizzy/jAgent",
  "canonical": "https://wuzzynizzy.github.io/jAgent/",
- "mirrors": ["https://jagent.pages.dev/"],
+ "mirrors": [
+  "https://jagent.pages.dev/"
+ ],
  "language": "en",
  "reviewed_on": "2026-10-24",
  "review_timezone": "Asia/Singapore",
- "library_file_limit_note": "Every path under data/trees was recorded at the pinned commit. Listing a path is not proof that its contents were read."
+ "library_file_limit_note": "Every path under data/trees was recorded at the pinned commit. Listing a path is not proof that its contents were read.",
+ "skill": {
+  "name": "jagent",
+  "install": "npx skills add wuzzynizzy/jAgent",
+  "entry": "/skill.md"
+ }
 }

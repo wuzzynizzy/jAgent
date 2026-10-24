@@ -8,7 +8,7 @@ from pathlib import Path
 from fontTools import subset
 
 SRC = Path(sys.argv[1] if len(sys.argv) > 1 else '/home/user/kit/Skills/Google-Sans-official-OFL.zip')
-OUT = Path(__file__).resolve().parent / 'assets' / 'fonts'
+OUT = Path(__file__).resolve().parent.parent / 'assets' / 'fonts'
 OUT.mkdir(parents=True, exist_ok=True)
 
 RANGES = [(0x20, 0x7E), (0xA0, 0x17F), (0x2010, 0x2027), (0x2030, 0x205E),
