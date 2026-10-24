@@ -2,7 +2,7 @@
 
 A reviewed library of fourteen agent skills, workflows and interface resources, published as a static site.
 
-Live at https://wuzzynizzy.github.io/jAgent/ and https://jagent.pages.dev/.
+Canonical URLs are https://wuzzynizzy.github.io/jAgent/ and https://jagent.pages.dev/. Nothing is published from a merge: `releases/jagent-pages-<version>.zip` is the upload archive, and the Pages workflow only publishes when it is run by hand.
 
 ## What is in it
 
