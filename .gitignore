@@ -2,6 +2,7 @@
 public/
 releases/
 node_modules/
+package-lock.json is committed; do not ignore it.
 .venv/
 __pycache__/
 *.pyc
